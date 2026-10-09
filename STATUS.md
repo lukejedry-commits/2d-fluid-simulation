@@ -57,3 +57,6 @@ No-obstacle column is the no-obstacle dam break on the same build (`validation/i
 
 ## Package contents / git readiness
 See `.gitignore`. Tracked: sim.js, index.html, style.css, README.md, STATUS.md, test/, validation/ (all summaries, CSVs, PNGs), experiments_item2/, the backup_* folders, preview PNGs. Excluded: `sim.js.bak`, node_modules, tmp files. Total size is about 42 MB, under the ~50 MB limit, so no raw run dumps were excluded.
+
+## Physics note (obstacle runs retain more energy)
+Per Physics: the obstacle runs ending with more total energy than the no-obstacle run (30 s: box 0.481, ramp 0.431 vs 0.389 of E0) is expected, not a defect. Not committed/pushed yet; goes with the next push.
