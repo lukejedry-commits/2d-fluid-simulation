@@ -1,0 +1,67 @@
+{
+  "note": "H/a=1 frozen table: OLD harness (same process after h2, no resetColumn reseed) vs NEW (resetColumn reseeds + fresh process per case). Physics = 2d mirror walls.",
+  "old": {
+    "preImpactPct": 0.6615614376739408,
+    "postImpactSpike0": {
+      "fromT": 1.517,
+      "toT": 1.617,
+      "rise": 0.027346413868522212,
+      "pctE0": 0.991
+    },
+    "lateMaxPct": 0.03,
+    "E30": 0.49706015560482986,
+    "depth": 0.10556313004097174,
+    "rhoMin": 0.9407134154827282,
+    "rhoOutOfBand": 130,
+    "rho30": 0.9980979888978981,
+    "maxRelN": 0.19618055555555555,
+    "absN3010": 0.036458333333333336,
+    "maxdZdT": 2.0397506186091836,
+    "over2": 3,
+    "T144": 0.6813896893397453,
+    "shift": 0.11861031066025474,
+    "shiftedMin": {
+      "2.25": 0.989336022107185,
+      "4.5": 0.9863672433773227
+    },
+    "pairs30": {
+      "lt0p8r": 14,
+      "lt1p2r": 137,
+      "lt1p2rBothInFloorRow": 136,
+      "floorRowParticlesPerCellOver4": 1.1015625
+    },
+    "solverMax": 0.000099806
+  },
+  "new": {
+    "preImpactPct": 0.6615671272458528,
+    "postImpactSpike0": {
+      "fromT": 1.517,
+      "toT": 1.567,
+      "rise": 0.02272613983860472,
+      "pctE0": 0.824
+    },
+    "lateMaxPct": 0.02,
+    "E30": 0.4972480436675923,
+    "depth": 0.10530653987017977,
+    "rhoMin": 0.9434346701641145,
+    "rhoOutOfBand": 142,
+    "rho30": 0.99825825685399,
+    "maxRelN": 0.2048611111111111,
+    "absN3010": 0.04861111111111111,
+    "maxdZdT": 2.0397506186091836,
+    "over2": 3,
+    "T144": 0.6813896893397453,
+    "shift": 0.11861031066025474,
+    "shiftedMin": {
+      "2.25": 0.989336022107185,
+      "4.5": 0.9863672433773227
+    },
+    "pairs30": {
+      "lt0p8r": 16,
+      "lt1p2r": 132,
+      "lt1p2rBothInFloorRow": 132,
+      "floorRowParticlesPerCellOver4": 1.109375
+    },
+    "solverMax": 0.000099995
+  }
+}

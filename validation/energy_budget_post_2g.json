@@ -1,0 +1,29 @@
+{
+  "boundary": "separating",
+  "window_s": [
+    1.5,
+    1.7
+  ],
+  "E0": 2.54449,
+  "E1": 2.16026,
+  "dE": -0.38423,
+  "sumOfRows": -0.38423,
+  "wallBoundaryTotal": -0.00799,
+  "wallsFeedSpike": false,
+  "rows_J_per_kg": {
+    "advection (particle PE)": -0.71615,
+    "advection (particle KE)": 0,
+    "separation (particles)": 0,
+    "wall clamp (particles)": -0.00027,
+    "enforceBoundary (inside P2G, before FLIP reference)": -0.00155,
+    "transfer P2G (incl. ghost fold)": 0.33599,
+    "gravity (grid)": 0.76577,
+    "viscosity": -0.02802,
+    "enforceBoundary (pre-projection)": -0.00644,
+    "pressure: projection (no drift)": -0.31793,
+    "pressure: drift target": 0.00146,
+    "extrapolation": -0.01748,
+    "enforceBoundary (post-projection)": 0,
+    "transfer G2P (incl. FLIP)": -0.39963
+  }
+}

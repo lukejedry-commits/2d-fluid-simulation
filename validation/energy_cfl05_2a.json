@@ -1,0 +1,22 @@
+{
+  "h2": {
+    "tag": "h2",
+    "CFL": 0.5,
+    "maxSub": 16,
+    "reach": null,
+    "E0": 5.527723054973439,
+    "preRisePct": 0.46427787909179047,
+    "postRisePct": 0,
+    "nSamples": 120
+  },
+  "h1": {
+    "tag": "h1",
+    "CFL": 0.5,
+    "maxSub": 16,
+    "reach": null,
+    "E0": 2.765621961945694,
+    "preRisePct": 0.6012858309237298,
+    "postRisePct": 0,
+    "nSamples": 120
+  }
+}

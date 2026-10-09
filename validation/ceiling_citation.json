@@ -1,0 +1,67 @@
+{
+  "stack": "final cumulative: PCG CFL1/cap8 neutral separating 2e driftRate=1 renorm+legacyGrade pressureMass=equal",
+  "h": 0.0234375,
+  "R": 0.1171875,
+  "g": 9.81,
+  "formula_corner": "t_phys = sqrt(2h/g) + R/max(|v_side|,0.1); pass if t_release <= t_phys+0.10 AND <= 0.55",
+  "drops": [
+    {
+      "case": "center",
+      "v_throw": [
+        0,
+        -8
+      ],
+      "contact": 0.12,
+      "release": 0.5,
+      "t_release": 0.38,
+      "dualContactT": 0.28,
+      "v_side": 0.2335328757762909,
+      "nCorner": 2,
+      "v_side_used": 0.2335328757762909,
+      "t_phys": 0.5709281679575944,
+      "pass_corner_band": true,
+      "pass_absolute_0p55": true
+    },
+    {
+      "case": "left",
+      "v_throw": [
+        -3,
+        -8
+      ],
+      "contact": 0.12,
+      "release": 0.38,
+      "t_release": 0.26,
+      "dualContactT": 0.12,
+      "v_side": 0.8457314036786556,
+      "nCorner": 4,
+      "v_side_used": 0.8457314036786556,
+      "t_phys": 0.20768865398580882,
+      "pass_corner_band": true,
+      "pass_absolute_0p55": true
+    },
+    {
+      "case": "right",
+      "v_throw": [
+        5,
+        -6
+      ],
+      "contact": 0.12,
+      "release": 0.64,
+      "t_release": 0.52,
+      "dualContactT": 0.12,
+      "v_side": 0.694668747484684,
+      "nCorner": 4,
+      "v_side_used": 0.694668747484684,
+      "t_phys": 0.2378206699118275,
+      "pass_corner_band": false,
+      "pass_absolute_0p55": true
+    }
+  ],
+  "damBreak_lid": {
+    "contact": 0.74,
+    "release": 1.18,
+    "t_release": 0.43999999999999995,
+    "pass_absolute_0p55": true,
+    "damping": 0
+  }
+}

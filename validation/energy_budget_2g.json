@@ -1,0 +1,171 @@
+{
+ "note": "pre-impact window budgets (J/kg)",
+ "runs": {
+  "2g_H/a=2": {
+   "column": "H/a=2",
+   "separation": "neutral",
+   "boundary": "separating",
+   "preImpactRisePctE0": 0.586,
+   "window_s": [
+    0.4,
+    0.633
+   ],
+   "E0": 5.51812,
+   "dE_J_per_kg": 0.03235,
+   "sumOfRows": 0.03235,
+   "rows_J_per_kg": {
+    "advection (particle PE)": -1.08987,
+    "separation (particles)": 0,
+    "wall clamp (particles)": 0.00032,
+    "enforceBoundary (inside P2G, before FLIP reference)": -0.00024,
+    "transfer P2G (incl. ghost fold)": 0.0643,
+    "gravity (grid)": 1.13128,
+    "viscosity": -0.00141,
+    "enforceBoundary (pre-projection)": -0.00213,
+    "pressure: projection (no drift)": -0.00469,
+    "pressure: drift target": -0.00308,
+    "extrapolation": 0.00148,
+    "enforceBoundary (post-projection)": 0,
+    "transfer G2P (incl. FLIP)": -0.06362
+   }
+  },
+  "2g_H/a=1": {
+   "column": "H/a=1",
+   "separation": "neutral",
+   "boundary": "separating",
+   "preImpactRisePctE0": 0.662,
+   "window_s": [
+    0.333,
+    0.683
+   ],
+   "E0": 2.75906,
+   "dE_J_per_kg": 0.01825,
+   "sumOfRows": 0.01825,
+   "rows_J_per_kg": {
+    "advection (particle PE)": -0.77984,
+    "separation (particles)": 0,
+    "wall clamp (particles)": 0.00089,
+    "enforceBoundary (inside P2G, before FLIP reference)": -0.00047,
+    "transfer P2G (incl. ghost fold)": 0.05699,
+    "gravity (grid)": 0.8515,
+    "viscosity": -0.00094,
+    "enforceBoundary (pre-projection)": -0.0066,
+    "pressure: projection (no drift)": -0.03574,
+    "pressure: drift target": -0.01134,
+    "extrapolation": 0.00054,
+    "enforceBoundary (post-projection)": 0,
+    "transfer G2P (incl. FLIP)": -0.05674
+   }
+  },
+  "2d_H/a=2": {
+   "column": "H/a=2",
+   "separation": "neutral",
+   "boundary": "mirror",
+   "preImpactRisePctE0": 0.586,
+   "window_s": [
+    0.4,
+    0.633
+   ],
+   "E0": 5.51812,
+   "dE_J_per_kg": 0.03235,
+   "sumOfRows": 0.03235,
+   "rows_J_per_kg": {
+    "advection (particle PE)": -1.08987,
+    "separation (particles)": 0,
+    "wall clamp (particles)": 0.00032,
+    "enforceBoundary (inside P2G, before FLIP reference)": -0.00024,
+    "transfer P2G (incl. ghost fold)": 0.0643,
+    "gravity (grid)": 1.13128,
+    "viscosity": -0.00141,
+    "enforceBoundary (pre-projection)": -0.00213,
+    "pressure: projection (no drift)": -0.00469,
+    "pressure: drift target": -0.00308,
+    "extrapolation": 0.00148,
+    "enforceBoundary (post-projection)": 0,
+    "transfer G2P (incl. FLIP)": -0.06362
+   }
+  },
+  "2d_H/a=1": {
+   "column": "H/a=1",
+   "separation": "neutral",
+   "boundary": "mirror",
+   "preImpactRisePctE0": 0.662,
+   "window_s": [
+    0.333,
+    0.683
+   ],
+   "E0": 2.75906,
+   "dE_J_per_kg": 0.01825,
+   "sumOfRows": 0.01825,
+   "rows_J_per_kg": {
+    "advection (particle PE)": -0.77984,
+    "separation (particles)": 0,
+    "wall clamp (particles)": 0.00089,
+    "enforceBoundary (inside P2G, before FLIP reference)": -0.00047,
+    "transfer P2G (incl. ghost fold)": 0.05699,
+    "gravity (grid)": 0.8515,
+    "viscosity": -0.00094,
+    "enforceBoundary (pre-projection)": -0.0066,
+    "pressure: projection (no drift)": -0.03574,
+    "pressure: drift target": -0.01134,
+    "extrapolation": 0.00054,
+    "enforceBoundary (post-projection)": 0,
+    "transfer G2P (incl. FLIP)": -0.05674
+   }
+  },
+  "r3_H/a=2": {
+   "column": "H/a=2",
+   "separation": "legacy",
+   "boundary": "legacy",
+   "preImpactRisePctE0": 0.616,
+   "window_s": [
+    0.367,
+    0.633
+   ],
+   "E0": 5.51812,
+   "dE_J_per_kg": 0.03401,
+   "sumOfRows": 0.03401,
+   "rows_J_per_kg": {
+    "advection (particle PE)": -1.36261,
+    "separation (particles)": 0,
+    "wall clamp (particles)": 0.00892,
+    "transfer P2G (incl. ghost fold)": 0.07899,
+    "gravity (grid)": 1.40906,
+    "viscosity": -0.0018,
+    "enforceBoundary (pre-projection)": -0.0021,
+    "pressure: projection (no drift)": -0.03667,
+    "pressure: drift target": -0.00481,
+    "extrapolation": 0.00122,
+    "enforceBoundary (post-projection)": 0.02175,
+    "transfer G2P (incl. FLIP)": -0.07793
+   }
+  },
+  "r3_H/a=1": {
+   "column": "H/a=1",
+   "separation": "legacy",
+   "boundary": "legacy",
+   "preImpactRisePctE0": 0.723,
+   "window_s": [
+    0.3,
+    0.683
+   ],
+   "E0": 2.75906,
+   "dE_J_per_kg": 0.01996,
+   "sumOfRows": 0.01996,
+   "rows_J_per_kg": {
+    "advection (particle PE)": -0.91684,
+    "separation (particles)": 0,
+    "wall clamp (particles)": 0.0194,
+    "transfer P2G (incl. ghost fold)": 0.06709,
+    "gravity (grid)": 0.99269,
+    "viscosity": -0.001,
+    "enforceBoundary (pre-projection)": -0.00588,
+    "pressure: projection (no drift)": -0.08815,
+    "pressure: drift target": -0.0039,
+    "extrapolation": 0.00005,
+    "enforceBoundary (post-projection)": 0.02274,
+    "transfer G2P (incl. FLIP)": -0.06626
+   }
+  }
+ }
+}

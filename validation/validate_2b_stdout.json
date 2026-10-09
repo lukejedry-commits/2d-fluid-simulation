@@ -1,0 +1,699 @@
+{
+ "h2": {
+  "tag": "h2",
+  "cellsA": 24,
+  "cellsH": 48,
+  "a": 0.5625,
+  "H": 1.125,
+  "Tscale": 5.90592922409336,
+  "h": 0.0234375,
+  "config": {
+   "solver": "pcg",
+   "flipRatio": 0.8,
+   "gsIters": 50,
+   "pcgMaxIters": 500,
+   "pcgRelTol": 0.000001,
+   "pcgAbsTol": 0.0001,
+   "viscosity": 0.05,
+   "gravity": 9.81,
+   "omegaGS": 1.9,
+   "cfl": 1,
+   "maxSub": 8,
+   "damping": 0,
+   "separation": "neutral",
+   "boundary": "separating"
+  },
+  "particles": 4608,
+  "particlesEnd": 4608,
+  "countEvents": [],
+  "nanRecoveries": 0,
+  "nanMax": 0,
+  "escMax": 0,
+  "front": {
+   "reachT": 0.6399999999999979,
+   "reachTstar": 3.7797947034197383,
+   "samples": 33,
+   "maxdZdT": 1.7054385722218095,
+   "maxdZdTat": 3.6616761189378835,
+   "over2": [],
+   "T144": 0.9389596768758668
+  },
+  "energy": {
+   "E0": 5.518124999999987,
+   "earlyPeak": {
+    "t": 0.09999999999999999,
+    "E": 5.55057030910524,
+    "risePct": 0.5879770593317954,
+    "backBelowE0At": 0.23333333333333348
+   },
+   "maxRiseAfter05_smoothed": 0.00042965411434847667,
+   "maxRiseAfter05T": 10.233333333333396,
+   "maxRiseAfter05Pct": 0.007786233808557756,
+   "smoothedNote": "0.5 s centred moving average vs running min from t=0.5 s; the window straddles the wall impact, so it hides the pre-impact rise. Use riseUnsmoothed.",
+   "riseUnsmoothed": {
+    "preImpact_0p2_to_wall": {
+     "rise": 0.03209257249593023,
+     "risePctE0": 0.5815847320589929,
+     "fromT": 0.39999999999999963,
+     "toT": 0.6333333333333313
+    },
+    "impactPlus0p5_to_5s": {
+     "rise": 0.01631590680562578,
+     "risePctE0": 0.2956784560992333,
+     "fromT": 1.1499999999999995,
+     "toT": 1.383333333333337
+    },
+    "after5s": {
+     "rise": 0.0035714265036599357,
+     "risePctE0": 0.06472173978769862,
+     "fromT": 10.250000000000062,
+     "toT": 10.433333333333405
+    }
+   },
+   "postImpactSpikes": [
+    {
+     "fromT": 1.05,
+     "toT": 1.383,
+     "rise": 0.022223501093134423,
+     "pctE0": 0.403
+    },
+    {
+     "fromT": 4.783,
+     "toT": 4.933,
+     "rise": 0.01150631808664171,
+     "pctE0": 0.209
+    }
+   ],
+   "lateUpswings_8_30s": [
+    {
+     "fromT": 10.25,
+     "toT": 10.433,
+     "rise": 0.0035714265036599357,
+     "pctE0": 0.065
+    },
+    {
+     "fromT": 11.933,
+     "toT": 12.15,
+     "rise": 0.0015756356310674402,
+     "pctE0": 0.029
+    },
+    {
+     "fromT": 9.867,
+     "toT": 10.033,
+     "rise": 0.0015659836245098813,
+     "pctE0": 0.028
+    },
+    {
+     "fromT": 8,
+     "toT": 8.15,
+     "rise": 0.001538807142513976,
+     "pctE0": 0.028
+    },
+    {
+     "fromT": 13.867,
+     "toT": 14.1,
+     "rise": 0.0013715388083719304,
+     "pctE0": 0.025
+    }
+   ],
+   "at1": {
+    "t": 0.999999999999996,
+    "KE": 2.608676778386455,
+    "PE": 2.4211091106560736,
+    "E": 5.029785889042529
+   },
+   "at5": {
+    "t": 5.000000000000054,
+    "KE": 0.1882287871888075,
+    "PE": 1.2392434189398698,
+    "E": 1.4274722061286773
+   },
+   "at10": {
+    "t": 10.000000000000064,
+    "KE": 0.009340016235091378,
+    "PE": 1.085594021999271,
+    "E": 1.0949340382343624
+   },
+   "at20": {
+    "t": 20.000000000000096,
+    "KE": 0.002260876275773112,
+    "PE": 1.0454327448666962,
+    "E": 1.0476936211424694
+   },
+   "at30": {
+    "t": 29.999999999999527,
+    "KE": 0.0015126347522743243,
+    "PE": 1.0344000765075867,
+    "E": 1.035912711259861
+   }
+  },
+  "volume": {
+   "N0": 1152,
+   "maxRelN": 0.1675347222222222,
+   "maxRelNt": 2.1666666666666785,
+   "N10": 1221,
+   "N30": 1188,
+   "drift10_30": -0.028645833333333332,
+   "absDrift10_30": 0.028645833333333332,
+   "rhoMin": 0.9276482617099058,
+   "rhoMinT": 2.3166666666666837,
+   "rhoMax": 0.9974145715277734,
+   "rhoMaxT": 0.3333333333333332,
+   "rho30": 0.9867630024563592,
+   "rhoSamples": 1800,
+   "rhoOutOfBand": 576,
+   "densitySamplers": {
+    "gradeOn": "legacy",
+    "legacy": {
+     "rhoMin": 0.9276482617099058,
+     "rhoMinT": 2.3166666666666837,
+     "rhoMax": 0.9974145715277734,
+     "rhoMaxT": 0.3333333333333332,
+     "rho30": 0.9867630024563592,
+     "rhoOutOfBand": 576
+    },
+    "renorm": {
+     "rhoMin": 0.9426032960199902,
+     "rhoMax": 1.0086593831154271,
+     "rho30": 1.0007399011895342
+    }
+   }
+  },
+  "depth": {
+   "last5Mean": 0.21263920733290553,
+   "last5Min": 0.21209379192441702,
+   "last5Max": 0.21321870665997267,
+   "at30": 0.21273537538945675,
+   "fromParticleVolume": 0.2109375,
+   "target": 0.2109375
+  },
+  "height": {
+   "meanParticleHeight30": 0.10544343287539151,
+   "halfLast5Depth": 0.10631960366645277,
+   "halfDepth30": 0.10636768769472837,
+   "E30": 1.035912711259861,
+   "gTimesMeanHeight": 1.0344000765075907
+  },
+  "div": {
+   "substeps": 3002,
+   "rawMax": 0.02372,
+   "rawP95OfMax": 0.013742,
+   "rawMean": 0.00043764481439040613,
+   "solverMax": 0.000099989,
+   "solverP95OfMax": 0.000094583,
+   "solverMean": 0.000008189421598934036
+  },
+  "pcg": {
+   "mean": 9.588274483677548,
+   "p95": 12,
+   "max": 17,
+   "capHits": 0
+  },
+  "cost": {
+   "meanMsPerFrame": 5.148233859770083,
+   "p95MsPerFrame": 14.131966000000375,
+   "maxMsPerFrame": 56.96265900000003,
+   "note": "excludes first 60 frames (JIT warm-up) and diagnostics-hook time"
+  },
+  "cfl": {
+   "maxAdvective": 0.9349407631001001,
+   "maxWithGravityTerm": 0.9996493654236537
+  },
+  "closePairs": {
+   "t1.2": {
+    "lt0p8r": 81,
+    "lt1p2r": 314,
+    "lt1p2rBothInFloorRow": 186,
+    "floorRowParticlesPerCellOver4": 1.099609375
+   },
+   "t5": {
+    "lt0p8r": 56,
+    "lt1p2r": 204,
+    "lt1p2rBothInFloorRow": 204,
+    "floorRowParticlesPerCellOver4": 1.119140625
+   },
+   "t30": {
+    "lt0p8r": 10,
+    "lt1p2r": 62,
+    "lt1p2rBothInFloorRow": 61,
+    "floorRowParticlesPerCellOver4": 1.015625
+   }
+  },
+  "wallActiveSet": {
+   "maxPasses": 5,
+   "sumPasses": 4324,
+   "n": 3002,
+   "capHits": 0,
+   "capNegHits": 0,
+   "worstNegP": 0,
+   "worstUInto": 0.005497351288795471,
+   "compFailSteps": 3,
+   "totalCompFail": 4,
+   "meanPasses": 1.4403730846102598,
+   "p95Passes": 3,
+   "pass": false,
+   "note": "separating-wall active set (2g only). Contact p = cell p when constrained, 0 when released. Null pass when boundary != separating."
+  },
+  "separationCom": {
+   "maxAbsRawDy": 1.4228539334403143e-10,
+   "maxAbsRawDx": 2.7406107013424236e-10,
+   "maxAbsEffDy": 1.935087152244503e-9,
+   "maxAbsEffDx": 1.2137100213749363e-9,
+   "maxEffLift": 1.935087152244503e-9,
+   "maxEffLiftT": 7.166666666666784,
+   "sumEffLift": 0.000003690310697813798,
+   "sumEffLiftPreImpact": 8.555233361246578e-9,
+   "g_x_sumEffLift_J_per_kg": 0.00003620194794555336,
+   "g_x_sumEffLiftPreImpact_J_per_kg": 8.392683927382894e-8,
+   "note": "per-substep centre-of-mass shift of the free particles caused by the push-apart pass (m, y down). raw = right after the pass; eff = wall clamp applied to the positions before and after the pass. lift = -dy."
+  },
+  "cap": {
+   "hits": 0
+  },
+  "frames": 1800,
+  "simTime": 29.999999999999527
+ },
+ "h1": {
+  "tag": "h1",
+  "cellsA": 24,
+  "cellsH": 24,
+  "a": 0.5625,
+  "H": 0.5625,
+  "Tscale": 4.17612260356422,
+  "h": 0.0234375,
+  "config": {
+   "solver": "pcg",
+   "flipRatio": 0.8,
+   "gsIters": 50,
+   "pcgMaxIters": 500,
+   "pcgRelTol": 0.000001,
+   "pcgAbsTol": 0.0001,
+   "viscosity": 0.05,
+   "gravity": 9.81,
+   "omegaGS": 1.9,
+   "cfl": 1,
+   "maxSub": 8,
+   "damping": 0,
+   "separation": "neutral",
+   "boundary": "separating"
+  },
+  "particles": 2304,
+  "particlesEnd": 2304,
+  "countEvents": [],
+  "nanRecoveries": 0,
+  "nanMax": 0,
+  "escMax": 0,
+  "front": {
+   "reachT": 0.6999999999999986,
+   "reachTstar": 2.9232858224949485,
+   "samples": 36,
+   "maxdZdT": 2.0424534284701426,
+   "maxdZdTat": 2.9232858224949543,
+   "over2": [
+    {
+     "T": 2.589,
+     "dZdT": 2.0025
+    },
+    {
+     "T": 2.673,
+     "dZdT": 2.0154
+    },
+    {
+     "T": 2.756,
+     "dZdT": 2.0286
+    },
+    {
+     "T": 2.84,
+     "dZdT": 2.0417
+    },
+    {
+     "T": 2.923,
+     "dZdT": 2.0425
+    }
+   ],
+   "T144": 0.6816297886496588
+  },
+  "energy": {
+   "E0": 2.759062500000011,
+   "earlyPeak": {
+    "t": 0.06666666666666667,
+    "E": 2.776284543918114,
+    "risePct": 0.624199122640504,
+    "backBelowE0At": 0.1666666666666667
+   },
+   "maxRiseAfter05_smoothed": 0.0019326770551462147,
+   "maxRiseAfter05T": 1.366666666666663,
+   "maxRiseAfter05Pct": 0.07004832457206776,
+   "smoothedNote": "0.5 s centred moving average vs running min from t=0.5 s; the window straddles the wall impact, so it hides the pre-impact rise. Use riseUnsmoothed.",
+   "riseUnsmoothed": {
+    "preImpact_0p2_to_wall": {
+     "rise": 0.02551920169625177,
+     "risePctE0": 0.9249229293012271,
+     "fromT": 0.3333333333333332,
+     "toT": 0.683333333333332
+    },
+    "impactPlus0p5_to_5s": {
+     "rise": 0.03528131875617557,
+     "risePctE0": 1.2787430062267684,
+     "fromT": 1.4999999999999958,
+     "toT": 1.616666666666662
+    },
+    "after5s": {
+     "rise": 0.0021138585271490706,
+     "risePctE0": 0.07661510122184845,
+     "fromT": 22.900000000000077,
+     "toT": 29.46666666666637
+    }
+   },
+   "postImpactSpikes": [
+    {
+     "fromT": 1.5,
+     "toT": 1.617,
+     "rise": 0.03528131875617557,
+     "pctE0": 1.279
+    },
+    {
+     "fromT": 1.883,
+     "toT": 2.033,
+     "rise": 0.02130776977943416,
+     "pctE0": 0.772
+    }
+   ],
+   "lateUpswings_8_30s": [
+    {
+     "fromT": 27.017,
+     "toT": 29.467,
+     "rise": 0.0017904862708111313,
+     "pctE0": 0.065
+    },
+    {
+     "fromT": 22.9,
+     "toT": 23.617,
+     "rise": 0.0013182237226757598,
+     "pctE0": 0.048
+    },
+    {
+     "fromT": 20.117,
+     "toT": 21.5,
+     "rise": 0.0012580785720173182,
+     "pctE0": 0.046
+    },
+    {
+     "fromT": 8.2,
+     "toT": 8.283,
+     "rise": 0.000978519105230613,
+     "pctE0": 0.035
+    },
+    {
+     "fromT": 18.1,
+     "toT": 18.717,
+     "rise": 0.0007845225475442419,
+     "pctE0": 0.028
+    },
+    {
+     "fromT": 23.767,
+     "toT": 24.817,
+     "rise": 0.0007156465271515033,
+     "pctE0": 0.026
+    },
+    {
+     "fromT": 13.917,
+     "toT": 14.133,
+     "rise": 0.0007110104655020377,
+     "pctE0": 0.026
+    },
+    {
+     "fromT": 8.567,
+     "toT": 8.667,
+     "rise": 0.0005468523764390332,
+     "pctE0": 0.02
+    }
+   ],
+   "at1": {
+    "t": 0.9999999999999976,
+    "KE": 1.6773586309116486,
+    "PE": 0.9092605564859692,
+    "E": 2.5866191873976176
+   },
+   "at5": {
+    "t": 5.000000000000056,
+    "KE": 0.08883665998013382,
+    "PE": 0.5483308181772013,
+    "E": 0.6371674781573351
+   },
+   "at10": {
+    "t": 10.000000000000172,
+    "KE": 0.014426546648452339,
+    "PE": 0.5261827773647392,
+    "E": 0.5406093240131915
+   },
+   "at20": {
+    "t": 20.00000000000024,
+    "KE": 0.002992484442026866,
+    "PE": 0.5163999937335029,
+    "E": 0.5193924781755297
+   },
+   "at30": {
+    "t": 29.999999999999673,
+    "KE": 0.00026612218394337397,
+    "PE": 0.5195198842650295,
+    "E": 0.5197860064489729
+   }
+  },
+  "volume": {
+   "N0": 576,
+   "maxRelN": 0.2222222222222222,
+   "maxRelNt": 2.033333333333329,
+   "N10": 626,
+   "N30": 632,
+   "drift10_30": 0.010416666666666666,
+   "absDrift10_30": 0.010416666666666666,
+   "rhoMin": 0.8961235319170925,
+   "rhoMinT": 2.65000000000001,
+   "rhoMax": 0.9929452702841338,
+   "rhoMaxT": 0.13333333333333333,
+   "rho30": 0.9715690271012367,
+   "rhoSamples": 1800,
+   "rhoOutOfBand": 1765,
+   "densitySamplers": {
+    "gradeOn": "legacy",
+    "legacy": {
+     "rhoMin": 0.8961235319170925,
+     "rhoMinT": 2.65000000000001,
+     "rhoMax": 0.9929452702841338,
+     "rhoMaxT": 0.13333333333333333,
+     "rho30": 0.9715690271012367,
+     "rhoOutOfBand": 1765
+    },
+    "renorm": {
+     "rhoMin": 0.9204043468495585,
+     "rhoMax": 1.0238454993565878,
+     "rho30": 0.998266454963457
+    }
+   }
+  },
+  "depth": {
+   "last5Mean": 0.10743639137645397,
+   "last5Min": 0.10667425394058228,
+   "last5Max": 0.10812774021178484,
+   "at30": 0.10765665862709284,
+   "fromParticleVolume": 0.10546875,
+   "target": 0.10546875
+  },
+  "height": {
+   "meanParticleHeight30": 0.05295819411468175,
+   "halfLast5Depth": 0.053718195688226986,
+   "halfDepth30": 0.05382832931354642,
+   "E30": 0.5197860064489729,
+   "gTimesMeanHeight": 0.519519884265028
+  },
+  "div": {
+   "substeps": 2400,
+   "rawMax": 0.014397,
+   "rawP95OfMax": 0.009333,
+   "rawMean": 0.0005104353056666664,
+   "solverMax": 0.00009997,
+   "solverP95OfMax": 0.000091392,
+   "solverMean": 0.000009301495999999986
+  },
+  "pcg": {
+   "mean": 7.131666666666667,
+   "p95": 9,
+   "max": 13,
+   "capHits": 0
+  },
+  "cost": {
+   "meanMsPerFrame": 2.4666553344827555,
+   "p95MsPerFrame": 6.022600999999895,
+   "maxMsPerFrame": 18.40282100000013,
+   "note": "excludes first 60 frames (JIT warm-up) and diagnostics-hook time"
+  },
+  "cfl": {
+   "maxAdvective": 0.8982553324285739,
+   "maxWithGravityTerm": 0.9997873479498934
+  },
+  "closePairs": {
+   "t1.2": {
+    "lt0p8r": 51,
+    "lt1p2r": 253,
+    "lt1p2rBothInFloorRow": 158,
+    "floorRowParticlesPerCellOver4": 1.083984375
+   },
+   "t5": {
+    "lt0p8r": 18,
+    "lt1p2r": 161,
+    "lt1p2rBothInFloorRow": 161,
+    "floorRowParticlesPerCellOver4": 1.083984375
+   },
+   "t30": {
+    "lt0p8r": 6,
+    "lt1p2r": 22,
+    "lt1p2rBothInFloorRow": 22,
+    "floorRowParticlesPerCellOver4": 1.013671875
+   }
+  },
+  "wallActiveSet": {
+   "maxPasses": 5,
+   "sumPasses": 2754,
+   "n": 2400,
+   "capHits": 1,
+   "capNegHits": 0,
+   "worstNegP": 0,
+   "worstUInto": 0,
+   "compFailSteps": 0,
+   "totalCompFail": 0,
+   "meanPasses": 1.1475,
+   "p95Passes": 2,
+   "pass": true,
+   "note": "separating-wall active set (2g only). Contact p = cell p when constrained, 0 when released. Null pass when boundary != separating."
+  },
+  "separationCom": {
+   "maxAbsRawDy": 7.761021455128987e-11,
+   "maxAbsRawDx": 5.772259707252184e-10,
+   "maxAbsEffDy": 3.5804238586302337e-9,
+   "maxAbsEffDx": 1.9856884531716585e-9,
+   "maxEffLift": 3.5804238586302337e-9,
+   "maxEffLiftT": 20.600000000000207,
+   "sumEffLift": 0.0000056580415388967635,
+   "sumEffLiftPreImpact": 6.560650886753043e-9,
+   "g_x_sumEffLift_J_per_kg": 0.00005550538749657725,
+   "g_x_sumEffLiftPreImpact_J_per_kg": 6.435998519904736e-8,
+   "note": "per-substep centre-of-mass shift of the free particles caused by the push-apart pass (m, y down). raw = right after the pass; eff = wall clamp applied to the positions before and after the pass. lift = -dy."
+  },
+  "cap": {
+   "hits": 0
+  },
+  "frames": 1800,
+  "simTime": 29.999999999999673
+ },
+ "comparison": {
+  "h2": {
+   "T144": 0.9389596768758668,
+   "shift": 0.25104032312413316,
+   "release": {
+    "1.125": {
+     "points": 10,
+     "pass": true,
+     "minRatio": 1.046,
+     "minAtT": 2.23,
+     "minOffWall": {
+      "ratio": 1.0459521952190245,
+      "T": 2.23,
+      "Zref": 2.78
+     }
+    },
+    "2.25": {
+     "points": 15,
+     "pass": true,
+     "minRatio": 1.0642,
+     "minAtT": 4.02,
+     "minOffWall": {
+      "ratio": 1.083261260402289,
+      "T": 3.11,
+      "Zref": 3.89
+     }
+    }
+   },
+   "shifted": {
+    "1.125": {
+     "points": 10,
+     "pass": true,
+     "minRatio": 0.9261,
+     "minAtT": 2.23,
+     "minOffWall": {
+      "ratio": 0.9260987567083059,
+      "T": 2.23,
+      "Zref": 2.78
+     }
+    },
+    "2.25": {
+     "points": 15,
+     "pass": true,
+     "minRatio": 0.9553,
+     "minAtT": 0.84,
+     "minOffWall": {
+      "ratio": 0.9553427461150621,
+      "T": 0.84,
+      "Zref": 1.22
+     }
+    }
+   }
+  },
+  "h1": {
+   "T144": 0.6816297886496588,
+   "shift": 0.1183702113503412,
+   "release": {
+    "2.25": {
+     "points": 19,
+     "pass": true,
+     "minRatio": 1.0642,
+     "minAtT": 3.32,
+     "minOffWall": {
+      "ratio": 1.0781490394839885,
+      "T": 1.29,
+      "Zref": 2.11
+     }
+    },
+    "4.5": {
+     "points": 9,
+     "pass": true,
+     "minRatio": 1.0642,
+     "minAtT": 3.19,
+     "minOffWall": {
+      "ratio": 1.0845196786762776,
+      "T": 0.58,
+      "Zref": 1.22
+     }
+    }
+   },
+   "shifted": {
+    "2.25": {
+     "points": 19,
+     "pass": true,
+     "minRatio": 0.9891,
+     "minAtT": 0.97,
+     "minOffWall": {
+      "ratio": 0.9890851609570019,
+      "T": 0.97,
+      "Zref": 1.67
+     }
+    },
+    "4.5": {
+     "points": 9,
+     "pass": true,
+     "minRatio": 0.9875,
+     "minAtT": 0.58,
+     "minOffWall": {
+      "ratio": 0.9874549633649918,
+      "T": 0.58,
+      "Zref": 1.22
+     }
+    }
+   }
+  }
+ },
+ "harness": {
+  "reseed": true,
+  "freshProcessPerCase": true
+ }
+}

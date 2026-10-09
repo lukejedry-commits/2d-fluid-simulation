@@ -1,0 +1,51 @@
+{
+  "part": "2f dig cycle",
+  "default_reverted_to": "equal",
+  "digs": [
+    {
+      "item": 1,
+      "change": "shared uScale/vScale = rho0/rho_f for both A and u-=scale*dp; dedicated arrays",
+      "weighted": {
+        "maxAbsU": 0.3674645150460833,
+        "absDE": 0.009527116192245444,
+        "pass": false
+      },
+      "equal": {
+        "maxAbsU": 0.013384736441418103,
+        "absDE": 0.009214287856790904,
+        "pass": false
+      }
+    },
+    {
+      "item": 2,
+      "change": "fold normal ghost face mass+momentum onto interface faces",
+      "weighted": {
+        "maxAbsU": 0.3674645150460833,
+        "absDE": 0.009527116192245444,
+        "pass": false
+      },
+      "equal": {
+        "maxAbsU": 0.013384736441418103,
+        "absDE": 0.009214287856790904,
+        "pass": false
+      }
+    },
+    {
+      "item": 3,
+      "change": "explicit rho_f=m_f/V_f with V_f=h^2; clamp frac ~0.021%",
+      "weighted": {
+        "maxAbsU": 0.3674645150460833,
+        "absDE": 0.009527116192245444,
+        "pass": false,
+        "clampFrac": 0.0002123072903057225
+      },
+      "equal": {
+        "maxAbsU": 0.013384736441418103,
+        "absDE": 0.009214287856790904,
+        "pass": false
+      }
+    }
+  ],
+  "verdict": "PARK 2f as FAIL \u2014 weighted still grows after all three digs; equal remains default",
+  "next": "2e"
+}

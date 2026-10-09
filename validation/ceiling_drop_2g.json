@@ -1,0 +1,83 @@
+{
+  "dropParams": {
+    "DROP_RADIUS_CELLS": 5,
+    "R_m": 0.1171875,
+    "holdStepsBeforeRelease": 3,
+    "sampleDt": 0.02,
+    "contactDef": "any particle centre within one cell (0.0234375 m) of the lid (py < 2h)",
+    "damping": 0.15
+  },
+  "drops": [
+    {
+      "case": "center",
+      "start": [
+        1.5,
+        0.6
+      ],
+      "v": [
+        0,
+        -8
+      ],
+      "R_m": 0.1171875,
+      "legacy_t": 0.32,
+      "sep_t": 0.38,
+      "delta": 0.06,
+      "pass": true,
+      "legacy_contact": 0.12,
+      "sep_contact": 0.12
+    },
+    {
+      "case": "left",
+      "start": [
+        0.4,
+        0.6
+      ],
+      "v": [
+        -3,
+        -8
+      ],
+      "R_m": 0.1171875,
+      "legacy_t": 0.06,
+      "sep_t": 0.4,
+      "delta": 0.34,
+      "pass": false,
+      "legacy_contact": 0.12,
+      "sep_contact": 0.12
+    },
+    {
+      "case": "right",
+      "start": [
+        2.6,
+        0.6
+      ],
+      "v": [
+        5,
+        -6
+      ],
+      "R_m": 0.1171875,
+      "legacy_t": 0.08000000000000002,
+      "sep_t": 0.5,
+      "delta": 0.42,
+      "pass": false,
+      "legacy_contact": 0.12,
+      "sep_contact": 0.12
+    }
+  ],
+  "allDropsPass": false,
+  "damBreak": {
+    "legacy": {
+      "boundary": "legacy",
+      "contact": 0.72,
+      "release": 2.54,
+      "t_release": 1.82
+    },
+    "separating": {
+      "boundary": "separating",
+      "contact": 0.74,
+      "release": 1.18,
+      "t_release": 0.43999999999999995
+    },
+    "pass": true,
+    "damping": 0
+  }
+}

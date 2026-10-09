@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2D Water Particles — FLIP/APIC</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="view"></canvas>
+  <aside class="panel" id="panel">
+    <header>
+      <p class="kicker">fluid / flip · apic</p>
+      <h1>2D water particles</h1>
+      <p class="lede">Particles + MAC grid (APIC transfer, FLIP blend). 3 m tank. Empty canvas is air. No metaballs yet.</p>
+    </header>
+
+    <dl class="hud">
+      <div><dt>particles</dt><dd id="hud-n">0</dd></div>
+      <div><dt>fps</dt><dd id="hud-fps">—</dd></div>
+    </dl>
+
+    <label class="ctrl">
+      <span>water amount <em id="val-n">22%</em></span>
+      <input id="sl-n" type="range" autocomplete="off" min="8" max="40" step="1" value="22" />
+    </label>
+    <label class="ctrl">
+      <span>gravity m/s² <em id="val-g">9.81</em></span>
+      <input id="sl-g" type="range" autocomplete="off" min="0" max="20" step="0.01" value="9.81" />
+    </label>
+    <label class="ctrl">
+      <span>FLIP blend (0 = APIC) <em id="val-flip">0.80</em></span>
+      <input id="sl-flip" type="range" autocomplete="off" min="0" max="1" step="0.01" value="0.8" />
+    </label>
+    <label class="ctrl">
+      <span>pressure solver max iterations (PCG cap) <em id="val-iters">500</em></span>
+      <input id="sl-iters" type="range" autocomplete="off" min="10" max="1000" step="10" value="500" />
+    </label>
+    <label class="ctrl">
+      <span>viscosity <em id="val-mu">0.05</em></span>
+      <input id="sl-mu" type="range" autocomplete="off" min="0" max="1" step="0.01" value="0.05" />
+    </label>
+
+    <div class="row">
+      <button type="button" id="btn-pause">Pause</button>
+      <button type="button" id="btn-reset">Reset</button>
+      <button type="button" id="btn-dam">Dam break</button>
+    </div>
+    <p class="hint">Solver: FLIP/APIC. Hold left mouse for a water drop; release to splash. Water amount restarts the dam break. Space pause · R reset.</p>
+  </aside>
+  <script src="sim.js"></script>
+</body>
+</html>

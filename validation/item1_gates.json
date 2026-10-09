@@ -1,0 +1,278 @@
+{
+ "settings": {
+  "grid": "128x72",
+  "h": 0.0234375,
+  "damping": 0,
+  "cfl": 1,
+  "speedClamp": "off",
+  "nanGuard": true,
+  "tEnd": 30,
+  "sim": "/workspace/2d-fluid-simulation/sim.js"
+ },
+ "gates": {
+  "b1": {
+   "noNaN": {
+    "value": null,
+    "pass": true
+   },
+   "substepCapHits0": {
+    "value": 0,
+    "pass": true
+   },
+   "maxSpeedBelow14": {
+    "value": 9.982037879225247,
+    "pass": true
+   },
+   "pcgCapHits0": {
+    "value": 0,
+    "solves": 4095,
+    "maxIters": 23,
+    "pass": true
+   },
+   "E30_below_E0": {
+    "value": [
+     3.7169740284937434,
+     4.788077540919157
+    ],
+    "pass": true
+   },
+   "obstacleCumulative_le_1e4": {
+    "value": -0.0029448898808439403,
+    "pass": true
+   },
+   "obstacleEvery05sWindow_le_1e4": {
+    "value": 0,
+    "at": [
+     0.016666666666666666,
+     0.016666666666666666
+    ],
+    "pass": true
+   },
+   "removal_le_0": {
+    "value": -0.0029448898808357164,
+    "maxPerSubstep": 0,
+    "pass": true
+   },
+   "leaks0_minSdf_ge0": {
+    "value": {
+     "leaks": {
+      "maxDownstream": 0,
+      "finalDownstream": 0,
+      "everDownstream": 0
+     },
+     "minSdfOverR": 0.9999932183159723
+    },
+    "pass": true
+   }
+  },
+  "b2": {
+   "noNaN": {
+    "value": null,
+    "pass": true
+   },
+   "substepCapHits0": {
+    "value": 0,
+    "pass": true
+   },
+   "maxSpeedBelow14": {
+    "value": 9.985745823465965,
+    "pass": true
+   },
+   "pcgCapHits0": {
+    "value": 0,
+    "solves": 3672,
+    "maxIters": 23,
+    "pass": true
+   },
+   "E30_below_E0": {
+    "value": [
+     3.7011575799831826,
+     4.788077540919157
+    ],
+    "pass": true
+   },
+   "obstacleCumulative_le_1e4": {
+    "value": -0.0037557760936676524,
+    "pass": true
+   },
+   "obstacleEvery05sWindow_le_1e4": {
+    "value": 0,
+    "at": [
+     0.016666666666666666,
+     0.016666666666666666
+    ],
+    "pass": true
+   },
+   "removal_le_0": {
+    "value": -0.0037557760936593695,
+    "maxPerSubstep": 0,
+    "pass": true
+   }
+  },
+  "energyRise_b1_vs_b2": {
+   "b1_rise_frac": 0.0036698304623449017,
+   "b2_rise_frac": 0.0036698304623449017,
+   "b1_at": 0.09999999999999999,
+   "b2_at": 0.09999999999999999,
+   "excess_frac": 0,
+   "limit": 0.002,
+   "pass": true
+  },
+  "instrumentationReadOnly": {
+   "b1": "385610c06d39d85b",
+   "b1_plain": "385610c06d39d85b",
+   "identical": true
+  }
+ },
+ "b1": {
+  "case": "b1",
+  "kind": "b1",
+  "barrier_cells": [
+   64,
+   65
+  ],
+  "sim": "/workspace/2d-fluid-simulation/sim.js",
+  "nanGuard": null,
+  "simTime": 29.99999999999939,
+  "particles": [
+   6400,
+   6400
+  ],
+  "E0": 4.788077540919157,
+  "E30": 3.7169740284937434,
+  "maxE": 4.8056489737348915,
+  "maxEt": 0.09999999999999999,
+  "capHits": 0,
+  "pcgCapHits": 0,
+  "maxParticleSpeed": 9.982037879225247,
+  "substeps": 2992,
+  "leaks": {
+   "maxDownstream": 0,
+   "finalDownstream": 0,
+   "everDownstream": 0
+  },
+  "minSdfOverR": 0.9999932183159723,
+  "insideMaxPerSubstep": 0,
+  "finalStateHash": "385610c06d39d85b",
+  "pcgSolves": 4095,
+  "pcgMaxIters": 23,
+  "obstacleRows": {
+   "pushPE": 0,
+   "pushKE": -8.22370059268004e-15,
+   "velRemoval": -0.0029448898808357164,
+   "pushPlusRemoval": -0.0029448898808439403,
+   "maxWindow05s": 0,
+   "maxWindow05sAt": [
+    0.016666666666666666,
+    0.016666666666666666
+   ],
+   "maxRemovalPerSubstep": 0
+  },
+  "hydrostatic": {
+   "window": [
+    25,
+    30
+   ],
+   "samples": 361,
+   "F_mean_N_per_m": 2824.1883327294845,
+   "F_min": 2088.179924723191,
+   "F_max": 4528.733015057105,
+   "wetCells_mean": 31.914127423822716,
+   "d_upstream_m": 0.7424442747257464,
+   "F_ref_half_rho_g_d2": 2703.7512727632593,
+   "ratio": 1.0445444302438136,
+   "band_2h_over_d": 0.0631360515471889
+  }
+ },
+ "b2": {
+  "case": "b2",
+  "kind": "b2",
+  "barrier_cells": [
+   64,
+   66
+  ],
+  "sim": "/workspace/2d-fluid-simulation/sim.js",
+  "nanGuard": null,
+  "simTime": 29.999999999999382,
+  "particles": [
+   6400,
+   6400
+  ],
+  "E0": 4.788077540919157,
+  "E30": 3.7011575799831826,
+  "maxE": 4.8056489737348915,
+  "maxEt": 0.09999999999999999,
+  "capHits": 0,
+  "pcgCapHits": 0,
+  "maxParticleSpeed": 9.985745823465965,
+  "substeps": 2691,
+  "leaks": {
+   "maxDownstream": 0,
+   "finalDownstream": 0,
+   "everDownstream": 0
+  },
+  "minSdfOverR": 0.9999932183159723,
+  "insideMaxPerSubstep": 0,
+  "finalStateHash": "b67b2fc591745546",
+  "pcgSolves": 3672,
+  "pcgMaxIters": 23,
+  "obstacleRows": {
+   "pushPE": 0,
+   "pushKE": -8.282968037163808e-15,
+   "velRemoval": -0.0037557760936593695,
+   "pushPlusRemoval": -0.0037557760936676524,
+   "maxWindow05s": 0,
+   "maxWindow05sAt": [
+    0.016666666666666666,
+    0.016666666666666666
+   ],
+   "maxRemovalPerSubstep": 0
+  },
+  "hydrostatic": {
+   "window": [
+    25,
+    30
+   ],
+   "samples": 314,
+   "F_mean_N_per_m": 2810.77131976447,
+   "F_min": 2253.801484028322,
+   "F_max": 3320.954731358249,
+   "wetCells_mean": 31.831210191082803,
+   "d_upstream_m": 0.7423710093111994,
+   "F_ref_half_rho_g_d2": 2703.2176793594003,
+   "ratio": 1.0397872658300154,
+   "band_2h_over_d": 0.06314228251382344
+  }
+ },
+ "b1_plain": {
+  "case": "b1_plain",
+  "kind": "b1",
+  "barrier_cells": [
+   64,
+   65
+  ],
+  "sim": "/workspace/2d-fluid-simulation/sim.js",
+  "nanGuard": null,
+  "simTime": 29.99999999999939,
+  "particles": [
+   6400,
+   6400
+  ],
+  "E0": 4.788077540919157,
+  "E30": 3.7169740284937434,
+  "maxE": 4.8056489737348915,
+  "maxEt": 0.09999999999999999,
+  "capHits": 0,
+  "pcgCapHits": 0,
+  "maxParticleSpeed": 9.982037879225247,
+  "substeps": 2992,
+  "leaks": {
+   "maxDownstream": 0,
+   "finalDownstream": 0,
+   "everDownstream": 0
+  },
+  "minSdfOverR": 0.9999932183159723,
+  "insideMaxPerSubstep": 0,
+  "finalStateHash": "385610c06d39d85b"
+ }
+}

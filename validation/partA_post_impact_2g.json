@@ -1,0 +1,155 @@
+{
+  "part": "A",
+  "window_s": [
+    1.5,
+    1.7
+  ],
+  "case": "H/a=1 24x24",
+  "harness": "reseed + fresh process (budget_window.js)",
+  "wallsFeedSpike": false,
+  "note": "Wall boundary rows remove energy (~-0.008 J/kg) under both 2g and 2d; walls do NOT feed the post-impact spike. Spike source remains gravity + P2G transfer vs advection PE / G2P / pressure.",
+  "budget_2g_separating": {
+    "boundary": "separating",
+    "window_s": [
+      1.5,
+      1.7
+    ],
+    "E0": 2.54449,
+    "E1": 2.16026,
+    "dE": -0.38423,
+    "sumOfRows": -0.38423,
+    "wallBoundaryTotal": -0.00799,
+    "wallsFeedSpike": false,
+    "rows_J_per_kg": {
+      "advection (particle PE)": -0.71615,
+      "advection (particle KE)": 0,
+      "separation (particles)": 0,
+      "wall clamp (particles)": -0.00027,
+      "enforceBoundary (inside P2G, before FLIP reference)": -0.00155,
+      "transfer P2G (incl. ghost fold)": 0.33599,
+      "gravity (grid)": 0.76577,
+      "viscosity": -0.02802,
+      "enforceBoundary (pre-projection)": -0.00644,
+      "pressure: projection (no drift)": -0.31793,
+      "pressure: drift target": 0.00146,
+      "extrapolation": -0.01748,
+      "enforceBoundary (post-projection)": 0,
+      "transfer G2P (incl. FLIP)": -0.39963
+    }
+  },
+  "budget_2d_mirror": {
+    "boundary": "mirror",
+    "window_s": [
+      1.5,
+      1.7
+    ],
+    "E0": 2.54735,
+    "E1": 2.19302,
+    "dE": -0.35433,
+    "sumOfRows": -0.35433,
+    "wallBoundaryTotal": -0.00806,
+    "wallsFeedSpike": false,
+    "rows_J_per_kg": {
+      "advection (particle PE)": -0.71349,
+      "advection (particle KE)": 0,
+      "separation (particles)": 0,
+      "wall clamp (particles)": -0.00027,
+      "enforceBoundary (inside P2G, before FLIP reference)": -0.00163,
+      "transfer P2G (incl. ghost fold)": 0.34393,
+      "gravity (grid)": 0.76306,
+      "viscosity": -0.02899,
+      "enforceBoundary (pre-projection)": -0.00643,
+      "pressure: projection (no drift)": -0.29867,
+      "pressure: drift target": 0.0075,
+      "extrapolation": -0.01301,
+      "enforceBoundary (post-projection)": 0,
+      "transfer G2P (incl. FLIP)": -0.40633
+    }
+  },
+  "ceiling_vside_2g": {
+    "h": 0.0234375,
+    "R": 0.1171875,
+    "g": 9.81,
+    "formula": "t_phys = sqrt(2h/g) + R/max(|v_side|,0.1)",
+    "rows": [
+      {
+        "name": "left",
+        "v_throw": [
+          -3,
+          -8
+        ],
+        "v_side_at_dual_contact": 0.8424525558948517,
+        "dualContactT": 0.12,
+        "nCornerParticles": 4,
+        "v_side_used": 0.8424525558948517,
+        "t_phys": 0.2082279468026093,
+        "band_hi": 0.30822794680260934,
+        "t_release": 0.4,
+        "legacy_t": 0.06,
+        "pass_new_band": false
+      },
+      {
+        "name": "right",
+        "v_throw": [
+          5,
+          -6
+        ],
+        "v_side_at_dual_contact": 0.7338741719722748,
+        "dualContactT": 0.12,
+        "nCornerParticles": 2,
+        "v_side_used": 0.7338741719722748,
+        "t_phys": 0.22880852667507245,
+        "band_hi": 0.32880852667507243,
+        "t_release": 0.5,
+        "legacy_t": 0.08000000000000002,
+        "pass_new_band": false
+      },
+      {
+        "name": "center",
+        "v_throw": [
+          0,
+          -8
+        ],
+        "v_side_at_dual_contact": 4.96551513671875,
+        "dualContactT": 0.26,
+        "nCornerParticles": 1,
+        "v_side_used": 4.96551513671875,
+        "t_phys": 0.0927254283709316,
+        "band_hi": 0.1927254283709316,
+        "t_release": 0.38,
+        "legacy_t": 0.32,
+        "pass_new_band": false
+      }
+    ]
+  },
+  "corner_band": {
+    "formula": "t_phys = sqrt(2h/g) + R/max(|v_side|, 0.1)",
+    "h_m": 0.0234375,
+    "R_m": 0.1171875,
+    "g": 9.81,
+    "pass_rule": "t_release <= t_phys+0.10 AND t_release <= 0.55",
+    "results": [
+      {
+        "case": "left",
+        "v_side": 0.8424525558948517,
+        "t_phys": 0.2082279468026093,
+        "t_release": 0.4,
+        "pass": false
+      },
+      {
+        "case": "right",
+        "v_side": 0.7338741719722748,
+        "t_phys": 0.22880852667507245,
+        "t_release": 0.5,
+        "pass": false
+      },
+      {
+        "case": "center",
+        "v_side": 4.96551513671875,
+        "t_phys": 0.0927254283709316,
+        "t_release": 0.38,
+        "pass": false
+      }
+    ]
+  }
+}

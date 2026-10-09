@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2D Water Particles — FLIP/APIC</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="view"></canvas>
+  <aside class="panel" id="panel">
+    <header>
+      <p class="kicker">fluid / flip · apic</p>
+      <h1>2D water particles</h1>
+      <p class="lede">Particles + MAC grid (APIC transfer, FLIP blend). 3 m tank. Empty canvas is air. No metaballs yet.</p>
+    </header>
+
+    <dl class="hud">
+      <div><dt>particles</dt><dd id="hud-n">0</dd></div>
+      <div><dt>fps</dt><dd id="hud-fps">—</dd></div>
+    </dl>
+
+    <label class="ctrl">
+      <span>water amount <em id="val-n">22%</em></span>
+      <input id="sl-n" type="range" autocomplete="off" min="8" max="40" step="1" value="22" />
+    </label>
+    <label class="ctrl">
+      <span>gravity m/s² <em id="val-g">9.81</em></span>
+      <input id="sl-g" type="range" autocomplete="off" min="0" max="20" step="0.01" value="9.81" />
+    </label>
+    <label class="ctrl">
+      <span>FLIP blend (0 = APIC) <em id="val-flip">0.80</em></span>
+      <input id="sl-flip" type="range" autocomplete="off" min="0" max="1" step="0.01" value="0.8" />
+    </label>
+    <label class="ctrl">
+      <span>pressure solver max iterations (PCG cap) <em id="val-iters">500</em></span>
+      <input id="sl-iters" type="range" autocomplete="off" min="10" max="1000" step="10" value="500" />
+    </label>
+    <label class="ctrl">
+      <span>viscosity <em id="val-mu">0.05</em></span>
+      <input id="sl-mu" type="range" autocomplete="off" min="0" max="1" step="0.01" value="0.05" />
+    </label>
+
+    <div class="row">
+      <button type="button" id="btn-pause">Pause</button>
+      <button type="button" id="btn-reset">Reset</button>
+      <button type="button" id="btn-dam">Dam break</button>
+    </div>
+    <div class="row">
+      <button type="button" id="btn-edit">Edit objects (E)</button>
+    </div>
+
+    <section class="edit-panel" id="edit-panel" hidden>
+      <p class="edit-title">Object edit mode <span id="edit-paused">sim paused</span> · <span id="edit-count">0</span> objects</p>
+      <div class="tools" role="group" aria-label="Shape">
+        <button type="button" data-tool="circle" title="Circle (1)"><kbd>1</kbd>Circle</button>
+        <button type="button" data-tool="box" title="Box (2)"><kbd>2</kbd>Box</button>
+        <button type="button" data-tool="ramp" title="Ramp (3)"><kbd>3</kbd>Ramp</button>
+        <button type="button" data-tool="triangle" title="Triangle (4)"><kbd>4</kbd>Tri</button>
+        <button type="button" data-tool="freehand" title="Freehand (5)"><kbd>5</kbd>Free</button>
+      </div>
+      <div class="row">
+        <button type="button" id="btn-rot-l" title="Rotate left ([)">⟲ [</button>
+        <button type="button" id="btn-rot-r" title="Rotate right (])">⟳ ]</button>
+        <button type="button" id="btn-delete" title="Delete selected (Del)">Delete</button>
+        <button type="button" id="btn-clear-obj" title="Remove all objects">Clear all</button>
+      </div>
+      <div class="row">
+        <button type="button" id="btn-confirm" class="primary" title="Confirm (Enter)">Confirm ⏎</button>
+        <button type="button" id="btn-cancel" title="Cancel (Esc)">Cancel</button>
+        <button type="button" id="btn-done" title="Exit edit mode (E)">Done</button>
+      </div>
+      <p class="hint" id="edit-status"></p>
+    </section>
+
+    <p class="hint main-hint">Solver: FLIP/APIC. Hold left mouse (or touch) for a water drop; release to splash. Water amount restarts the dam break. Space pause · R reset · E edit objects (fixed obstacles: circle, box, ramp, triangle, freehand; water flows around them like the tank walls).</p>
+    <p class="hint edit-hint">Drag on the canvas to place and size a shape (tap = default size; Freehand: hold and draw, release to close). Drag a shape to move it; rotate with [ ] , the mouse wheel or the round handle. Enter / Confirm commits (particles inside are removed), Esc / Cancel discards, Del deletes the selected object. E / Done exits and restores the previous pause state.</p>
+  </aside>
+  <script src="sim.js"></script>
+</body>
+</html>

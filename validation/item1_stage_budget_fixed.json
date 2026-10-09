@@ -1,0 +1,2327 @@
+{
+ "method": "see header of test/item1_budget.js; A = read-only G2P probe (primary), B = face-mass grid KE",
+ "sim": "/workspace/2d-fluid-simulation/sim.js",
+ "tEnd": 1,
+ "cases": {
+  "b1_cfl1": {
+   "kind": "b1",
+   "cfl": 1,
+   "barrier_cells": [
+    64,
+    65
+   ],
+   "nanGuard": null,
+   "simTime": 0.9999999999999961,
+   "capHits": 0,
+   "maxParticleSpeed": 9.982037879225247,
+   "tContact": 0.16666666666666669,
+   "contactWindow": {
+    "window": [
+     0.16666666666666669,
+     0.3666666666666667
+    ],
+    "substeps": 83,
+    "duration": 0.19999999999999984,
+    "dE_measured": -0.3730120754627313,
+    "sumA": -0.3730120754627253,
+    "sumB": -0.3730120754627253,
+    "closureA": 5.995204332975845e-15,
+    "closureB": 5.995204332975845e-15,
+    "rows": {
+     "gravity+advection": {
+      "A_total": 0.04214115367873106,
+      "A_perSubstep": 0.0005077247431172417,
+      "A_rate": 0.21070576839365546,
+      "B_total": 0.04360764106869208,
+      "B_perSubstep": 0.0005253932658878564,
+      "B_rate": 0.21803820534346058
+     },
+     "P2G": {
+      "A_total": -1.2898422627075359,
+      "A_perSubstep": -0.015540268225391998,
+      "A_rate": -6.449211313537685,
+      "B_total": -2.941945940812933,
+      "B_perSubstep": -0.03544513181702329,
+      "B_rate": -14.709729704064676
+     },
+     "boundary: box-wall faces (enforceWalls)": {
+      "A_total": 0.0388422157783852,
+      "A_perSubstep": 0.0004679785033540386,
+      "A_rate": 0.19421107889192615,
+      "B_total": -0.0003791026267769837,
+      "B_perSubstep": -0.000004567501527433539,
+      "B_rate": -0.00189551313388492
+     },
+     "boundary: obstacle interface normal faces": {
+      "A_total": -0.0005332189843896273,
+      "A_perSubstep": -0.0000064243251131280405,
+      "A_rate": -0.002666094921948139,
+      "B_total": -0.0034932354043455405,
+      "B_perSubstep": -0.00004208717354633181,
+      "B_rate": -0.017466177021727716
+     },
+     "boundary: obstacle ghost-face fill": {
+      "A_total": 1.2002428619248544,
+      "A_perSubstep": 0.014460757372588607,
+      "A_rate": 6.0012143096242765,
+      "B_total": 0,
+      "B_perSubstep": 0,
+      "B_rate": 0
+     },
+     "viscosity": {
+      "A_total": -0.014644817966314783,
+      "A_perSubstep": -0.00017644358995559978,
+      "A_rate": -0.07322408983157397,
+      "B_total": -0.015968765944461616,
+      "B_perSubstep": -0.0001923947704152002,
+      "B_rate": -0.07984382972230814
+     },
+     "separating active set (restore/enforce w. release bits/put-back)": {
+      "A_total": -0.00005133455728234537,
+      "A_perSubstep": -6.184886419559683e-7,
+      "A_rate": -0.0002566727864117271,
+      "B_total": -0.00006056232715678789,
+      "B_perSubstep": -7.296665922504564e-7,
+      "B_rate": -0.00030281163578393965
+     },
+     "projection (PCG solve + apply, incl. drift rhs)": {
+      "A_total": -0.4106896889073335,
+      "A_perSubstep": -0.004948068541052211,
+      "A_rate": -2.053448444536669,
+      "B_total": -0.41215410209613346,
+      "B_perSubstep": -0.004965712073447391,
+      "B_rate": -2.060770510480669
+     },
+     "extrapolation": {
+      "A_total": 0.06424845541784308,
+      "A_perSubstep": 0.0007740777761185912,
+      "A_rate": 0.3212422770892156,
+      "B_total": 0.005572900767064404,
+      "B_perSubstep": 0.00006714338273571571,
+      "B_rate": 0.02786450383532204
+     },
+     "G2P": {
+      "A_total": 5.833202365579382e-9,
+      "A_perSubstep": 7.027954657324556e-11,
+      "A_rate": 2.9166011827896933e-8,
+      "B_total": 2.954534536886211,
+      "B_perSubstep": 0.03559680164923146,
+      "B_rate": 14.772672684431065
+     },
+     "push-out PE": {
+      "A_total": 0,
+      "A_perSubstep": 0,
+      "A_rate": 0,
+      "B_total": 0,
+      "B_perSubstep": 0,
+      "B_rate": 0
+     },
+     "push-out KE (excl. removal)": {
+      "A_total": -2.3032834892116195e-15,
+      "A_perSubstep": -2.7750403484477344e-17,
+      "A_rate": -1.1516417446058107e-14,
+      "B_total": -2.3032834892116195e-15,
+      "B_perSubstep": -2.7750403484477344e-17,
+      "B_rate": -1.1516417446058107e-14
+     },
+     "velocity removal": {
+      "A_total": -0.0027601981595536686,
+      "A_perSubstep": -0.0000332553995126948,
+      "A_rate": -0.013800990797768354,
+      "B_total": -0.0027601981595536686,
+      "B_perSubstep": -0.0000332553995126948,
+      "B_rate": -0.013800990797768354
+     },
+     "separation (particles)": {
+      "A_total": -1.3709211543755373e-10,
+      "A_perSubstep": -1.6517122341873944e-12,
+      "A_rate": -6.854605771877692e-10,
+      "B_total": -1.3709211543755373e-10,
+      "B_perSubstep": -1.6517122341873944e-12,
+      "B_rate": -6.854605771877692e-10
+     },
+     "wall clamp (particles)": {
+      "A_total": 0.00003475332376279283,
+      "A_perSubstep": 4.1871474413003414e-7,
+      "A_rate": 0.0001737666188139643,
+      "B_total": 0.00003475332376279283,
+      "B_perSubstep": 4.1871474413003414e-7,
+      "B_rate": 0.0001737666188139643
+     },
+     "other (between marks)": {
+      "A_total": 0,
+      "A_perSubstep": 0,
+      "A_rate": 0,
+      "B_total": 0,
+      "B_perSubstep": 0,
+      "B_rate": 0
+     }
+    },
+    "byPlaceA": {
+     "gravity+advection": 0.04214115367873106,
+     "separation (particles)": -1.3709211543755373e-10,
+     "wall clamp (particles)": 0.00003475332376279283,
+     "push-out PE": 0,
+     "push-out KE (excl. removal)": -2.3032834892116195e-15,
+     "velocity removal": -0.0027601981595536686,
+     "P2G": -1.2898422627075359,
+     "p2g.pending": 0,
+     "p2g.enforce.walls": 0.043413434928115,
+     "p2g.enforce.obstacleInterface": 0.00009612532182057265,
+     "p2g.enforce.obstacleGhostFill": 1.219257341126447,
+     "viscosity": -0.014644817966314783,
+     "pre.pending": 0,
+     "pre.enforce.walls": 0.0004446211817290546,
+     "pre.enforce.obstacleInterface": -0.0005103972756357322,
+     "pre.enforce.obstacleGhostFill": -0.019013004268208178,
+     "activeSet.other": -5.623754502082079e-7,
+     "activeSet.pending": 0,
+     "activeSet.enforce.walls": -0.00004534151455626301,
+     "activeSet.enforce.obstacleInterface": -0.000005430667275874157,
+     "activeSet.enforce.obstacleGhostFill": 0,
+     "projection (PCG solve + pressure apply, incl. drift rhs)": -0.4106896889073335,
+     "extrapolation": 0.06424845541784308,
+     "post.pending": 0,
+     "post.enforce.walls": -0.005015840331458854,
+     "post.enforce.obstacleInterface": -0.00011894703057446776,
+     "post.enforce.obstacleGhostFill": -0.000001474933384315591,
+     "G2P": 5.833202365579382e-9
+    },
+    "p_A": {
+     "gravity+advection": 0.5998029879782975,
+     "P2G": -0.628946163165774,
+     "boundary: box-wall faces (enforceWalls)": -0.8527724473820948,
+     "boundary: obstacle interface normal faces": 1.612229902579882,
+     "boundary: obstacle ghost-face fill": -0.6394335960192569,
+     "viscosity": -0.678783033217787,
+     "separating active set (restore/enforce w. release bits/put-back)": null,
+     "projection (PCG solve + apply, incl. drift rhs)": 0.008581158070599528,
+     "extrapolation": 0.5206007516776957,
+     "G2P": null,
+     "push-out PE": null,
+     "push-out KE (excl. removal)": 0.4562237549997087,
+     "velocity removal": 0.6771020971548161,
+     "separation (particles)": null,
+     "wall clamp (particles)": 0.14801565671476893,
+     "other (between marks)": null
+    }
+   },
+   "first1s": {
+    "window": [
+     0,
+     1
+    ],
+    "substeps": 325,
+    "duration": 0.9999999999999961,
+    "dE_measured": -0.5859353972126984,
+    "sumA": -0.5859353972126942,
+    "sumB": -0.5859353972126942,
+    "closureA": 4.218847493575595e-15,
+    "closureB": 4.218847493575595e-15,
+    "rows": {
+     "gravity+advection": {
+      "A_total": 0.215385185834287,
+      "A_perSubstep": 0.000662723648720883,
+      "A_rate": 0.21538518583428784,
+      "B_total": 0.23667236777176814,
+      "B_perSubstep": 0.000728222670066979,
+      "B_rate": 0.23667236777176906
+     },
+     "P2G": {
+      "A_total": -3.1267813184371,
+      "A_perSubstep": -0.009620865595191076,
+      "A_rate": -3.126781318437112,
+      "B_total": -4.994337505442229,
+      "B_perSubstep": -0.015367192324437628,
+      "B_rate": -4.994337505442249
+     },
+     "boundary: box-wall faces (enforceWalls)": {
+      "A_total": 0.9420505238691543,
+      "A_perSubstep": 0.0028986169965204748,
+      "A_rate": 0.942050523869158,
+      "B_total": -0.03442004811717769,
+      "B_perSubstep": -0.00010590784036054675,
+      "B_rate": -0.034420048117177825
+     },
+     "boundary: obstacle interface normal faces": {
+      "A_total": -0.0003053319668637755,
+      "A_perSubstep": -9.394829749654631e-7,
+      "A_rate": -0.0003053319668637767,
+      "B_total": -0.004089734589101113,
+      "B_perSubstep": -0.000012583798735695732,
+      "B_rate": -0.004089734589101128
+     },
+     "boundary: obstacle ghost-face fill": {
+      "A_total": 2.0826118082809817,
+      "A_perSubstep": 0.006408036333172252,
+      "A_rate": 2.0826118082809897,
+      "B_total": 0,
+      "B_perSubstep": 0,
+      "B_rate": 0
+     },
+     "viscosity": {
+      "A_total": -0.0340900729487732,
+      "A_perSubstep": -0.00010489253215007138,
+      "A_rate": -0.03409007294877333,
+      "B_total": -0.04254991147546061,
+      "B_perSubstep": -0.00013092280453987881,
+      "B_rate": -0.04254991147546078
+     },
+     "separating active set (restore/enforce w. release bits/put-back)": {
+      "A_total": -0.0008484546711073904,
+      "A_perSubstep": -0.000002610629757253509,
+      "A_rate": -0.0008484546711073936,
+      "B_total": -0.0014147163259305984,
+      "B_perSubstep": -0.000004352973310555687,
+      "B_rate": -0.0014147163259306038
+     },
+     "projection (PCG solve + apply, incl. drift rhs)": {
+      "A_total": -0.5683982196385742,
+      "A_perSubstep": -0.0017489175988879206,
+      "A_rate": -0.5683982196385764,
+      "B_total": -0.497112741252173,
+      "B_perSubstep": -0.0015295776653913014,
+      "B_rate": -0.4971127412521749
+     },
+     "extrapolation": {
+      "A_total": -0.004555184068672169,
+      "A_perSubstep": -0.00001401595098052975,
+      "A_rate": -0.004555184068672186,
+      "B_total": -0.05013222476639889,
+      "B_perSubstep": -0.00015425299928122736,
+      "B_rate": -0.050132224766399086
+     },
+     "G2P": {
+      "A_total": 2.5474455433993626e-8,
+      "A_perSubstep": 7.838293979690346e-11,
+      "A_rate": 2.5474455433993725e-8,
+      "B_total": 4.892453475924491,
+      "B_perSubstep": 0.015053703002844587,
+      "B_rate": 4.892453475924509
+     },
+     "push-out PE": {
+      "A_total": 0,
+      "A_perSubstep": 0,
+      "A_rate": 0,
+      "B_total": 0,
+      "B_perSubstep": 0,
+      "B_rate": 0
+     },
+     "push-out KE (excl. removal)": {
+      "A_total": -8.558272353560767e-15,
+      "A_perSubstep": -2.63331457032639e-17,
+      "A_rate": -8.5582723535608e-15,
+      "B_total": -8.558272353560767e-15,
+      "B_perSubstep": -2.63331457032639e-17,
+      "B_rate": -8.5582723535608e-15
+     },
+     "velocity removal": {
+      "A_total": -0.0027875828737192955,
+      "A_perSubstep": -0.000008577178072982447,
+      "A_rate": -0.0027875828737193064,
+      "B_total": -0.0027875828737192955,
+      "B_perSubstep": -0.000008577178072982447,
+      "B_rate": -0.0027875828737193064
+     },
+     "separation (particles)": {
+      "A_total": -3.2063764976442144e-9,
+      "A_perSubstep": -9.865773838905276e-12,
+      "A_rate": -3.206376497644227e-9,
+      "B_total": -3.2063764976442144e-9,
+      "B_perSubstep": -9.865773838905276e-12,
+      "B_rate": -3.206376497644227e-9
+     },
+     "wall clamp (particles)": {
+      "A_total": -0.08821677286037755,
+      "A_perSubstep": -0.00027143622418577705,
+      "A_rate": -0.08821677286037789,
+      "B_total": -0.08821677286037755,
+      "B_perSubstep": -0.00027143622418577705,
+      "B_rate": -0.08821677286037789
+     },
+     "other (between marks)": {
+      "A_total": 0,
+      "A_perSubstep": 0,
+      "A_rate": 0,
+      "B_total": 0,
+      "B_perSubstep": 0,
+      "B_rate": 0
+     }
+    },
+    "byPlaceA": {
+     "gravity+advection": 0.215385185834287,
+     "separation (particles)": -3.2063764976442144e-9,
+     "wall clamp (particles)": -0.08821677286037755,
+     "push-out PE": 0,
+     "push-out KE (excl. removal)": -8.558272353560767e-15,
+     "velocity removal": -0.0027875828737192955,
+     "P2G": -3.1267813184371,
+     "p2g.pending": 0,
+     "p2g.enforce.walls": 0.8935560994746359,
+     "p2g.enforce.obstacleInterface": 0.0006246150495554659,
+     "p2g.enforce.obstacleGhostFill": 2.128067513170584,
+     "viscosity": -0.0340900729487732,
+     "pre.pending": 0,
+     "pre.enforce.walls": 0.013857013453285383,
+     "pre.enforce.obstacleInterface": -0.0007750676075062302,
+     "pre.enforce.obstacleGhostFill": -0.045454391488441104,
+     "activeSet.other": 0.0000017473930986611208,
+     "activeSet.pending": 0,
+     "activeSet.enforce.walls": -0.0008375817179118172,
+     "activeSet.enforce.obstacleInterface": -0.000012620346294234253,
+     "activeSet.enforce.obstacleGhostFill": 0,
+     "projection (PCG solve + pressure apply, incl. drift rhs)": -0.5683982196385742,
+     "extrapolation": -0.004555184068672169,
+     "post.pending": 0,
+     "post.enforce.walls": 0.03463741094123307,
+     "post.enforce.obstacleInterface": -0.00015487940891301122,
+     "post.enforce.obstacleGhostFill": -0.0000013134011611626306,
+     "G2P": 2.5474455433993626e-8
+    },
+    "p_A": {
+     "gravity+advection": 0.7884856209324951,
+     "P2G": -0.7485179699398516,
+     "boundary: box-wall faces (enforceWalls)": -0.9279182163967701,
+     "boundary: obstacle interface normal faces": -2.46588728447287,
+     "boundary: obstacle ghost-face fill": -0.68823502127436,
+     "viscosity": -0.7126776214712398,
+     "separating active set (restore/enforce w. release bits/put-back)": 0.734613950907529,
+     "projection (PCG solve + apply, incl. drift rhs)": 0.22940984070245077,
+     "extrapolation": -3.6591099400019056,
+     "G2P": 2.9568942817340047,
+     "push-out PE": null,
+     "push-out KE (excl. removal)": 0.3929677494091565,
+     "velocity removal": 0.6604284322950034,
+     "separation (particles)": -0.5352439404716748,
+     "wall clamp (particles)": 1.5363379394788954,
+     "other (between marks)": null
+    }
+   },
+   "E0": 4.788077540919157,
+   "t_E_over_1p01E0": null,
+   "t_E_over_10E0": null,
+   "onsetWindow": {
+    "window": [
+     0.16666666666666669,
+     0.3666666666666667
+    ],
+    "substeps": 83,
+    "duration": 0.19999999999999984,
+    "dE_measured": -0.3730120754627313,
+    "sumA": -0.3730120754627253,
+    "sumB": -0.3730120754627253,
+    "closureA": 5.995204332975845e-15,
+    "closureB": 5.995204332975845e-15,
+    "rows": {
+     "gravity+advection": {
+      "A_total": 0.04214115367873106,
+      "A_perSubstep": 0.0005077247431172417,
+      "A_rate": 0.21070576839365546,
+      "B_total": 0.04360764106869208,
+      "B_perSubstep": 0.0005253932658878564,
+      "B_rate": 0.21803820534346058
+     },
+     "P2G": {
+      "A_total": -1.2898422627075359,
+      "A_perSubstep": -0.015540268225391998,
+      "A_rate": -6.449211313537685,
+      "B_total": -2.941945940812933,
+      "B_perSubstep": -0.03544513181702329,
+      "B_rate": -14.709729704064676
+     },
+     "boundary: box-wall faces (enforceWalls)": {
+      "A_total": 0.0388422157783852,
+      "A_perSubstep": 0.0004679785033540386,
+      "A_rate": 0.19421107889192615,
+      "B_total": -0.0003791026267769837,
+      "B_perSubstep": -0.000004567501527433539,
+      "B_rate": -0.00189551313388492
+     },
+     "boundary: obstacle interface normal faces": {
+      "A_total": -0.0005332189843896273,
+      "A_perSubstep": -0.0000064243251131280405,
+      "A_rate": -0.002666094921948139,
+      "B_total": -0.0034932354043455405,
+      "B_perSubstep": -0.00004208717354633181,
+      "B_rate": -0.017466177021727716
+     },
+     "boundary: obstacle ghost-face fill": {
+      "A_total": 1.2002428619248544,
+      "A_perSubstep": 0.014460757372588607,
+      "A_rate": 6.0012143096242765,
+      "B_total": 0,
+      "B_perSubstep": 0,
+      "B_rate": 0
+     },
+     "viscosity": {
+      "A_total": -0.014644817966314783,
+      "A_perSubstep": -0.00017644358995559978,
+      "A_rate": -0.07322408983157397,
+      "B_total": -0.015968765944461616,
+      "B_perSubstep": -0.0001923947704152002,
+      "B_rate": -0.07984382972230814
+     },
+     "separating active set (restore/enforce w. release bits/put-back)": {
+      "A_total": -0.00005133455728234537,
+      "A_perSubstep": -6.184886419559683e-7,
+      "A_rate": -0.0002566727864117271,
+      "B_total": -0.00006056232715678789,
+      "B_perSubstep": -7.296665922504564e-7,
+      "B_rate": -0.00030281163578393965
+     },
+     "projection (PCG solve + apply, incl. drift rhs)": {
+      "A_total": -0.4106896889073335,
+      "A_perSubstep": -0.004948068541052211,
+      "A_rate": -2.053448444536669,
+      "B_total": -0.41215410209613346,
+      "B_perSubstep": -0.004965712073447391,
+      "B_rate": -2.060770510480669
+     },
+     "extrapolation": {
+      "A_total": 0.06424845541784308,
+      "A_perSubstep": 0.0007740777761185912,
+      "A_rate": 0.3212422770892156,
+      "B_total": 0.005572900767064404,
+      "B_perSubstep": 0.00006714338273571571,
+      "B_rate": 0.02786450383532204
+     },
+     "G2P": {
+      "A_total": 5.833202365579382e-9,
+      "A_perSubstep": 7.027954657324556e-11,
+      "A_rate": 2.9166011827896933e-8,
+      "B_total": 2.954534536886211,
+      "B_perSubstep": 0.03559680164923146,
+      "B_rate": 14.772672684431065
+     },
+     "push-out PE": {
+      "A_total": 0,
+      "A_perSubstep": 0,
+      "A_rate": 0,
+      "B_total": 0,
+      "B_perSubstep": 0,
+      "B_rate": 0
+     },
+     "push-out KE (excl. removal)": {
+      "A_total": -2.3032834892116195e-15,
+      "A_perSubstep": -2.7750403484477344e-17,
+      "A_rate": -1.1516417446058107e-14,
+      "B_total": -2.3032834892116195e-15,
+      "B_perSubstep": -2.7750403484477344e-17,
+      "B_rate": -1.1516417446058107e-14
+     },
+     "velocity removal": {
+      "A_total": -0.0027601981595536686,
+      "A_perSubstep": -0.0000332553995126948,
+      "A_rate": -0.013800990797768354,
+      "B_total": -0.0027601981595536686,
+      "B_perSubstep": -0.0000332553995126948,
+      "B_rate": -0.013800990797768354
+     },
+     "separation (particles)": {
+      "A_total": -1.3709211543755373e-10,
+      "A_perSubstep": -1.6517122341873944e-12,
+      "A_rate": -6.854605771877692e-10,
+      "B_total": -1.3709211543755373e-10,
+      "B_perSubstep": -1.6517122341873944e-12,
+      "B_rate": -6.854605771877692e-10
+     },
+     "wall clamp (particles)": {
+      "A_total": 0.00003475332376279283,
+      "A_perSubstep": 4.1871474413003414e-7,
+      "A_rate": 0.0001737666188139643,
+      "B_total": 0.00003475332376279283,
+      "B_perSubstep": 4.1871474413003414e-7,
+      "B_rate": 0.0001737666188139643
+     },
+     "other (between marks)": {
+      "A_total": 0,
+      "A_perSubstep": 0,
+      "A_rate": 0,
+      "B_total": 0,
+      "B_perSubstep": 0,
+      "B_rate": 0
+     }
+    },
+    "byPlaceA": {
+     "gravity+advection": 0.04214115367873106,
+     "separation (particles)": -1.3709211543755373e-10,
+     "wall clamp (particles)": 0.00003475332376279283,
+     "push-out PE": 0,
+     "push-out KE (excl. removal)": -2.3032834892116195e-15,
+     "velocity removal": -0.0027601981595536686,
+     "P2G": -1.2898422627075359,
+     "p2g.pending": 0,
+     "p2g.enforce.walls": 0.043413434928115,
+     "p2g.enforce.obstacleInterface": 0.00009612532182057265,
+     "p2g.enforce.obstacleGhostFill": 1.219257341126447,
+     "viscosity": -0.014644817966314783,
+     "pre.pending": 0,
+     "pre.enforce.walls": 0.0004446211817290546,
+     "pre.enforce.obstacleInterface": -0.0005103972756357322,
+     "pre.enforce.obstacleGhostFill": -0.019013004268208178,
+     "activeSet.other": -5.623754502082079e-7,
+     "activeSet.pending": 0,
+     "activeSet.enforce.walls": -0.00004534151455626301,
+     "activeSet.enforce.obstacleInterface": -0.000005430667275874157,
+     "activeSet.enforce.obstacleGhostFill": 0,
+     "projection (PCG solve + pressure apply, incl. drift rhs)": -0.4106896889073335,
+     "extrapolation": 0.06424845541784308,
+     "post.pending": 0,
+     "post.enforce.walls": -0.005015840331458854,
+     "post.enforce.obstacleInterface": -0.00011894703057446776,
+     "post.enforce.obstacleGhostFill": -0.000001474933384315591,
+     "G2P": 5.833202365579382e-9
+    },
+    "p_A": {
+     "gravity+advection": 0.5998029879782975,
+     "P2G": -0.628946163165774,
+     "boundary: box-wall faces (enforceWalls)": -0.8527724473820948,
+     "boundary: obstacle interface normal faces": 1.612229902579882,
+     "boundary: obstacle ghost-face fill": -0.6394335960192569,
+     "viscosity": -0.678783033217787,
+     "separating active set (restore/enforce w. release bits/put-back)": null,
+     "projection (PCG solve + apply, incl. drift rhs)": 0.008581158070599528,
+     "extrapolation": 0.5206007516776957,
+     "G2P": null,
+     "push-out PE": null,
+     "push-out KE (excl. removal)": 0.4562237549997087,
+     "velocity removal": 0.6771020971548161,
+     "separation (particles)": null,
+     "wall clamp (particles)": 0.14801565671476893,
+     "other (between marks)": null
+    }
+   },
+   "growthWindow": null,
+   "pcgContact": {
+    "solves": 204,
+    "capHits": 0,
+    "maxIters": 18,
+    "meanIters": 14.029411764705882,
+    "maxRelRes": 1,
+    "maxMaxResDt": 0.00009893038210072948
+   },
+   "pcgFirst1s": {
+    "solves": 941,
+    "capHits": 0,
+    "maxIters": 21,
+    "meanIters": 13.696068012752391,
+    "maxRelRes": 1,
+    "maxMaxResDt": 0.00009999760235107356
+   },
+   "pcgCapLogTotal": 0
+  },
+  "b1_cfl05": {
+   "kind": "b1",
+   "cfl": 0.5,
+   "barrier_cells": [
+    64,
+    65
+   ],
+   "nanGuard": null,
+   "simTime": 1.0015186040858617,
+   "capHits": 72,
+   "maxParticleSpeed": 9.649285875122755,
+   "tContact": 0.16666666666666657,
+   "contactWindow": {
+    "window": [
+     0.16666666666666657,
+     0.3666666666666666
+    ],
+    "substeps": 153,
+    "duration": 0.20019087366969512,
+    "dE_measured": -0.41623890713181133,
+    "sumA": -0.4162389071318032,
+    "sumB": -0.4162389071318032,
+    "closureA": 8.104628079763643e-15,
+    "closureB": 8.104628079763643e-15,
+    "rows": {
+     "gravity+advection": {
+      "A_total": 0.02783312751539402,
+      "A_perSubstep": 0.00018191586611368638,
+      "A_rate": 0.139032948931115,
+      "B_total": 0.02917964445374821,
+      "B_perSubstep": 0.00019071663041665498,
+      "B_rate": 0.14575911438347164
+     },
+     "P2G": {
+      "A_total": -1.996560813030416,
+      "A_perSubstep": -0.01304941707863017,
+      "A_rate": -9.97328587678098,
+      "B_total": -4.496890788704837,
+      "B_perSubstep": -0.029391443063430306,
+      "B_rate": -22.46301595208821
+     },
+     "boundary: box-wall faces (enforceWalls)": {
+      "A_total": 0.07021475130196286,
+      "A_perSubstep": 0.0004589199431500841,
+      "A_rate": 0.350739022288367,
+      "B_total": -0.00023238313653717313,
+      "B_perSubstep": -0.0000015188440296547263,
+      "B_rate": -0.0011608078444204884
+     },
+     "boundary: obstacle interface normal faces": {
+      "A_total": -0.00017457832488432246,
+      "A_perSubstep": -0.0000011410348031655063,
+      "A_rate": -0.0008720593585717994,
+      "B_total": -0.004337539474344787,
+      "B_perSubstep": -0.00002834993120486789,
+      "B_rate": -0.02166701905453247
+     },
+     "boundary: obstacle ghost-face fill": {
+      "A_total": 1.8714236075963973,
+      "A_perSubstep": 0.012231526847035276,
+      "A_rate": 9.348196415207978,
+      "B_total": 0,
+      "B_perSubstep": 0,
+      "B_rate": 0
+     },
+     "viscosity": {
+      "A_total": -0.023465634974346727,
+      "A_perSubstep": -0.00015337016323102435,
+      "A_rate": -0.11721630733808498,
+      "B_total": -0.025248465852161672,
+      "B_perSubstep": -0.00016502265262850765,
+      "B_rate": -0.12612196245179674
+     },
+     "separating active set (restore/enforce w. release bits/put-back)": {
+      "A_total": 0.0000018218539175052229,
+      "A_perSubstep": 1.1907541944478581e-8,
+      "A_rate": 0.000009100584277938615,
+      "B_total": -0.000009440750933897846,
+      "B_perSubstep": -6.170425446992055e-8,
+      "B_rate": -0.00004715874785318441
+     },
+     "projection (PCG solve + apply, incl. drift rhs)": {
+      "A_total": -0.4086437796787248,
+      "A_perSubstep": -0.0026708743769851295,
+      "A_rate": -2.041270774176082,
+      "B_total": -0.4088683394411099,
+      "B_perSubstep": -0.0026723420878503913,
+      "B_rate": -2.042392502446051
+     },
+     "extrapolation": {
+      "A_total": 0.044829152502938285,
+      "A_perSubstep": 0.0002930009967512306,
+      "A_rate": 0.22393204885505485,
+      "B_total": -0.0033772734604369248,
+      "B_perSubstep": -0.000022073682747953758,
+      "B_rate": -0.016870266853469335
+     },
+     "G2P": {
+      "A_total": -2.7075834907464014e-8,
+      "A_perSubstep": -1.7696624122525499e-10,
+      "A_rate": -1.352500961264487e-7,
+      "B_total": 4.495242214053016,
+      "B_perSubstep": 0.029380668065705988,
+      "B_rate": 22.454780938065838
+     },
+     "push-out PE": {
+      "A_total": 0,
+      "A_perSubstep": 0,
+      "A_rate": 0,
+      "B_total": 0,
+      "B_perSubstep": 0,
+      "B_rate": 0
+     },
+     "push-out KE (excl. removal)": {
+      "A_total": -1.680446299548466e-15,
+      "A_perSubstep": -1.0983309147375595e-17,
+      "A_rate": -8.394220319559211e-15,
+      "B_total": -1.680446299548466e-15,
+      "B_perSubstep": -1.0983309147375595e-17,
+      "B_rate": -8.394220319559211e-15
+     },
+     "velocity removal": {
+      "A_total": -0.001727931412451851,
+      "A_perSubstep": -0.000011293669362430399,
+      "A_rate": -0.008631419508677757,
+      "B_total": -0.001727931412451851,
+      "B_perSubstep": -0.000011293669362430399,
+      "B_rate": -0.008631419508677757
+     },
+     "separation (particles)": {
+      "A_total": 2.101309348745417e-9,
+      "A_perSubstep": 1.3734048031015798e-11,
+      "A_rate": 1.049652918850073e-8,
+      "B_total": 2.101309348745417e-9,
+      "B_perSubstep": 1.3734048031015798e-11,
+      "B_rate": 1.049652918850073e-8
+     },
+     "wall clamp (particles)": {
+      "A_total": 0.000031394492937764085,
+      "A_perSubstep": 2.0519276429911165e-7,
+      "A_rate": 0.00015682279797411453,
+      "B_total": 0.000031394492937764085,
+      "B_perSubstep": 2.0519276429911165e-7,
+      "B_rate": 0.00015682279797411453
+     },
+     "other (between marks)": {
+      "A_total": 0,
+      "A_perSubstep": 0,
+      "A_rate": 0,
+      "B_total": 0,
+      "B_perSubstep": 0,
+      "B_rate": 0
+     }
+    },
+    "byPlaceA": {
+     "gravity+advection": 0.02783312751539402,
+     "separation (particles)": 2.101309348745417e-9,
+     "wall clamp (particles)": 0.000031394492937764085,
+     "push-out PE": 0,
+     "push-out KE (excl. removal)": -1.680446299548466e-15,
+     "velocity removal": -0.001727931412451851,
+     "P2G": -1.996560813030416,
+     "p2g.pending": 0,
+     "p2g.enforce.walls": 0.07460683289845527,
+     "p2g.enforce.obstacleInterface": 0.0007431416949676972,
+     "p2g.enforce.obstacleGhostFill": 1.8891750310748003,
+     "viscosity": -0.023465634974346727,
+     "pre.pending": 0,
+     "pre.enforce.walls": 0.0005876030119775777,
+     "pre.enforce.obstacleInterface": -0.0006577626044865781,
+     "pre.enforce.obstacleGhostFill": -0.01774812067317022,
+     "activeSet.other": 0,
+     "activeSet.pending": 0,
+     "activeSet.enforce.walls": -0.000004837297632676041,
+     "activeSet.enforce.obstacleInterface": 0.000006659151550181264,
+     "activeSet.enforce.obstacleGhostFill": 0,
+     "projection (PCG solve + pressure apply, incl. drift rhs)": -0.4086437796787248,
+     "extrapolation": 0.044829152502938285,
+     "post.pending": 0,
+     "post.enforce.walls": -0.004979684608469981,
+     "post.enforce.obstacleInterface": -0.0002599574153654416,
+     "post.enforce.obstacleGhostFill": -0.000003302805232863193,
+     "G2P": -2.7075834907464014e-8
+    }
+   },
+   "first1s": {
+    "window": [
+     0,
+     1
+    ],
+    "substeps": 627,
+    "duration": 1.0015186040858617,
+    "dE_measured": -0.6140408733434128,
+    "sumA": -0.6140408733434013,
+    "sumB": -0.6140408733434004,
+    "closureA": 1.1546319456101628e-14,
+    "closureB": 1.2434497875801753e-14,
+    "rows": {
+     "gravity+advection": {
+      "A_total": 0.1248869407883424,
+      "A_perSubstep": 0.00019918172374536267,
+      "A_rate": 0.12469757454214565,
+      "B_total": 0.1435614874410005,
+      "B_perSubstep": 0.0002289656896985654,
+      "B_rate": 0.14334380495311574
+     },
+     "P2G": {
+      "A_total": -5.261176733499163,
+      "A_perSubstep": -0.008391031472885427,
+      "A_rate": -5.253199203724541,
+      "B_total": -7.77090263924639,
+      "B_perSubstep": -0.012393784113630605,
+      "B_rate": -7.759119608506222
+     },
+     "boundary: box-wall faces (enforceWalls)": {
+      "A_total": 1.7949999184256784,
+      "A_perSubstep": 0.0028628387853679082,
+      "A_rate": 1.7922781574927094,
+      "B_total": -0.02591798569378856,
+      "B_perSubstep": -0.00004133650030907266,
+      "B_rate": -0.025878686215165477
+     },
+     "boundary: obstacle interface normal faces": {
+      "A_total": -0.0016894188476417327,
+      "A_perSubstep": -0.000002694447922873577,
+      "A_rate": -0.0016868571794367748,
+      "B_total": -0.005400581854337894,
+      "B_perSubstep": -0.000008613368188736673,
+      "B_rate": -0.005392392944379987
+     },
+     "boundary: obstacle ghost-face fill": {
+      "A_total": 3.360831453628778,
+      "A_perSubstep": 0.005360177756983697,
+      "A_rate": 3.35573542010873,
+      "B_total": 0,
+      "B_perSubstep": 0,
+      "B_rate": 0
+     },
+     "viscosity": {
+      "A_total": -0.05595311803608549,
+      "A_perSubstep": -0.00008923942270508052,
+      "A_rate": -0.055868276243512045,
+      "B_total": -0.06772852583831313,
+      "B_perSubstep": -0.00010801997741357755,
+      "B_rate": -0.06762582897811717
+     },
+     "separating active set (restore/enforce w. release bits/put-back)": {
+      "A_total": -0.0005106776269840907,
+      "A_perSubstep": -8.144778739778161e-7,
+      "A_rate": -0.0005099032857709246,
+      "B_total": -0.0011401579408083506,
+      "B_perSubstep": -0.0000018184337173976884,
+      "B_rate": -0.0011384291176987494
+     },
+     "projection (PCG solve + apply, incl. drift rhs)": {
+      "A_total": -0.48557071538456054,
+      "A_perSubstep": -0.0007744349527664443,
+      "A_rate": -0.48483444381721325,
+      "B_total": -0.4180090471928084,
+      "B_perSubstep": -0.0006666810960012893,
+      "B_rate": -0.4173752194791699
+     },
+     "extrapolation": {
+      "A_total": -0.05763241273835895,
+      "A_perSubstep": -0.00009191772366564426,
+      "A_rate": -0.05754502462883659,
+      "B_total": -0.10066946732092763,
+      "B_perSubstep": -0.00016055736414820993,
+      "B_rate": -0.10051682206424303
+     },
+     "G2P": {
+      "A_total": 3.285867578028956e-9,
+      "A_perSubstep": 5.2406181467766444e-12,
+      "A_rate": 3.280885212340253e-9,
+      "B_total": 7.664392157642246,
+      "B_perSubstep": 0.012223910937228463,
+      "B_rate": 7.6527706288970405
+     },
+     "push-out PE": {
+      "A_total": 0,
+      "A_perSubstep": 0,
+      "A_rate": 0,
+      "B_total": 0,
+      "B_perSubstep": 0,
+      "B_rate": 0
+     },
+     "push-out KE (excl. removal)": {
+      "A_total": -6.527547552725199e-15,
+      "A_perSubstep": -1.0410761647089631e-17,
+      "A_rate": -6.517649823073663e-15,
+      "B_total": -6.527547552725199e-15,
+      "B_perSubstep": -1.0410761647089631e-17,
+      "B_rate": -6.517649823073663e-15
+     },
+     "velocity removal": {
+      "A_total": -0.0017663551977606345,
+      "A_perSubstep": -0.0000028171534254555574,
+      "A_rate": -0.001763676870858409,
+      "B_total": -0.0017663551977606345,
+      "B_perSubstep": -0.0000028171534254555574,
+      "B_rate": -0.001763676870858409
+     },
+     "separation (particles)": {
+      "A_total": -4.653696095147097e-9,
+      "A_perSubstep": -7.422162831175594e-12,
+      "A_rate": -4.646639689129658e-9,
+      "B_total": -4.653696095147097e-9,
+      "B_perSubstep": -7.422162831175594e-12,
+      "B_rate": -4.646639689129658e-9
+     },
+     "wall clamp (particles)": {
+      "A_total": -0.03045975348781127,
+      "A_perSubstep": -0.00004858014910336726,
+      "A_rate": -0.030413567320213164,
+      "B_total": -0.03045975348781127,
+      "B_perSubstep": -0.00004858014910336726,
+      "B_rate": -0.030413567320213164
+     },
+     "other (between marks)": {
+      "A_total": 0,
+      "A_perSubstep": 0,
+      "A_rate": 0,
+      "B_total": 0,
+      "B_perSubstep": 0,
+      "B_rate": 0
+     }
+    },
+    "byPlaceA": {
+     "gravity+advection": 0.1248869407883424,
+     "separation (particles)": -4.653696095147097e-9,
+     "wall clamp (particles)": -0.03045975348781127,
+     "push-out PE": 0,
+     "push-out KE (excl. removal)": -6.527547552725199e-15,
+     "velocity removal": -0.0017663551977606345,
+     "P2G": -5.261176733499163,
+     "p2g.pending": 0,
+     "p2g.enforce.walls": 1.762294970634823,
+     "p2g.enforce.obstacleInterface": 0.0008315885537113488,
+     "p2g.enforce.obstacleGhostFill": 3.4018117358470015,
+     "viscosity": -0.05595311803608549,
+     "pre.pending": 0,
+     "pre.enforce.walls": 0.010856981554066891,
+     "pre.enforce.obstacleInterface": -0.0011441673435541588,
+     "pre.enforce.obstacleGhostFill": -0.04097761938688205,
+     "activeSet.other": -0.0000055685693469698094,
+     "activeSet.pending": 0,
+     "activeSet.enforce.walls": -0.0005195758808822504,
+     "activeSet.enforce.obstacleInterface": 0.00001446682324512949,
+     "activeSet.enforce.obstacleGhostFill": 0,
+     "projection (PCG solve + pressure apply, incl. drift rhs)": -0.48557071538456054,
+     "extrapolation": -0.05763241273835895,
+     "post.pending": 0,
+     "post.enforce.walls": 0.02184796623678853,
+     "post.enforce.obstacleInterface": -0.0013768400577989226,
+     "post.enforce.obstacleGhostFill": -0.0000026628313412047078,
+     "G2P": 3.285867578028956e-9
+    }
+   },
+   "E0": 4.788077540919157,
+   "t_E_over_1p01E0": null,
+   "t_E_over_10E0": null,
+   "onsetWindow": {
+    "window": [
+     0.16666666666666657,
+     0.3666666666666666
+    ],
+    "substeps": 153,
+    "duration": 0.20019087366969512,
+    "dE_measured": -0.41623890713181133,
+    "sumA": -0.4162389071318032,
+    "sumB": -0.4162389071318032,
+    "closureA": 8.104628079763643e-15,
+    "closureB": 8.104628079763643e-15,
+    "rows": {
+     "gravity+advection": {
+      "A_total": 0.02783312751539402,
+      "A_perSubstep": 0.00018191586611368638,
+      "A_rate": 0.139032948931115,
+      "B_total": 0.02917964445374821,
+      "B_perSubstep": 0.00019071663041665498,
+      "B_rate": 0.14575911438347164
+     },
+     "P2G": {
+      "A_total": -1.996560813030416,
+      "A_perSubstep": -0.01304941707863017,
+      "A_rate": -9.97328587678098,
+      "B_total": -4.496890788704837,
+      "B_perSubstep": -0.029391443063430306,
+      "B_rate": -22.46301595208821
+     },
+     "boundary: box-wall faces (enforceWalls)": {
+      "A_total": 0.07021475130196286,
+      "A_perSubstep": 0.0004589199431500841,
+      "A_rate": 0.350739022288367,
+      "B_total": -0.00023238313653717313,
+      "B_perSubstep": -0.0000015188440296547263,
+      "B_rate": -0.0011608078444204884
+     },
+     "boundary: obstacle interface normal faces": {
+      "A_total": -0.00017457832488432246,
+      "A_perSubstep": -0.0000011410348031655063,
+      "A_rate": -0.0008720593585717994,
+      "B_total": -0.004337539474344787,
+      "B_perSubstep": -0.00002834993120486789,
+      "B_rate": -0.02166701905453247
+     },
+     "boundary: obstacle ghost-face fill": {
+      "A_total": 1.8714236075963973,
+      "A_perSubstep": 0.012231526847035276,
+      "A_rate": 9.348196415207978,
+      "B_total": 0,
+      "B_perSubstep": 0,
+      "B_rate": 0
+     },
+     "viscosity": {
+      "A_total": -0.023465634974346727,
+      "A_perSubstep": -0.00015337016323102435,
+      "A_rate": -0.11721630733808498,
+      "B_total": -0.025248465852161672,
+      "B_perSubstep": -0.00016502265262850765,
+      "B_rate": -0.12612196245179674
+     },
+     "separating active set (restore/enforce w. release bits/put-back)": {
+      "A_total": 0.0000018218539175052229,
+      "A_perSubstep": 1.1907541944478581e-8,
+      "A_rate": 0.000009100584277938615,
+      "B_total": -0.000009440750933897846,
+      "B_perSubstep": -6.170425446992055e-8,
+      "B_rate": -0.00004715874785318441
+     },
+     "projection (PCG solve + apply, incl. drift rhs)": {
+      "A_total": -0.4086437796787248,
+      "A_perSubstep": -0.0026708743769851295,
+      "A_rate": -2.041270774176082,
+      "B_total": -0.4088683394411099,
+      "B_perSubstep": -0.0026723420878503913,
+      "B_rate": -2.042392502446051
+     },
+     "extrapolation": {
+      "A_total": 0.044829152502938285,
+      "A_perSubstep": 0.0002930009967512306,
+      "A_rate": 0.22393204885505485,
+      "B_total": -0.0033772734604369248,
+      "B_perSubstep": -0.000022073682747953758,
+      "B_rate": -0.016870266853469335
+     },
+     "G2P": {
+      "A_total": -2.7075834907464014e-8,
+      "A_perSubstep": -1.7696624122525499e-10,
+      "A_rate": -1.352500961264487e-7,
+      "B_total": 4.495242214053016,
+      "B_perSubstep": 0.029380668065705988,
+      "B_rate": 22.454780938065838
+     },
+     "push-out PE": {
+      "A_total": 0,
+      "A_perSubstep": 0,
+      "A_rate": 0,
+      "B_total": 0,
+      "B_perSubstep": 0,
+      "B_rate": 0
+     },
+     "push-out KE (excl. removal)": {
+      "A_total": -1.680446299548466e-15,
+      "A_perSubstep": -1.0983309147375595e-17,
+      "A_rate": -8.394220319559211e-15,
+      "B_total": -1.680446299548466e-15,
+      "B_perSubstep": -1.0983309147375595e-17,
+      "B_rate": -8.394220319559211e-15
+     },
+     "velocity removal": {
+      "A_total": -0.001727931412451851,
+      "A_perSubstep": -0.000011293669362430399,
+      "A_rate": -0.008631419508677757,
+      "B_total": -0.001727931412451851,
+      "B_perSubstep": -0.000011293669362430399,
+      "B_rate": -0.008631419508677757
+     },
+     "separation (particles)": {
+      "A_total": 2.101309348745417e-9,
+      "A_perSubstep": 1.3734048031015798e-11,
+      "A_rate": 1.049652918850073e-8,
+      "B_total": 2.101309348745417e-9,
+      "B_perSubstep": 1.3734048031015798e-11,
+      "B_rate": 1.049652918850073e-8
+     },
+     "wall clamp (particles)": {
+      "A_total": 0.000031394492937764085,
+      "A_perSubstep": 2.0519276429911165e-7,
+      "A_rate": 0.00015682279797411453,
+      "B_total": 0.000031394492937764085,
+      "B_perSubstep": 2.0519276429911165e-7,
+      "B_rate": 0.00015682279797411453
+     },
+     "other (between marks)": {
+      "A_total": 0,
+      "A_perSubstep": 0,
+      "A_rate": 0,
+      "B_total": 0,
+      "B_perSubstep": 0,
+      "B_rate": 0
+     }
+    },
+    "byPlaceA": {
+     "gravity+advection": 0.02783312751539402,
+     "separation (particles)": 2.101309348745417e-9,
+     "wall clamp (particles)": 0.000031394492937764085,
+     "push-out PE": 0,
+     "push-out KE (excl. removal)": -1.680446299548466e-15,
+     "velocity removal": -0.001727931412451851,
+     "P2G": -1.996560813030416,
+     "p2g.pending": 0,
+     "p2g.enforce.walls": 0.07460683289845527,
+     "p2g.enforce.obstacleInterface": 0.0007431416949676972,
+     "p2g.enforce.obstacleGhostFill": 1.8891750310748003,
+     "viscosity": -0.023465634974346727,
+     "pre.pending": 0,
+     "pre.enforce.walls": 0.0005876030119775777,
+     "pre.enforce.obstacleInterface": -0.0006577626044865781,
+     "pre.enforce.obstacleGhostFill": -0.01774812067317022,
+     "activeSet.other": 0,
+     "activeSet.pending": 0,
+     "activeSet.enforce.walls": -0.000004837297632676041,
+     "activeSet.enforce.obstacleInterface": 0.000006659151550181264,
+     "activeSet.enforce.obstacleGhostFill": 0,
+     "projection (PCG solve + pressure apply, incl. drift rhs)": -0.4086437796787248,
+     "extrapolation": 0.044829152502938285,
+     "post.pending": 0,
+     "post.enforce.walls": -0.004979684608469981,
+     "post.enforce.obstacleInterface": -0.0002599574153654416,
+     "post.enforce.obstacleGhostFill": -0.000003302805232863193,
+     "G2P": -2.7075834907464014e-8
+    }
+   },
+   "growthWindow": null,
+   "pcgContact": {
+    "solves": 298,
+    "capHits": 0,
+    "maxIters": 17,
+    "meanIters": 14.281879194630873,
+    "maxRelRes": 0.07556637329925127,
+    "maxMaxResDt": 0.0000999995164976311
+   },
+   "pcgFirst1s": {
+    "solves": 1744,
+    "capHits": 0,
+    "maxIters": 21,
+    "meanIters": 11.64105504587156,
+    "maxRelRes": 1,
+    "maxMaxResDt": 0.0000999995164976311
+   },
+   "pcgCapLogTotal": 0
+  },
+  "b2_cfl1": {
+   "kind": "b2",
+   "cfl": 1,
+   "barrier_cells": [
+    64,
+    66
+   ],
+   "nanGuard": null,
+   "simTime": 0.9999999999999964,
+   "capHits": 0,
+   "maxParticleSpeed": 9.985745823465965,
+   "tContact": 0.16666666666666669,
+   "contactWindow": {
+    "window": [
+     0.16666666666666669,
+     0.3666666666666667
+    ],
+    "substeps": 83,
+    "duration": 0.19999999999999984,
+    "dE_measured": -0.37322407295108917,
+    "sumA": -0.3732240729510936,
+    "sumB": -0.3732240729510936,
+    "closureA": -4.440892098500626e-15,
+    "closureB": -4.440892098500626e-15,
+    "rows": {
+     "gravity+advection": {
+      "A_total": 0.042109288179912774,
+      "A_perSubstep": 0.0005073408214447322,
+      "A_rate": 0.21054644089956404,
+      "B_total": 0.043574931209331424,
+      "B_perSubstep": 0.0005249991711967642,
+      "B_rate": 0.2178746560466573
+     },
+     "P2G": {
+      "A_total": -1.2869859275155484,
+      "A_perSubstep": -0.015505854548380101,
+      "A_rate": -6.434929637577747,
+      "B_total": -2.937121693713417,
+      "B_perSubstep": -0.03538700835799297,
+      "B_rate": -14.685608468567095
+     },
+     "boundary: box-wall faces (enforceWalls)": {
+      "A_total": 0.038850830623390564,
+      "A_perSubstep": 0.0004680822966673562,
+      "A_rate": 0.19425415311695296,
+      "B_total": -0.00037401868201669686,
+      "B_perSubstep": -0.000004506249180924058,
+      "B_rate": -0.0018700934100834858
+     },
+     "boundary: obstacle interface normal faces": {
+      "A_total": -0.0007796962393324947,
+      "A_perSubstep": -0.000009393930594367405,
+      "A_rate": -0.0038984811966624763,
+      "B_total": -0.0014910680807798116,
+      "B_perSubstep": -0.00001796467567204592,
+      "B_rate": -0.007455340403899064
+     },
+     "boundary: obstacle ghost-face fill": {
+      "A_total": 1.1974310994828352,
+      "A_perSubstep": 0.014426880716660664,
+      "A_rate": 5.9871554974141805,
+      "B_total": 0,
+      "B_perSubstep": 0,
+      "B_rate": 0
+     },
+     "viscosity": {
+      "A_total": -0.014473743143021522,
+      "A_perSubstep": -0.0001743824475062834,
+      "A_rate": -0.07236871571510767,
+      "B_total": -0.01597631865100091,
+      "B_perSubstep": -0.00019248576687952903,
+      "B_rate": -0.0798815932550046
+     },
+     "separating active set (restore/enforce w. release bits/put-back)": {
+      "A_total": -0.000006890347636456795,
+      "A_perSubstep": -8.301623658381681e-8,
+      "A_rate": -0.000034451738182284,
+      "B_total": -0.00006654637452729872,
+      "B_perSubstep": -8.017635485216714e-7,
+      "B_rate": -0.0003327318726364939
+     },
+     "projection (PCG solve + apply, incl. drift rhs)": {
+      "A_total": -0.41087513332850545,
+      "A_perSubstep": -0.004950302811186812,
+      "A_rate": -2.054375666642529,
+      "B_total": -0.41234261487135004,
+      "B_perSubstep": -0.004967983311703013,
+      "B_rate": -2.061713074356752
+     },
+     "extrapolation": {
+      "A_total": 0.06424544337771287,
+      "A_perSubstep": 0.0007740414864784683,
+      "A_rate": 0.3212272168885646,
+      "B_total": 0.005496579911079991,
+      "B_perSubstep": 0.00006622385435036134,
+      "B_rate": 0.027482899555399974
+     },
+     "G2P": {
+      "A_total": 1.92160642953354e-8,
+      "A_perSubstep": 2.3151884693175181e-10,
+      "A_rate": 9.608032147667708e-8,
+      "B_total": 2.9478160395585515,
+      "B_perSubstep": 0.035515855898295805,
+      "B_rate": 14.739080197792768
+     },
+     "push-out PE": {
+      "A_total": 0,
+      "A_perSubstep": 0,
+      "A_rate": 0,
+      "B_total": 0,
+      "B_perSubstep": 0,
+      "B_rate": 0
+     },
+     "push-out KE (excl. removal)": {
+      "A_total": -1.522337164232843e-15,
+      "A_perSubstep": -1.834141161726317e-17,
+      "A_rate": -7.611685821164221e-15,
+      "B_total": -1.522337164232843e-15,
+      "B_perSubstep": -1.834141161726317e-17,
+      "B_rate": -7.611685821164221e-15
+     },
+     "velocity removal": {
+      "A_total": -0.002774443586585992,
+      "A_perSubstep": -0.00003342703116368665,
+      "A_rate": -0.013872217932929972,
+      "B_total": -0.002774443586585992,
+      "B_perSubstep": -0.00003342703116368665,
+      "B_rate": -0.013872217932929972
+     },
+     "separation (particles)": {
+      "A_total": 7.308988969612074e-10,
+      "A_perSubstep": 8.806010806761535e-12,
+      "A_rate": 3.6544944848060397e-9,
+      "B_total": 7.308988969612074e-10,
+      "B_perSubstep": 8.806010806761535e-12,
+      "B_rate": 3.6544944848060397e-9
+     },
+     "wall clamp (particles)": {
+      "A_total": 0.000035079598723619654,
+      "A_perSubstep": 4.2264576775445366e-7,
+      "A_rate": 0.0001753979936180984,
+      "B_total": 0.000035079598723619654,
+      "B_perSubstep": 4.2264576775445366e-7,
+      "B_rate": 0.0001753979936180984
+     },
+     "other (between marks)": {
+      "A_total": 0,
+      "A_perSubstep": 0,
+      "A_rate": 0,
+      "B_total": 0,
+      "B_perSubstep": 0,
+      "B_rate": 0
+     }
+    },
+    "byPlaceA": {
+     "gravity+advection": 0.042109288179912774,
+     "separation (particles)": 7.308988969612074e-10,
+     "wall clamp (particles)": 0.000035079598723619654,
+     "push-out PE": 0,
+     "push-out KE (excl. removal)": -1.522337164232843e-15,
+     "velocity removal": -0.002774443586585992,
+     "P2G": -1.2869859275155484,
+     "p2g.pending": 0,
+     "p2g.enforce.walls": 0.04341465281770507,
+     "p2g.enforce.obstacleInterface": 0.000018034707351510804,
+     "p2g.enforce.obstacleGhostFill": 1.2164175861314428,
+     "viscosity": -0.014473743143021522,
+     "pre.pending": 0,
+     "pre.enforce.walls": 0.0004520962171135068,
+     "pre.enforce.obstacleInterface": -0.0006786598740200489,
+     "pre.enforce.obstacleGhostFill": -0.018985123121073144,
+     "activeSet.other": -5.913711387250942e-7,
+     "activeSet.pending": 0,
+     "activeSet.enforce.walls": -0.000053115818003490745,
+     "activeSet.enforce.obstacleInterface": 0.000046816841505759044,
+     "activeSet.enforce.obstacleGhostFill": 0,
+     "projection (PCG solve + pressure apply, incl. drift rhs)": -0.41087513332850545,
+     "extrapolation": 0.06424544337771287,
+     "post.pending": 0,
+     "post.enforce.walls": -0.005015918411428011,
+     "post.enforce.obstacleInterface": -0.00011907107266395656,
+     "post.enforce.obstacleGhostFill": -0.0000013635275344370257,
+     "G2P": 1.92160642953354e-8
+    },
+    "p_A": {
+     "gravity+advection": 0.5985237852136307,
+     "P2G": -0.6324839823934695,
+     "boundary: box-wall faces (enforceWalls)": -0.8524651903055006,
+     "boundary: obstacle interface normal faces": 0.6936224423237215,
+     "boundary: obstacle ghost-face fill": -0.6432454994629756,
+     "viscosity": -0.681996214299931,
+     "separating active set (restore/enforce w. release bits/put-back)": null,
+     "projection (PCG solve + apply, incl. drift rhs)": 0.009242999817218541,
+     "extrapolation": 0.5204698044465353,
+     "G2P": 0.45934666570693267,
+     "push-out PE": null,
+     "push-out KE (excl. removal)": -0.47668953011576004,
+     "velocity removal": 0.6848173726575619,
+     "separation (particles)": null,
+     "wall clamp (particles)": 0.16149766447991565,
+     "other (between marks)": null
+    }
+   },
+   "first1s": {
+    "window": [
+     0,
+     1
+    ],
+    "substeps": 328,
+    "duration": 0.9999999999999964,
+    "dE_measured": -0.6054473305856725,
+    "sumA": -0.6054473305856803,
+    "sumB": -0.6054473305856803,
+    "closureA": -7.882583474838611e-15,
+    "closureB": -7.882583474838611e-15,
+    "rows": {
+     "gravity+advection": {
+      "A_total": 0.21577021593946277,
+      "A_perSubstep": 0.0006578360242056792,
+      "A_rate": 0.21577021593946355,
+      "B_total": 0.23534488186347247,
+      "B_perSubstep": 0.000717514883730099,
+      "B_rate": 0.2353448818634733
+     },
+     "P2G": {
+      "A_total": -3.065596679532372,
+      "A_perSubstep": -0.00934633134003772,
+      "A_rate": -3.065596679532383,
+      "B_total": -4.977170554292906,
+      "B_perSubstep": -0.0151743004704052,
+      "B_rate": -4.977170554292924
+     },
+     "boundary: box-wall faces (enforceWalls)": {
+      "A_total": 0.8854070290625673,
+      "A_perSubstep": 0.0026994116739712417,
+      "A_rate": 0.8854070290625704,
+      "B_total": -0.03775247929283321,
+      "B_perSubstep": -0.00011509902223424758,
+      "B_rate": -0.03775247929283334
+     },
+     "boundary: obstacle interface normal faces": {
+      "A_total": -0.000704013210245158,
+      "A_perSubstep": -0.0000021463817385523107,
+      "A_rate": -0.0007040132102451604,
+      "B_total": -0.0019160412190126763,
+      "B_perSubstep": -0.000005841589082355721,
+      "B_rate": -0.001916041219012683
+     },
+     "boundary: obstacle ghost-face fill": {
+      "A_total": 2.0800572202887198,
+      "A_perSubstep": 0.0063416378667339015,
+      "A_rate": 2.0800572202887273,
+      "B_total": 0,
+      "B_perSubstep": 0,
+      "B_rate": 0
+     },
+     "viscosity": {
+      "A_total": -0.033826371651747955,
+      "A_perSubstep": -0.00010312918186508523,
+      "A_rate": -0.03382637165174807,
+      "B_total": -0.04268163861556484,
+      "B_perSubstep": -0.0001301269469986733,
+      "B_rate": -0.042681638615564996
+     },
+     "separating active set (restore/enforce w. release bits/put-back)": {
+      "A_total": -0.00019542618818046975,
+      "A_perSubstep": -5.958115493307004e-7,
+      "A_rate": -0.00019542618818047046,
+      "B_total": -0.0010839243458926617,
+      "B_perSubstep": -0.0000033046473960142124,
+      "B_rate": -0.0010839243458926656
+     },
+     "projection (PCG solve + apply, incl. drift rhs)": {
+      "A_total": -0.5901652400792532,
+      "A_perSubstep": -0.0017992842685343085,
+      "A_rate": -0.5901652400792553,
+      "B_total": -0.5146639691221369,
+      "B_perSubstep": -0.0015690974668357831,
+      "B_rate": -0.5146639691221386
+     },
+     "extrapolation": {
+      "A_total": -0.0085602080109064,
+      "A_perSubstep": -0.00002609819515520244,
+      "A_rate": -0.008560208010906432,
+      "B_total": -0.05324545156120397,
+      "B_perSubstep": -0.00016233369378415845,
+      "B_rate": -0.05324545156120416
+     },
+     "G2P": {
+      "A_total": -5.437188477230848e-10,
+      "A_perSubstep": -1.6576794137898926e-12,
+      "A_rate": -5.437188477230867e-10,
+      "B_total": 4.8753557026604035,
+      "B_perSubstep": 0.014863889337379279,
+      "B_rate": 4.875355702660421
+     },
+     "push-out PE": {
+      "A_total": 0,
+      "A_perSubstep": 0,
+      "A_rate": 0,
+      "B_total": 0,
+      "B_perSubstep": 0,
+      "B_rate": 0
+     },
+     "push-out KE (excl. removal)": {
+      "A_total": -8.413853416001235e-15,
+      "A_perSubstep": -2.5651992121954984e-17,
+      "A_rate": -8.413853416001265e-15,
+      "B_total": -8.413853416001235e-15,
+      "B_perSubstep": -2.5651992121954984e-17,
+      "B_rate": -8.413853416001265e-15
+     },
+     "velocity removal": {
+      "A_total": -0.002804337725116005,
+      "A_perSubstep": -0.000008549810137548796,
+      "A_rate": -0.002804337725116015,
+      "B_total": -0.002804337725116005,
+      "B_perSubstep": -0.000008549810137548796,
+      "B_rate": -0.002804337725116015
+     },
+     "separation (particles)": {
+      "A_total": -4.759353799954624e-9,
+      "A_perSubstep": -1.451022499986166e-11,
+      "A_rate": -4.759353799954641e-9,
+      "B_total": -4.759353799954624e-9,
+      "B_perSubstep": -1.451022499986166e-11,
+      "B_rate": -4.759353799954641e-9
+     },
+     "wall clamp (particles)": {
+      "A_total": -0.08482951417552798,
+      "A_perSubstep": -0.000258626567608317,
+      "A_rate": -0.08482951417552828,
+      "B_total": -0.08482951417552798,
+      "B_perSubstep": -0.000258626567608317,
+      "B_rate": -0.08482951417552828
+     },
+     "other (between marks)": {
+      "A_total": 0,
+      "A_perSubstep": 0,
+      "A_rate": 0,
+      "B_total": 0,
+      "B_perSubstep": 0,
+      "B_rate": 0
+     }
+    },
+    "byPlaceA": {
+     "gravity+advection": 0.21577021593946277,
+     "separation (particles)": -4.759353799954624e-9,
+     "wall clamp (particles)": -0.08482951417552798,
+     "push-out PE": 0,
+     "push-out KE (excl. removal)": -8.413853416001235e-15,
+     "velocity removal": -0.002804337725116005,
+     "P2G": -3.065596679532372,
+     "p2g.pending": 0,
+     "p2g.enforce.walls": 0.8339450306435978,
+     "p2g.enforce.obstacleInterface": 0.0005186652882116505,
+     "p2g.enforce.obstacleGhostFill": 2.1254584888114723,
+     "viscosity": -0.033826371651747955,
+     "pre.pending": 0,
+     "pre.enforce.walls": 0.012205695502703229,
+     "pre.enforce.obstacleInterface": -0.0010491054820382928,
+     "pre.enforce.obstacleGhostFill": -0.04540050036359844,
+     "activeSet.other": 0.000012118774363578666,
+     "activeSet.pending": 0,
+     "activeSet.enforce.walls": -0.000246278270821243,
+     "activeSet.enforce.obstacleInterface": 0.00003873330827719457,
+     "activeSet.enforce.obstacleGhostFill": 0,
+     "projection (PCG solve + pressure apply, incl. drift rhs)": -0.5901652400792532,
+     "extrapolation": -0.0085602080109064,
+     "post.pending": 0,
+     "post.enforce.walls": 0.03925630291626625,
+     "post.enforce.obstacleInterface": -0.00017357301641851564,
+     "post.enforce.obstacleGhostFill": -7.681591540631416e-7,
+     "G2P": -5.437188477230848e-10
+    },
+    "p_A": {
+     "gravity+advection": 0.7834013585644797,
+     "P2G": -0.7650804500601706,
+     "boundary: box-wall faces (enforceWalls)": -0.9807966400640318,
+     "boundary: obstacle interface normal faces": -1.5333000438498947,
+     "boundary: obstacle ghost-face fill": -0.6912121293092565,
+     "viscosity": -0.6825667635805285,
+     "separating active set (restore/enforce w. release bits/put-back)": -1.664423012983295,
+     "projection (PCG solve + apply, incl. drift rhs)": 0.2899234565092917,
+     "extrapolation": -2.942483652330892,
+     "G2P": null,
+     "push-out PE": null,
+     "push-out KE (excl. removal)": 0.01701226973795193,
+     "velocity removal": 0.6694955416746363,
+     "separation (particles)": null,
+     "wall clamp (particles)": 1.536396480673359,
+     "other (between marks)": null
+    }
+   },
+   "E0": 4.788077540919157,
+   "t_E_over_1p01E0": null,
+   "t_E_over_10E0": null,
+   "onsetWindow": {
+    "window": [
+     0.16666666666666669,
+     0.3666666666666667
+    ],
+    "substeps": 83,
+    "duration": 0.19999999999999984,
+    "dE_measured": -0.37322407295108917,
+    "sumA": -0.3732240729510936,
+    "sumB": -0.3732240729510936,
+    "closureA": -4.440892098500626e-15,
+    "closureB": -4.440892098500626e-15,
+    "rows": {
+     "gravity+advection": {
+      "A_total": 0.042109288179912774,
+      "A_perSubstep": 0.0005073408214447322,
+      "A_rate": 0.21054644089956404,
+      "B_total": 0.043574931209331424,
+      "B_perSubstep": 0.0005249991711967642,
+      "B_rate": 0.2178746560466573
+     },
+     "P2G": {
+      "A_total": -1.2869859275155484,
+      "A_perSubstep": -0.015505854548380101,
+      "A_rate": -6.434929637577747,
+      "B_total": -2.937121693713417,
+      "B_perSubstep": -0.03538700835799297,
+      "B_rate": -14.685608468567095
+     },
+     "boundary: box-wall faces (enforceWalls)": {
+      "A_total": 0.038850830623390564,
+      "A_perSubstep": 0.0004680822966673562,
+      "A_rate": 0.19425415311695296,
+      "B_total": -0.00037401868201669686,
+      "B_perSubstep": -0.000004506249180924058,
+      "B_rate": -0.0018700934100834858
+     },
+     "boundary: obstacle interface normal faces": {
+      "A_total": -0.0007796962393324947,
+      "A_perSubstep": -0.000009393930594367405,
+      "A_rate": -0.0038984811966624763,
+      "B_total": -0.0014910680807798116,
+      "B_perSubstep": -0.00001796467567204592,
+      "B_rate": -0.007455340403899064
+     },
+     "boundary: obstacle ghost-face fill": {
+      "A_total": 1.1974310994828352,
+      "A_perSubstep": 0.014426880716660664,
+      "A_rate": 5.9871554974141805,
+      "B_total": 0,
+      "B_perSubstep": 0,
+      "B_rate": 0
+     },
+     "viscosity": {
+      "A_total": -0.014473743143021522,
+      "A_perSubstep": -0.0001743824475062834,
+      "A_rate": -0.07236871571510767,
+      "B_total": -0.01597631865100091,
+      "B_perSubstep": -0.00019248576687952903,
+      "B_rate": -0.0798815932550046
+     },
+     "separating active set (restore/enforce w. release bits/put-back)": {
+      "A_total": -0.000006890347636456795,
+      "A_perSubstep": -8.301623658381681e-8,
+      "A_rate": -0.000034451738182284,
+      "B_total": -0.00006654637452729872,
+      "B_perSubstep": -8.017635485216714e-7,
+      "B_rate": -0.0003327318726364939
+     },
+     "projection (PCG solve + apply, incl. drift rhs)": {
+      "A_total": -0.41087513332850545,
+      "A_perSubstep": -0.004950302811186812,
+      "A_rate": -2.054375666642529,
+      "B_total": -0.41234261487135004,
+      "B_perSubstep": -0.004967983311703013,
+      "B_rate": -2.061713074356752
+     },
+     "extrapolation": {
+      "A_total": 0.06424544337771287,
+      "A_perSubstep": 0.0007740414864784683,
+      "A_rate": 0.3212272168885646,
+      "B_total": 0.005496579911079991,
+      "B_perSubstep": 0.00006622385435036134,
+      "B_rate": 0.027482899555399974
+     },
+     "G2P": {
+      "A_total": 1.92160642953354e-8,
+      "A_perSubstep": 2.3151884693175181e-10,
+      "A_rate": 9.608032147667708e-8,
+      "B_total": 2.9478160395585515,
+      "B_perSubstep": 0.035515855898295805,
+      "B_rate": 14.739080197792768
+     },
+     "push-out PE": {
+      "A_total": 0,
+      "A_perSubstep": 0,
+      "A_rate": 0,
+      "B_total": 0,
+      "B_perSubstep": 0,
+      "B_rate": 0
+     },
+     "push-out KE (excl. removal)": {
+      "A_total": -1.522337164232843e-15,
+      "A_perSubstep": -1.834141161726317e-17,
+      "A_rate": -7.611685821164221e-15,
+      "B_total": -1.522337164232843e-15,
+      "B_perSubstep": -1.834141161726317e-17,
+      "B_rate": -7.611685821164221e-15
+     },
+     "velocity removal": {
+      "A_total": -0.002774443586585992,
+      "A_perSubstep": -0.00003342703116368665,
+      "A_rate": -0.013872217932929972,
+      "B_total": -0.002774443586585992,
+      "B_perSubstep": -0.00003342703116368665,
+      "B_rate": -0.013872217932929972
+     },
+     "separation (particles)": {
+      "A_total": 7.308988969612074e-10,
+      "A_perSubstep": 8.806010806761535e-12,
+      "A_rate": 3.6544944848060397e-9,
+      "B_total": 7.308988969612074e-10,
+      "B_perSubstep": 8.806010806761535e-12,
+      "B_rate": 3.6544944848060397e-9
+     },
+     "wall clamp (particles)": {
+      "A_total": 0.000035079598723619654,
+      "A_perSubstep": 4.2264576775445366e-7,
+      "A_rate": 0.0001753979936180984,
+      "B_total": 0.000035079598723619654,
+      "B_perSubstep": 4.2264576775445366e-7,
+      "B_rate": 0.0001753979936180984
+     },
+     "other (between marks)": {
+      "A_total": 0,
+      "A_perSubstep": 0,
+      "A_rate": 0,
+      "B_total": 0,
+      "B_perSubstep": 0,
+      "B_rate": 0
+     }
+    },
+    "byPlaceA": {
+     "gravity+advection": 0.042109288179912774,
+     "separation (particles)": 7.308988969612074e-10,
+     "wall clamp (particles)": 0.000035079598723619654,
+     "push-out PE": 0,
+     "push-out KE (excl. removal)": -1.522337164232843e-15,
+     "velocity removal": -0.002774443586585992,
+     "P2G": -1.2869859275155484,
+     "p2g.pending": 0,
+     "p2g.enforce.walls": 0.04341465281770507,
+     "p2g.enforce.obstacleInterface": 0.000018034707351510804,
+     "p2g.enforce.obstacleGhostFill": 1.2164175861314428,
+     "viscosity": -0.014473743143021522,
+     "pre.pending": 0,
+     "pre.enforce.walls": 0.0004520962171135068,
+     "pre.enforce.obstacleInterface": -0.0006786598740200489,
+     "pre.enforce.obstacleGhostFill": -0.018985123121073144,
+     "activeSet.other": -5.913711387250942e-7,
+     "activeSet.pending": 0,
+     "activeSet.enforce.walls": -0.000053115818003490745,
+     "activeSet.enforce.obstacleInterface": 0.000046816841505759044,
+     "activeSet.enforce.obstacleGhostFill": 0,
+     "projection (PCG solve + pressure apply, incl. drift rhs)": -0.41087513332850545,
+     "extrapolation": 0.06424544337771287,
+     "post.pending": 0,
+     "post.enforce.walls": -0.005015918411428011,
+     "post.enforce.obstacleInterface": -0.00011907107266395656,
+     "post.enforce.obstacleGhostFill": -0.0000013635275344370257,
+     "G2P": 1.92160642953354e-8
+    },
+    "p_A": {
+     "gravity+advection": 0.5985237852136307,
+     "P2G": -0.6324839823934695,
+     "boundary: box-wall faces (enforceWalls)": -0.8524651903055006,
+     "boundary: obstacle interface normal faces": 0.6936224423237215,
+     "boundary: obstacle ghost-face fill": -0.6432454994629756,
+     "viscosity": -0.681996214299931,
+     "separating active set (restore/enforce w. release bits/put-back)": null,
+     "projection (PCG solve + apply, incl. drift rhs)": 0.009242999817218541,
+     "extrapolation": 0.5204698044465353,
+     "G2P": 0.45934666570693267,
+     "push-out PE": null,
+     "push-out KE (excl. removal)": -0.47668953011576004,
+     "velocity removal": 0.6848173726575619,
+     "separation (particles)": null,
+     "wall clamp (particles)": 0.16149766447991565,
+     "other (between marks)": null
+    }
+   },
+   "growthWindow": null,
+   "pcgContact": {
+    "solves": 210,
+    "capHits": 0,
+    "maxIters": 18,
+    "meanIters": 13.871428571428572,
+    "maxRelRes": 1,
+    "maxMaxResDt": 0.00009986370648479259
+   },
+   "pcgFirst1s": {
+    "solves": 940,
+    "capHits": 0,
+    "maxIters": 21,
+    "meanIters": 13.758510638297873,
+    "maxRelRes": 1,
+    "maxMaxResDt": 0.00009986370648479259
+   },
+   "pcgCapLogTotal": 0
+  },
+  "b2_cfl05": {
+   "kind": "b2",
+   "cfl": 0.5,
+   "barrier_cells": [
+    64,
+    66
+   ],
+   "nanGuard": null,
+   "simTime": 1.012900585979055,
+   "capHits": 73,
+   "maxParticleSpeed": 9.649251459931204,
+   "tContact": 0.16666666666666657,
+   "contactWindow": {
+    "window": [
+     0.16666666666666657,
+     0.3666666666666666
+    ],
+    "substeps": 153,
+    "duration": 0.20019098591510345,
+    "dE_measured": -0.416231053542659,
+    "sumA": -0.4162310535426521,
+    "sumB": -0.4162310535426521,
+    "closureA": 6.8833827526759706e-15,
+    "closureB": 6.8833827526759706e-15,
+    "rows": {
+     "gravity+advection": {
+      "A_total": 0.027836768031566983,
+      "A_perSubstep": 0.0001819396603370391,
+      "A_rate": 0.13905105619177047,
+      "B_total": 0.029183273582917835,
+      "B_perSubstep": 0.00019074035021514926,
+      "B_rate": 0.14577716099212285
+     },
+     "P2G": {
+      "A_total": -1.9970317582536872,
+      "A_perSubstep": -0.013052495151984884,
+      "A_rate": -9.97563276450711,
+      "B_total": -4.5009192993969585,
+      "B_perSubstep": -0.02941777319867293,
+      "B_rate": -22.48312669435425
+     },
+     "boundary: box-wall faces (enforceWalls)": {
+      "A_total": 0.07021540798814563,
+      "A_perSubstep": 0.0004589242352166381,
+      "A_rate": 0.350742105930396,
+      "B_total": -0.00023238056401631013,
+      "B_perSubstep": -0.0000015188272157928767,
+      "B_rate": -0.0011607943432321052
+     },
+     "boundary: obstacle interface normal faces": {
+      "A_total": -0.00048254609057796216,
+      "A_perSubstep": -0.0000031538960168494258,
+      "A_rate": -0.00241042866326958,
+      "B_total": -0.0017355069890712116,
+      "B_perSubstep": -0.000011343182935105958,
+      "B_rate": -0.00866925641600667
+     },
+     "boundary: obstacle ghost-face fill": {
+      "A_total": 1.8719801791945807,
+      "A_perSubstep": 0.01223516456989922,
+      "A_rate": 9.350971376845338,
+      "B_total": 0,
+      "B_perSubstep": 0,
+      "B_rate": 0
+     },
+     "viscosity": {
+      "A_total": -0.023243241862665798,
+      "A_perSubstep": -0.0001519166134814758,
+      "A_rate": -0.11610533689325422,
+      "B_total": -0.025244203621335615,
+      "B_perSubstep": -0.0001649947949106903,
+      "B_rate": -0.12610060091337538
+     },
+     "separating active set (restore/enforce w. release bits/put-back)": {
+      "A_total": 1.9169274967367755e-7,
+      "A_perSubstep": 1.2528937887168468e-9,
+      "A_rate": 9.575493561681653e-7,
+      "B_total": -0.000009338523544677457,
+      "B_perSubstep": -6.103610159919906e-8,
+      "B_rate": -0.00004664807209969842
+     },
+     "projection (PCG solve + apply, incl. drift rhs)": {
+      "A_total": -0.40864102090503884,
+      "A_perSubstep": -0.0026708563457845677,
+      "A_rate": -2.04125584894384,
+      "B_total": -0.4088650607106059,
+      "B_perSubstep": -0.0026723206582392545,
+      "B_rate": -2.0423749792810177
+     },
+     "extrapolation": {
+      "A_total": 0.04483114494159235,
+      "A_perSubstep": 0.0002930140192260938,
+      "A_rate": 0.22394187598738458,
+      "B_total": -0.0033786759747620465,
+      "B_perSubstep": -0.00002208284950824867,
+      "B_rate": -0.01687726327595423
+     },
+     "G2P": {
+      "A_total": 1.3989488678589623e-8,
+      "A_perSubstep": 9.143456652672956e-11,
+      "A_rate": 6.988071223407758e-8,
+      "B_total": 4.496666330923531,
+      "B_perSubstep": 0.029389976019108043,
+      "B_rate": 22.4618821390413
+     },
+     "push-out PE": {
+      "A_total": 0,
+      "A_perSubstep": 0,
+      "A_rate": 0,
+      "B_total": 0,
+      "B_perSubstep": 0,
+      "B_rate": 0
+     },
+     "push-out KE (excl. removal)": {
+      "A_total": -2.1204264830882266e-15,
+      "A_perSubstep": -1.3858996621491677e-17,
+      "A_rate": -1.059201778439441e-14,
+      "B_total": -2.1204264830882266e-15,
+      "B_perSubstep": -1.3858996621491677e-17,
+      "B_rate": -1.059201778439441e-14
+     },
+     "velocity removal": {
+      "A_total": -0.0017275866949660787,
+      "A_perSubstep": -0.000011291416306967836,
+      "A_rate": -0.008629692726018693,
+      "B_total": -0.0017275866949660787,
+      "B_perSubstep": -0.000011291416306967836,
+      "B_rate": -0.008629692726018693
+     },
+     "separation (particles)": {
+      "A_total": -6.860556567289677e-11,
+      "A_perSubstep": -4.4840239001893314e-13,
+      "A_rate": -3.4270057345134847e-10,
+      "B_total": -6.860556567289677e-11,
+      "B_perSubstep": -4.4840239001893314e-13,
+      "B_rate": -3.4270057345134847e-10
+     },
+     "wall clamp (particles)": {
+      "A_total": 0.00003139449476741163,
+      "A_perSubstep": 2.0519277625759234e-7,
+      "A_rate": 0.00015682271918439594,
+      "B_total": 0.00003139449476741163,
+      "B_perSubstep": 2.0519277625759234e-7,
+      "B_rate": 0.00015682271918439594
+     },
+     "other (between marks)": {
+      "A_total": 0,
+      "A_perSubstep": 0,
+      "A_rate": 0,
+      "B_total": 0,
+      "B_perSubstep": 0,
+      "B_rate": 0
+     }
+    },
+    "byPlaceA": {
+     "gravity+advection": 0.027836768031566983,
+     "separation (particles)": -6.860556567289677e-11,
+     "wall clamp (particles)": 0.00003139449476741163,
+     "push-out PE": 0,
+     "push-out KE (excl. removal)": -2.1204264830882266e-15,
+     "velocity removal": -0.0017275866949660787,
+     "P2G": -1.9970317582536872,
+     "p2g.pending": 0,
+     "p2g.enforce.walls": 0.07460690386675672,
+     "p2g.enforce.obstacleInterface": 0.0006554101093261266,
+     "p2g.enforce.obstacleGhostFill": 1.8897352317710832,
+     "viscosity": -0.023243241862665798,
+     "pre.pending": 0,
+     "pre.enforce.walls": 0.0005881182733808998,
+     "pre.enforce.obstacleInterface": -0.0008779429734850908,
+     "pre.enforce.obstacleGhostFill": -0.017751786696210026,
+     "activeSet.other": -7.082324948726182e-9,
+     "activeSet.pending": 0,
+     "activeSet.enforce.walls": -0.000005938595809773517,
+     "activeSet.enforce.obstacleInterface": 0.000006137370884395921,
+     "activeSet.enforce.obstacleGhostFill": 0,
+     "projection (PCG solve + pressure apply, incl. drift rhs)": -0.40864102090503884,
+     "extrapolation": 0.04483114494159235,
+     "post.pending": 0,
+     "post.enforce.walls": -0.004979614151991996,
+     "post.enforce.obstacleInterface": -0.00026001322641899804,
+     "post.enforce.obstacleGhostFill": -0.0000032658802924245833,
+     "G2P": 1.3989488678589623e-8
+    }
+   },
+   "first1s": {
+    "window": [
+     0,
+     1
+    ],
+    "substeps": 628,
+    "duration": 1.0011560985325516,
+    "dE_measured": -0.6157652946041772,
+    "sumA": -0.6157652946041603,
+    "sumB": -0.6157652946041594,
+    "closureA": 1.687538997430238e-14,
+    "closureB": 1.7763568394002505e-14,
+    "rows": {
+     "gravity+advection": {
+      "A_total": 0.12550643274187845,
+      "A_perSubstep": 0.00019985100755076185,
+      "A_rate": 0.12536150249280806,
+      "B_total": 0.1434445489412015,
+      "B_perSubstep": 0.000228414886849047,
+      "B_rate": 0.14327890441006744
+     },
+     "P2G": {
+      "A_total": -5.215896665061373,
+      "A_perSubstep": -0.008305567937995816,
+      "A_rate": -5.2098735379094165,
+      "B_total": -7.770571401478521,
+      "B_perSubstep": -0.012373521339933951,
+      "B_rate": -7.761598229155539
+     },
+     "boundary: box-wall faces (enforceWalls)": {
+      "A_total": 1.7494195315730856,
+      "A_perSubstep": 0.0027856998910399454,
+      "A_rate": 1.7473993657305829,
+      "B_total": -0.025330814042771266,
+      "B_perSubstep": -0.000040335691150909656,
+      "B_rate": -0.025301562942981623
+     },
+     "boundary: obstacle interface normal faces": {
+      "A_total": -0.0020401021388467555,
+      "A_perSubstep": -0.0000032485702847878274,
+      "A_rate": -0.0020377463033357567,
+      "B_total": -0.0023705111446146176,
+      "B_perSubstep": -0.0000037746992748640407,
+      "B_rate": -0.002367773764839672
+     },
+     "boundary: obstacle ghost-face fill": {
+      "A_total": 3.362425445882331,
+      "A_perSubstep": 0.005354180646309444,
+      "A_rate": 3.358542639665102,
+      "B_total": 0,
+      "B_perSubstep": 0,
+      "B_rate": 0
+     },
+     "viscosity": {
+      "A_total": -0.054353846462315225,
+      "A_perSubstep": -0.00008655071092725354,
+      "A_rate": -0.054291080623675554,
+      "B_total": -0.06622206977257683,
+      "B_perSubstep": -0.00010544915568881662,
+      "B_rate": -0.06614559894270443
+     },
+     "separating active set (restore/enforce w. release bits/put-back)": {
+      "A_total": -0.000620191501381484,
+      "A_perSubstep": -9.875660850023632e-7,
+      "A_rate": -0.0006194753268651433,
+      "B_total": -0.0009941435958662481,
+      "B_perSubstep": -0.0000015830312036086753,
+      "B_rate": -0.0009929955951159045
+     },
+     "projection (PCG solve + apply, incl. drift rhs)": {
+      "A_total": -0.4832810506983405,
+      "A_perSubstep": -0.000769555813213918,
+      "A_rate": -0.4827229753748806,
+      "B_total": -0.41679139015395883,
+      "B_perSubstep": -0.0006636805575699981,
+      "B_rate": -0.41631009466443086
+     },
+     "extrapolation": {
+      "A_total": -0.06588126906595271,
+      "A_perSubstep": -0.0001049064794043833,
+      "A_rate": -0.06580519178030123,
+      "B_total": -0.10534100348042763,
+      "B_perSubstep": -0.0001677404514019548,
+      "B_rate": -0.10521935953327519
+     },
+     "G2P": {
+      "A_total": 1.7088249926189292e-8,
+      "A_perSubstep": 2.7210589054441548e-11,
+      "A_rate": 1.7068517038688032e-8,
+      "B_total": 7.65945508708487,
+      "B_perSubstep": 0.012196584533574634,
+      "B_rate": 7.650610227827355
+     },
+     "push-out PE": {
+      "A_total": 0,
+      "A_perSubstep": 0,
+      "A_rate": 0,
+      "B_total": 0,
+      "B_perSubstep": 0,
+      "B_rate": 0
+     },
+     "push-out KE (excl. removal)": {
+      "A_total": -8.324833099336095e-15,
+      "A_perSubstep": -1.3256103661363209e-17,
+      "A_rate": -8.315219885828245e-15,
+      "B_total": -8.324833099336095e-15,
+      "B_perSubstep": -1.3256103661363209e-17,
+      "B_rate": -8.315219885828245e-15
+     },
+     "velocity removal": {
+      "A_total": -0.0017651998079678852,
+      "A_perSubstep": -0.0000028108277196940848,
+      "A_rate": -0.00176316141963799,
+      "B_total": -0.0017651998079678852,
+      "B_perSubstep": -0.0000028108277196940848,
+      "B_rate": -0.00176316141963799
+     },
+     "separation (particles)": {
+      "A_total": 3.605967080488881e-9,
+      "A_perSubstep": 5.741985796956817e-12,
+      "A_rate": 3.601803041278319e-9,
+      "B_total": 3.605967080488881e-9,
+      "B_perSubstep": 5.741985796956817e-12,
+      "B_rate": 3.601803041278319e-9
+     },
+     "wall clamp (particles)": {
+      "A_total": -0.029278400759486622,
+      "A_perSubstep": -0.000046621657260329014,
+      "A_rate": -0.02924459113059547,
+      "B_total": -0.029278400759486622,
+      "B_perSubstep": -0.000046621657260329014,
+      "B_rate": -0.02924459113059547
+     },
+     "other (between marks)": {
+      "A_total": 0,
+      "A_perSubstep": 0,
+      "A_rate": 0,
+      "B_total": 0,
+      "B_perSubstep": 0,
+      "B_rate": 0
+     }
+    },
+    "byPlaceA": {
+     "gravity+advection": 0.12550643274187845,
+     "separation (particles)": 3.605967080488881e-9,
+     "wall clamp (particles)": -0.029278400759486622,
+     "push-out PE": 0,
+     "push-out KE (excl. removal)": -8.324833099336095e-15,
+     "velocity removal": -0.0017651998079678852,
+     "P2G": -5.215896665061373,
+     "p2g.pending": 0,
+     "p2g.enforce.walls": 1.717675993633713,
+     "p2g.enforce.obstacleInterface": 0.0007505670068130854,
+     "p2g.enforce.obstacleGhostFill": 3.4034786482136736,
+     "viscosity": -0.054353846462315225,
+     "pre.pending": 0,
+     "pre.enforce.walls": 0.010226821111681161,
+     "pre.enforce.obstacleInterface": -0.0015080134700848902,
+     "pre.enforce.obstacleGhostFill": -0.041049556992114766,
+     "activeSet.other": 0.0000014275713704492432,
+     "activeSet.pending": 0,
+     "activeSet.enforce.walls": -0.000619975745042467,
+     "activeSet.enforce.obstacleInterface": -0.0000016433277094662913,
+     "activeSet.enforce.obstacleGhostFill": 0,
+     "projection (PCG solve + pressure apply, incl. drift rhs)": -0.4832810506983405,
+     "extrapolation": -0.06588126906595271,
+     "post.pending": 0,
+     "post.enforce.walls": 0.021516716827691518,
+     "post.enforce.obstacleInterface": -0.0012826556755749507,
+     "post.enforce.obstacleGhostFill": -0.0000036453392278090746,
+     "G2P": 1.7088249926189292e-8
+    }
+   },
+   "E0": 4.788077540919157,
+   "t_E_over_1p01E0": null,
+   "t_E_over_10E0": null,
+   "onsetWindow": {
+    "window": [
+     0.16666666666666657,
+     0.3666666666666666
+    ],
+    "substeps": 153,
+    "duration": 0.20019098591510345,
+    "dE_measured": -0.416231053542659,
+    "sumA": -0.4162310535426521,
+    "sumB": -0.4162310535426521,
+    "closureA": 6.8833827526759706e-15,
+    "closureB": 6.8833827526759706e-15,
+    "rows": {
+     "gravity+advection": {
+      "A_total": 0.027836768031566983,
+      "A_perSubstep": 0.0001819396603370391,
+      "A_rate": 0.13905105619177047,
+      "B_total": 0.029183273582917835,
+      "B_perSubstep": 0.00019074035021514926,
+      "B_rate": 0.14577716099212285
+     },
+     "P2G": {
+      "A_total": -1.9970317582536872,
+      "A_perSubstep": -0.013052495151984884,
+      "A_rate": -9.97563276450711,
+      "B_total": -4.5009192993969585,
+      "B_perSubstep": -0.02941777319867293,
+      "B_rate": -22.48312669435425
+     },
+     "boundary: box-wall faces (enforceWalls)": {
+      "A_total": 0.07021540798814563,
+      "A_perSubstep": 0.0004589242352166381,
+      "A_rate": 0.350742105930396,
+      "B_total": -0.00023238056401631013,
+      "B_perSubstep": -0.0000015188272157928767,
+      "B_rate": -0.0011607943432321052
+     },
+     "boundary: obstacle interface normal faces": {
+      "A_total": -0.00048254609057796216,
+      "A_perSubstep": -0.0000031538960168494258,
+      "A_rate": -0.00241042866326958,
+      "B_total": -0.0017355069890712116,
+      "B_perSubstep": -0.000011343182935105958,
+      "B_rate": -0.00866925641600667
+     },
+     "boundary: obstacle ghost-face fill": {
+      "A_total": 1.8719801791945807,
+      "A_perSubstep": 0.01223516456989922,
+      "A_rate": 9.350971376845338,
+      "B_total": 0,
+      "B_perSubstep": 0,
+      "B_rate": 0
+     },
+     "viscosity": {
+      "A_total": -0.023243241862665798,
+      "A_perSubstep": -0.0001519166134814758,
+      "A_rate": -0.11610533689325422,
+      "B_total": -0.025244203621335615,
+      "B_perSubstep": -0.0001649947949106903,
+      "B_rate": -0.12610060091337538
+     },
+     "separating active set (restore/enforce w. release bits/put-back)": {
+      "A_total": 1.9169274967367755e-7,
+      "A_perSubstep": 1.2528937887168468e-9,
+      "A_rate": 9.575493561681653e-7,
+      "B_total": -0.000009338523544677457,
+      "B_perSubstep": -6.103610159919906e-8,
+      "B_rate": -0.00004664807209969842
+     },
+     "projection (PCG solve + apply, incl. drift rhs)": {
+      "A_total": -0.40864102090503884,
+      "A_perSubstep": -0.0026708563457845677,
+      "A_rate": -2.04125584894384,
+      "B_total": -0.4088650607106059,
+      "B_perSubstep": -0.0026723206582392545,
+      "B_rate": -2.0423749792810177
+     },
+     "extrapolation": {
+      "A_total": 0.04483114494159235,
+      "A_perSubstep": 0.0002930140192260938,
+      "A_rate": 0.22394187598738458,
+      "B_total": -0.0033786759747620465,
+      "B_perSubstep": -0.00002208284950824867,
+      "B_rate": -0.01687726327595423
+     },
+     "G2P": {
+      "A_total": 1.3989488678589623e-8,
+      "A_perSubstep": 9.143456652672956e-11,
+      "A_rate": 6.988071223407758e-8,
+      "B_total": 4.496666330923531,
+      "B_perSubstep": 0.029389976019108043,
+      "B_rate": 22.4618821390413
+     },
+     "push-out PE": {
+      "A_total": 0,
+      "A_perSubstep": 0,
+      "A_rate": 0,
+      "B_total": 0,
+      "B_perSubstep": 0,
+      "B_rate": 0
+     },
+     "push-out KE (excl. removal)": {
+      "A_total": -2.1204264830882266e-15,
+      "A_perSubstep": -1.3858996621491677e-17,
+      "A_rate": -1.059201778439441e-14,
+      "B_total": -2.1204264830882266e-15,
+      "B_perSubstep": -1.3858996621491677e-17,
+      "B_rate": -1.059201778439441e-14
+     },
+     "velocity removal": {
+      "A_total": -0.0017275866949660787,
+      "A_perSubstep": -0.000011291416306967836,
+      "A_rate": -0.008629692726018693,
+      "B_total": -0.0017275866949660787,
+      "B_perSubstep": -0.000011291416306967836,
+      "B_rate": -0.008629692726018693
+     },
+     "separation (particles)": {
+      "A_total": -6.860556567289677e-11,
+      "A_perSubstep": -4.4840239001893314e-13,
+      "A_rate": -3.4270057345134847e-10,
+      "B_total": -6.860556567289677e-11,
+      "B_perSubstep": -4.4840239001893314e-13,
+      "B_rate": -3.4270057345134847e-10
+     },
+     "wall clamp (particles)": {
+      "A_total": 0.00003139449476741163,
+      "A_perSubstep": 2.0519277625759234e-7,
+      "A_rate": 0.00015682271918439594,
+      "B_total": 0.00003139449476741163,
+      "B_perSubstep": 2.0519277625759234e-7,
+      "B_rate": 0.00015682271918439594
+     },
+     "other (between marks)": {
+      "A_total": 0,
+      "A_perSubstep": 0,
+      "A_rate": 0,
+      "B_total": 0,
+      "B_perSubstep": 0,
+      "B_rate": 0
+     }
+    },
+    "byPlaceA": {
+     "gravity+advection": 0.027836768031566983,
+     "separation (particles)": -6.860556567289677e-11,
+     "wall clamp (particles)": 0.00003139449476741163,
+     "push-out PE": 0,
+     "push-out KE (excl. removal)": -2.1204264830882266e-15,
+     "velocity removal": -0.0017275866949660787,
+     "P2G": -1.9970317582536872,
+     "p2g.pending": 0,
+     "p2g.enforce.walls": 0.07460690386675672,
+     "p2g.enforce.obstacleInterface": 0.0006554101093261266,
+     "p2g.enforce.obstacleGhostFill": 1.8897352317710832,
+     "viscosity": -0.023243241862665798,
+     "pre.pending": 0,
+     "pre.enforce.walls": 0.0005881182733808998,
+     "pre.enforce.obstacleInterface": -0.0008779429734850908,
+     "pre.enforce.obstacleGhostFill": -0.017751786696210026,
+     "activeSet.other": -7.082324948726182e-9,
+     "activeSet.pending": 0,
+     "activeSet.enforce.walls": -0.000005938595809773517,
+     "activeSet.enforce.obstacleInterface": 0.000006137370884395921,
+     "activeSet.enforce.obstacleGhostFill": 0,
+     "projection (PCG solve + pressure apply, incl. drift rhs)": -0.40864102090503884,
+     "extrapolation": 0.04483114494159235,
+     "post.pending": 0,
+     "post.enforce.walls": -0.004979614151991996,
+     "post.enforce.obstacleInterface": -0.00026001322641899804,
+     "post.enforce.obstacleGhostFill": -0.0000032658802924245833,
+     "G2P": 1.3989488678589623e-8
+    }
+   },
+   "growthWindow": null,
+   "pcgContact": {
+    "solves": 300,
+    "capHits": 0,
+    "maxIters": 17,
+    "meanIters": 14.186666666666667,
+    "maxRelRes": 1,
+    "maxMaxResDt": 0.00009999782401863512
+   },
+   "pcgFirst1s": {
+    "solves": 1739,
+    "capHits": 0,
+    "maxIters": 21,
+    "meanIters": 11.635997699827486,
+    "maxRelRes": 1,
+    "maxMaxResDt": 0.00009999782401863512
+   },
+   "pcgCapLogTotal": 0
+  }
+ }
+}

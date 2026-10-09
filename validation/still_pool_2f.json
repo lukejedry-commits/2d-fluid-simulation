@@ -1,0 +1,48 @@
+{
+  "test": "still-pool",
+  "note": "Lattice pool resetColumn(128,12), damping 0, separating+neutral+PCG, 1 s.",
+  "weighted": {
+    "pressureMass": "weighted",
+    "particles": 6144,
+    "t": 1.0000000000000013,
+    "E0": 1.3795312500000299,
+    "E1": 1.3700041338077844,
+    "dE": -0.009527116192245444,
+    "maxAbsU": 0.3674645150460833,
+    "limits": {
+      "maxAbsU": 0.0001,
+      "absDE": 0.000001
+    },
+    "passU": false,
+    "passE": false,
+    "pass": false,
+    "clampAccum": {
+      "hits": 39,
+      "faces": 183696,
+      "fraction": 0.0002123072903057225
+    }
+  },
+  "equal": {
+    "pressureMass": "equal",
+    "particles": 6144,
+    "t": 1.0000000000000013,
+    "E0": 1.3795312500000299,
+    "E1": 1.370316962143239,
+    "dE": -0.009214287856790904,
+    "maxAbsU": 0.013384736441418103,
+    "limits": {
+      "maxAbsU": 0.0001,
+      "absDE": 0.000001
+    },
+    "passU": false,
+    "passE": false,
+    "pass": false,
+    "clampAccum": {
+      "hits": 0,
+      "faces": 0,
+      "fraction": 0
+    }
+  },
+  "pass": false,
+  "stopDamBreak": true
+}

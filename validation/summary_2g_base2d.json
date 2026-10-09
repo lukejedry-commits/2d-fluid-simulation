@@ -1,0 +1,1621 @@
+{
+  "h2": {
+    "tag": "h2",
+    "cellsA": 24,
+    "cellsH": 48,
+    "a": 0.5625,
+    "H": 1.125,
+    "Tscale": 5.90592922409336,
+    "h": 0.0234375,
+    "config": {
+      "solver": "pcg",
+      "flipRatio": 0.8,
+      "gsIters": 50,
+      "pcgMaxIters": 500,
+      "pcgRelTol": 0.000001,
+      "pcgAbsTol": 0.0001,
+      "viscosity": 0.05,
+      "gravity": 9.81,
+      "omegaGS": 1.9,
+      "cfl": 1,
+      "maxSub": 8,
+      "damping": 0,
+      "separation": "neutral",
+      "boundary": "mirror"
+    },
+    "particles": 4608,
+    "particlesEnd": 4608,
+    "countEvents": [],
+    "nanRecoveries": 0,
+    "nanMax": 0,
+    "escMax": 0,
+    "front": {
+      "reachT": 0.6399999999999979,
+      "reachTstar": 3.7797947034197383,
+      "samples": 33,
+      "maxdZdT": 1.7023992080117245,
+      "maxdZdTat": 3.6616761189378835,
+      "over2": [],
+      "T144": 0.941796543389806
+    },
+    "energy": {
+      "E0": 5.518124999999987,
+      "earlyPeak": {
+        "t": 0.09999999999999999,
+        "E": 5.548709184201933,
+        "risePct": 0.5542495721272421,
+        "backBelowE0At": 0.23333333333333348
+      },
+      "maxRiseAfter05_smoothed": 0.00007304074761593782,
+      "maxRiseAfter05T": 29.08333333333288,
+      "maxRiseAfter05Pct": 0.001323651559468805,
+      "smoothedNote": "0.5 s centred moving average vs running min from t=0.5 s; the window straddles the wall impact, so it hides the pre-impact rise. Use riseUnsmoothed.",
+      "riseUnsmoothed": {
+        "preImpact_0p2_to_wall": {
+          "rise": 0.032348955190955486,
+          "risePctE0": 0.5862309242896013,
+          "fromT": 0.39999999999999963,
+          "toT": 0.6333333333333313
+        },
+        "impactPlus0p5_to_5s": {
+          "rise": 0.010933125990741033,
+          "risePctE0": 0.19813117663592358,
+          "fromT": 1.9166666666666763,
+          "toT": 1.9833333333333445
+        },
+        "after5s": {
+          "rise": 0.0018822401672988764,
+          "risePctE0": 0.03411014008017,
+          "fromT": 12.916666666666844,
+          "toT": 13.183333333333524
+        }
+      },
+      "postImpactSpikes": [
+        {
+          "fromT": 1.083,
+          "toT": 1.383,
+          "rise": 0.01220564257276191,
+          "pctE0": 0.221
+        },
+        {
+          "fromT": 1.917,
+          "toT": 1.95,
+          "rise": 0.010152313856935713,
+          "pctE0": 0.184
+        },
+        {
+          "fromT": 1.967,
+          "toT": 1.983,
+          "rise": 0.0032630510016113945,
+          "pctE0": 0.059
+        },
+        {
+          "fromT": 1.883,
+          "toT": 1.9,
+          "rise": 0.003106713011886697,
+          "pctE0": 0.056
+        }
+      ],
+      "lateUpswings_8_30s": [
+        {
+          "fromT": 12.917,
+          "toT": 13.183,
+          "rise": 0.0018822401672988764,
+          "pctE0": 0.034
+        },
+        {
+          "fromT": 10.267,
+          "toT": 10.4,
+          "rise": 0.0016662784808276765,
+          "pctE0": 0.03
+        },
+        {
+          "fromT": 14.4,
+          "toT": 14.567,
+          "rise": 0.0016494299952098945,
+          "pctE0": 0.03
+        },
+        {
+          "fromT": 12.4,
+          "toT": 12.533,
+          "rise": 0.0012353221217882293,
+          "pctE0": 0.022
+        },
+        {
+          "fromT": 10.75,
+          "toT": 10.9,
+          "rise": 0.0011215215564832626,
+          "pctE0": 0.02
+        },
+        {
+          "fromT": 15.083,
+          "toT": 15.233,
+          "rise": 0.001099913484592152,
+          "pctE0": 0.02
+        }
+      ],
+      "at1": {
+        "t": 0.9999999999999964,
+        "KE": 2.552989470057535,
+        "PE": 2.4119569635282057,
+        "E": 4.964946433585741
+      },
+      "at5": {
+        "t": 5.000000000000048,
+        "KE": 0.08511272777645526,
+        "PE": 1.1443128876271578,
+        "E": 1.229425615403613
+      },
+      "at10": {
+        "t": 10.000000000000128,
+        "KE": 0.06920240516717008,
+        "PE": 1.0219795527332376,
+        "E": 1.0911819579004076
+      },
+      "at20": {
+        "t": 20.000000000000064,
+        "KE": 0.017035761598696793,
+        "PE": 1.0174656187370401,
+        "E": 1.0345013803357368
+      },
+      "at30": {
+        "t": 29.999999999999496,
+        "KE": 0.0003185459754342233,
+        "PE": 1.0151440117089023,
+        "E": 1.0154625576843366
+      }
+    },
+    "volume": {
+      "N0": 1152,
+      "maxRelN": 0.21614583333333334,
+      "maxRelNt": 2.0666666666666798,
+      "N10": 1182,
+      "N30": 1173,
+      "drift10_30": -0.0078125,
+      "absDrift10_30": 0.0078125,
+      "rhoMin": 0.9273754664054139,
+      "rhoMinT": 2.833333333333358,
+      "rhoMax": 1.0105098347159143,
+      "rhoMaxT": 1.816666666666674,
+      "rho30": 0.998619320172016,
+      "rhoSamples": 1800,
+      "rhoOutOfBand": 99
+    },
+    "depth": {
+      "last5Mean": 0.21155307471653156,
+      "last5Min": 0.21099238842725754,
+      "last5Max": 0.2119075506925583,
+      "at30": 0.21146362833678722,
+      "fromParticleVolume": 0.2109375,
+      "target": 0.2109375
+    },
+    "height": {
+      "meanParticleHeight30": 0.10348053126492435,
+      "halfLast5Depth": 0.10577653735826578,
+      "halfDepth30": 0.10573181416839361,
+      "E30": 1.0154625576843366,
+      "gTimesMeanHeight": 1.015144011708908
+    },
+    "div": {
+      "substeps": 2913,
+      "rawMax": 0.048744,
+      "rawP95OfMax": 0.026082,
+      "rawMean": 0.001265098355647102,
+      "solverMax": 0.000099824,
+      "solverP95OfMax": 0.000094554,
+      "solverMean": 0.000007951193649158955
+    },
+    "pcg": {
+      "mean": 9.874699622382424,
+      "p95": 12,
+      "max": 17,
+      "capHits": 0
+    },
+    "cost": {
+      "meanMsPerFrame": 4.053483548850563,
+      "p95MsPerFrame": 12.547271000000364,
+      "maxMsPerFrame": 27.47903099999985,
+      "note": "excludes first 60 frames (JIT warm-up) and diagnostics-hook time"
+    },
+    "cfl": {
+      "maxAdvective": 0.9313131084895204,
+      "maxWithGravityTerm": 0.9999384099583373
+    },
+    "closePairs": {
+      "t1.2": {
+        "lt0p8r": 94,
+        "lt1p2r": 359,
+        "lt1p2rBothInFloorRow": 196,
+        "floorRowParticlesPerCellOver4": 1.119140625
+      },
+      "t5": {
+        "lt0p8r": 36,
+        "lt1p2r": 194,
+        "lt1p2rBothInFloorRow": 189,
+        "floorRowParticlesPerCellOver4": 1.130859375
+      },
+      "t30": {
+        "lt0p8r": 30,
+        "lt1p2r": 138,
+        "lt1p2rBothInFloorRow": 135,
+        "floorRowParticlesPerCellOver4": 1.10546875
+      }
+    },
+    "wallActiveSet": {
+      "maxPasses": 1,
+      "sumPasses": 2913,
+      "n": 2913,
+      "capHits": 0,
+      "capNegHits": 0,
+      "worstNegP": 0,
+      "worstUInto": 0,
+      "compFailSteps": 0,
+      "totalCompFail": 0,
+      "meanPasses": 1,
+      "p95Passes": 0,
+      "pass": null,
+      "note": "separating-wall active set (2g only). Contact p = cell p when constrained, 0 when released. Null pass when boundary != separating."
+    },
+    "separationCom": {
+      "maxAbsRawDy": 1.4228539334403143e-10,
+      "maxAbsRawDx": 2.409150410029623e-10,
+      "maxAbsEffDy": 1.9454338387150627e-9,
+      "maxAbsEffDx": 1.1526728213892865e-9,
+      "maxEffLift": 1.9454338387150627e-9,
+      "maxEffLiftT": 15.41666666666693,
+      "sumEffLift": 0.000003831819327023322,
+      "sumEffLiftPreImpact": 7.885200245836022e-9,
+      "g_x_sumEffLift_J_per_kg": 0.00003759014759809879,
+      "g_x_sumEffLiftPreImpact_J_per_kg": 7.735381441165137e-8,
+      "note": "per-substep centre-of-mass shift of the free particles caused by the push-apart pass (m, y down). raw = right after the pass; eff = wall clamp applied to the positions before and after the pass. lift = -dy."
+    },
+    "cap": {
+      "hits": 0
+    },
+    "frames": 1800,
+    "simTime": 29.999999999999496
+  },
+  "h1": {
+    "tag": "h1",
+    "cellsA": 24,
+    "cellsH": 24,
+    "a": 0.5625,
+    "H": 0.5625,
+    "Tscale": 4.17612260356422,
+    "h": 0.0234375,
+    "config": {
+      "solver": "pcg",
+      "flipRatio": 0.8,
+      "gsIters": 50,
+      "pcgMaxIters": 500,
+      "pcgRelTol": 0.000001,
+      "pcgAbsTol": 0.0001,
+      "viscosity": 0.05,
+      "gravity": 9.81,
+      "omegaGS": 1.9,
+      "cfl": 1,
+      "maxSub": 8,
+      "damping": 0,
+      "separation": "neutral",
+      "boundary": "mirror"
+    },
+    "particles": 2304,
+    "particlesEnd": 2304,
+    "countEvents": [],
+    "nanRecoveries": 0,
+    "nanMax": 0,
+    "escMax": 0,
+    "front": {
+      "reachT": 0.7041666666666653,
+      "reachTstar": 2.9406863333431326,
+      "samples": 37,
+      "maxdZdT": 2.0397506186091836,
+      "maxdZdTat": 2.9232858224949543,
+      "over2": [
+        {
+          "T": 2.756,
+          "dZdT": 2.0095
+        },
+        {
+          "T": 2.84,
+          "dZdT": 2.0252
+        },
+        {
+          "T": 2.923,
+          "dZdT": 2.0398
+        }
+      ],
+      "T144": 0.6813896893397453
+    },
+    "energy": {
+      "E0": 2.759062500000011,
+      "earlyPeak": {
+        "t": 0.06666666666666667,
+        "E": 2.7752267032223945,
+        "risePct": 0.5858585379049439,
+        "backBelowE0At": 0.1666666666666667
+      },
+      "maxRiseAfter05_smoothed": 0.0010845113368471715,
+      "maxRiseAfter05T": 1.366666666666663,
+      "maxRiseAfter05Pct": 0.03930724066044779,
+      "smoothedNote": "0.5 s centred moving average vs running min from t=0.5 s; the window straddles the wall impact, so it hides the pre-impact rise. Use riseUnsmoothed.",
+      "riseUnsmoothed": {
+        "preImpact_0p2_to_wall": {
+          "rise": 0.01825305052016768,
+          "risePctE0": 0.6615671272458528,
+          "fromT": 0.3333333333333332,
+          "toT": 0.683333333333332
+        },
+        "impactPlus0p5_to_5s": {
+          "rise": 0.024428461616498254,
+          "risePctE0": 0.8853899328666226,
+          "fromT": 1.5166666666666624,
+          "toT": 1.5999999999999954
+        },
+        "after5s": {
+          "rise": 0.000789497147058893,
+          "risePctE0": 0.028614688759638095,
+          "fromT": 22.36666666666682,
+          "toT": 23.433333333333426
+        }
+      },
+      "postImpactSpikes": [
+        {
+          "fromT": 1.517,
+          "toT": 1.567,
+          "rise": 0.02272613983860472,
+          "pctE0": 0.824
+        },
+        {
+          "fromT": 1.767,
+          "toT": 1.85,
+          "rise": 0.01088309248486663,
+          "pctE0": 0.394
+        },
+        {
+          "fromT": 1.583,
+          "toT": 1.6,
+          "rise": 0.0024586093590039937,
+          "pctE0": 0.089
+        }
+      ],
+      "lateUpswings_8_30s": [
+        {
+          "fromT": 22.367,
+          "toT": 22.517,
+          "rise": 0.000547252279008259,
+          "pctE0": 0.02
+        }
+      ],
+      "at1": {
+        "t": 0.9999999999999976,
+        "KE": 1.6666609030615473,
+        "PE": 0.8967336781020285,
+        "E": 2.5633945811635757
+      },
+      "at5": {
+        "t": 5.0000000000000355,
+        "KE": 0.13959079211088227,
+        "PE": 0.5259193399967638,
+        "E": 0.665510132107646
+      },
+      "at10": {
+        "t": 10.000000000000217,
+        "KE": 0.013400344847946596,
+        "PE": 0.5182000296330098,
+        "E": 0.5316003744809564
+      },
+      "at20": {
+        "t": 20.000000000000288,
+        "KE": 0.0013632173662715193,
+        "PE": 0.4994607886532329,
+        "E": 0.5008240060195044
+      },
+      "at30": {
+        "t": 29.99999999999972,
+        "KE": 0.00006501807651691822,
+        "PE": 0.49718302559107536,
+        "E": 0.4972480436675923
+      }
+    },
+    "volume": {
+      "N0": 576,
+      "maxRelN": 0.2048611111111111,
+      "maxRelNt": 2.0000000000000004,
+      "N10": 612,
+      "N30": 640,
+      "drift10_30": 0.04861111111111111,
+      "absDrift10_30": 0.04861111111111111,
+      "rhoMin": 0.9434346701641145,
+      "rhoMinT": 2.5833333333333313,
+      "rhoMax": 1.0140678287067568,
+      "rhoMaxT": 1.749999999999997,
+      "rho30": 0.99825825685399,
+      "rhoSamples": 1800,
+      "rhoOutOfBand": 142
+    },
+    "depth": {
+      "last5Mean": 0.10530653987017977,
+      "last5Min": 0.10496494732797146,
+      "last5Max": 0.10575525928288698,
+      "at30": 0.1055173734202981,
+      "fromParticleVolume": 0.10546875,
+      "target": 0.10546875
+    },
+    "height": {
+      "meanParticleHeight30": 0.050681246237622365,
+      "halfLast5Depth": 0.05265326993508988,
+      "halfDepth30": 0.05275868671014905,
+      "E30": 0.4972480436675923,
+      "gTimesMeanHeight": 0.4971830255910754
+    },
+    "div": {
+      "substeps": 2450,
+      "rawMax": 0.04874,
+      "rawP95OfMax": 0.02446,
+      "rawMean": 0.0013634524081632628,
+      "solverMax": 0.000099995,
+      "solverP95OfMax": 0.000092693,
+      "solverMean": 0.00000958992979591836
+    },
+    "pcg": {
+      "mean": 7.104489795918368,
+      "p95": 9,
+      "max": 13,
+      "capHits": 0
+    },
+    "cost": {
+      "meanMsPerFrame": 1.9331561494252718,
+      "p95MsPerFrame": 4.290542999999957,
+      "maxMsPerFrame": 9.836078000000157,
+      "note": "excludes first 60 frames (JIT warm-up) and diagnostics-hook time"
+    },
+    "cfl": {
+      "maxAdvective": 0.9087839280883409,
+      "maxWithGravityTerm": 0.9995730113706097
+    },
+    "closePairs": {
+      "t1.2": {
+        "lt0p8r": 81,
+        "lt1p2r": 295,
+        "lt1p2rBothInFloorRow": 177,
+        "floorRowParticlesPerCellOver4": 1.130859375
+      },
+      "t5": {
+        "lt0p8r": 40,
+        "lt1p2r": 189,
+        "lt1p2rBothInFloorRow": 189,
+        "floorRowParticlesPerCellOver4": 1.138671875
+      },
+      "t30": {
+        "lt0p8r": 16,
+        "lt1p2r": 132,
+        "lt1p2rBothInFloorRow": 132,
+        "floorRowParticlesPerCellOver4": 1.109375
+      }
+    },
+    "wallActiveSet": {
+      "maxPasses": 1,
+      "sumPasses": 2450,
+      "n": 2450,
+      "capHits": 0,
+      "capNegHits": 0,
+      "worstNegP": 0,
+      "worstUInto": 0,
+      "compFailSteps": 0,
+      "totalCompFail": 0,
+      "meanPasses": 1,
+      "p95Passes": 0,
+      "pass": null,
+      "note": "separating-wall active set (2g only). Contact p = cell p when constrained, 0 when released. Null pass when boundary != separating."
+    },
+    "separationCom": {
+      "maxAbsRawDy": 7.761021455128987e-11,
+      "maxAbsRawDx": 4.13921144273546e-10,
+      "maxAbsEffDy": 4.159914684325687e-9,
+      "maxAbsEffDx": 2.0472917188701305e-9,
+      "maxEffLift": 4.159914684325687e-9,
+      "maxEffLiftT": 26.899999999999896,
+      "sumEffLift": 0.000006803073421934862,
+      "sumEffLiftPreImpact": 6.933181140311726e-9,
+      "g_x_sumEffLift_J_per_kg": 0.00006673815026918099,
+      "g_x_sumEffLiftPreImpact_J_per_kg": 6.801450698645804e-8,
+      "note": "per-substep centre-of-mass shift of the free particles caused by the push-apart pass (m, y down). raw = right after the pass; eff = wall clamp applied to the positions before and after the pass. lift = -dy."
+    },
+    "cap": {
+      "hits": 0
+    },
+    "frames": 1800,
+    "simTime": 29.99999999999972
+  },
+  "comparison": {
+    "h2": {
+      "T144": 0.941796543389806,
+      "Tref": 1.19,
+      "shift": 0.24820345661019394,
+      "release": {
+        "1.125": {
+          "points": 10,
+          "pass": true,
+          "minRatio": 1.0430545580231267,
+          "minAtT": 2.23,
+          "minAtZref": 2.78,
+          "minOffWall": {
+            "ratio": 1.0430545580231267,
+            "T": 2.23,
+            "Zref": 2.78
+          },
+          "rows": [
+            {
+              "T": 0.82,
+              "Tsim": 0.82,
+              "Zref": 1.22,
+              "Zsim": 1.3348762408560546,
+              "ratio": 1.0941608531607006,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 1.19,
+              "Tsim": 1.19,
+              "Zref": 1.44,
+              "Zsim": 1.6709473632513323,
+              "ratio": 1.1603801133689808,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 1.58,
+              "Tsim": 1.58,
+              "Zref": 1.89,
+              "Zsim": 2.078766816394118,
+              "ratio": 1.0998766224307504,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 1.91,
+              "Tsim": 1.91,
+              "Zref": 2.33,
+              "Zsim": 2.47503716316858,
+              "ratio": 1.062247709514412,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 2.23,
+              "Tsim": 2.23,
+              "Zref": 2.78,
+              "Zsim": 2.8996916713042924,
+              "ratio": 1.0430545580231267,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 2.58,
+              "Tsim": 2.58,
+              "Zref": 3.22,
+              "Zsim": 3.3987640679051023,
+              "ratio": 1.0555167912748764,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 2.91,
+              "Tsim": 2.91,
+              "Zref": 3.67,
+              "Zsim": 3.8996103648890643,
+              "ratio": 1.062564132122361,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 3.26,
+              "Tsim": 3.26,
+              "Zref": 4.11,
+              "Zsim": 4.461795613490623,
+              "ratio": 1.0855950397787404,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 3.6,
+              "Tsim": 3.6,
+              "Zref": 4.56,
+              "Zsim": 5.031110598549177,
+              "ratio": 1.1033137277520126,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 3.92,
+              "Tsim": 3.92,
+              "Zref": 5,
+              "Zsim": 5.3208334181043835,
+              "ratio": 1.0641666836208767,
+              "pass": true,
+              "note": "sim front already at far wall"
+            }
+          ]
+        },
+        "2.25": {
+          "points": 15,
+          "pass": true,
+          "minRatio": 1.0641666836208767,
+          "minAtT": 4.02,
+          "minAtZref": 5,
+          "minOffWall": {
+            "ratio": 1.0841784859786716,
+            "T": 3.11,
+            "Zref": 3.89
+          },
+          "rows": [
+            {
+              "T": 0.84,
+              "Tsim": 0.84,
+              "Zref": 1.22,
+              "Zsim": 1.3518533714301302,
+              "ratio": 1.1080765339591232,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 1.19,
+              "Tsim": 1.19,
+              "Zref": 1.44,
+              "Zsim": 1.6709473632513323,
+              "ratio": 1.1603801133689808,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 1.43,
+              "Tsim": 1.43,
+              "Zref": 1.67,
+              "Zsim": 1.914575254983105,
+              "ratio": 1.1464522484928772,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 1.63,
+              "Tsim": 1.63,
+              "Zref": 1.89,
+              "Zsim": 2.135480437515555,
+              "ratio": 1.1298838293733098,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 1.83,
+              "Tsim": 1.83,
+              "Zref": 2.11,
+              "Zsim": 2.3750136978967533,
+              "ratio": 1.1255989089558074,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 1.98,
+              "Tsim": 1.98,
+              "Zref": 2.33,
+              "Zsim": 2.564971774314108,
+              "ratio": 1.1008462550704325,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 2.2,
+              "Tsim": 2.2,
+              "Zref": 2.56,
+              "Zsim": 2.858714833841931,
+              "ratio": 1.1166854819695042,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 2.32,
+              "Tsim": 2.32,
+              "Zref": 2.78,
+              "Zsim": 3.025118126127792,
+              "ratio": 1.0881719878157528,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 2.51,
+              "Tsim": 2.51,
+              "Zref": 3,
+              "Zsim": 3.296487101076655,
+              "ratio": 1.0988290336922184,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 2.65,
+              "Tsim": 2.65,
+              "Zref": 3.22,
+              "Zsim": 3.5026393461653806,
+              "ratio": 1.0877761944612983,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 2.83,
+              "Tsim": 2.83,
+              "Zref": 3.44,
+              "Zsim": 3.7749542217547982,
+              "ratio": 1.0973704133008135,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 2.97,
+              "Tsim": 2.97,
+              "Zref": 3.67,
+              "Zsim": 3.9937419961366634,
+              "ratio": 1.0882130779663932,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 3.11,
+              "Tsim": 3.11,
+              "Zref": 3.89,
+              "Zsim": 4.217454310457033,
+              "ratio": 1.0841784859786716,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 3.33,
+              "Tsim": 3.33,
+              "Zref": 4.11,
+              "Zsim": 4.577224040530256,
+              "ratio": 1.113679815214174,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 4.02,
+              "Tsim": 4.02,
+              "Zref": 5,
+              "Zsim": 5.3208334181043835,
+              "ratio": 1.0641666836208767,
+              "pass": true,
+              "note": "sim front already at far wall"
+            }
+          ]
+        }
+      },
+      "shifted": {
+        "1.125": {
+          "points": 10,
+          "pass": true,
+          "minRatio": 0.9234819919483856,
+          "minAtT": 2.23,
+          "minAtZref": 2.78,
+          "minOffWall": {
+            "ratio": 0.9234819919483856,
+            "T": 2.23,
+            "Zref": 2.78
+          },
+          "rows": [
+            {
+              "T": 0.82,
+              "Tsim": 0.571796543389806,
+              "Zref": 1.22,
+              "Zsim": 1.1510208473438424,
+              "ratio": 0.9434597109375757,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 1.19,
+              "Tsim": 0.941796543389806,
+              "Zref": 1.44,
+              "Zsim": 1.44,
+              "ratio": 1,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 1.58,
+              "Tsim": 1.3317965433898062,
+              "Zref": 1.89,
+              "Zsim": 1.8128083166632065,
+              "ratio": 0.9591578395043421,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 1.91,
+              "Tsim": 1.6617965433898059,
+              "Zref": 2.33,
+              "Zsim": 2.1720008541236835,
+              "ratio": 0.9321892077784049,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 2.23,
+              "Tsim": 1.9817965433898062,
+              "Zref": 2.78,
+              "Zsim": 2.567279937616512,
+              "ratio": 0.9234819919483856,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 2.58,
+              "Tsim": 2.3317965433898062,
+              "Zref": 3.22,
+              "Zsim": 3.0416196697453928,
+              "ratio": 0.944602381908507,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 2.91,
+              "Tsim": 2.6617965433898063,
+              "Zref": 3.67,
+              "Zsim": 3.5202421533950186,
+              "ratio": 0.9591940472465991,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 3.26,
+              "Tsim": 3.011796543389806,
+              "Zref": 4.11,
+              "Zsim": 4.060213054519864,
+              "ratio": 0.9878863879610374,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 3.6,
+              "Tsim": 3.3517965433898063,
+              "Zref": 4.56,
+              "Zsim": 4.613504123135907,
+              "ratio": 1.0117333603368217,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 3.92,
+              "Tsim": 3.671796543389806,
+              "Zref": 5,
+              "Zsim": 5.151935288325605,
+              "ratio": 1.030387057665121,
+              "pass": true,
+              "note": ""
+            }
+          ]
+        },
+        "2.25": {
+          "points": 15,
+          "pass": true,
+          "minRatio": 0.9532266837998331,
+          "minAtT": 0.84,
+          "minAtZref": 1.22,
+          "minOffWall": {
+            "ratio": 0.9532266837998331,
+            "T": 0.84,
+            "Zref": 1.22
+          },
+          "rows": [
+            {
+              "T": 0.84,
+              "Tsim": 0.591796543389806,
+              "Zref": 1.22,
+              "Zsim": 1.1629365542357963,
+              "ratio": 0.9532266837998331,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 1.19,
+              "Tsim": 0.941796543389806,
+              "Zref": 1.44,
+              "Zsim": 1.44,
+              "ratio": 1,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 1.43,
+              "Tsim": 1.1817965433898059,
+              "Zref": 1.67,
+              "Zsim": 1.662812654348578,
+              "ratio": 0.9956962002087294,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 1.63,
+              "Tsim": 1.381796543389806,
+              "Zref": 1.89,
+              "Zsim": 1.8643170176038983,
+              "ratio": 0.9864111204253431,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 1.83,
+              "Tsim": 1.5817965433898062,
+              "Zref": 2.11,
+              "Zsim": 2.080804586016872,
+              "ratio": 0.9861633109084702,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 1.98,
+              "Tsim": 1.7317965433898062,
+              "Zref": 2.33,
+              "Zsim": 2.255309927597056,
+              "ratio": 0.9679441749343588,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 2.2,
+              "Tsim": 1.9517965433898063,
+              "Zref": 2.56,
+              "Zsim": 2.5287365328398574,
+              "ratio": 0.9877877081405693,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 2.32,
+              "Tsim": 2.071796543389806,
+              "Zref": 2.78,
+              "Zsim": 2.685663933059663,
+              "ratio": 0.9660661629711019,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 2.51,
+              "Tsim": 2.261796543389806,
+              "Zref": 3,
+              "Zsim": 2.9437004729889753,
+              "ratio": 0.9812334909963251,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 2.65,
+              "Tsim": 2.401796543389806,
+              "Zref": 3.22,
+              "Zsim": 3.1407909189188397,
+              "ratio": 0.975400906496534,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 2.83,
+              "Tsim": 2.5817965433898062,
+              "Zref": 3.44,
+              "Zsim": 3.4013889966006032,
+              "ratio": 0.9887758711048266,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 2.97,
+              "Tsim": 2.7217965433898064,
+              "Zref": 3.67,
+              "Zsim": 3.6099406009378376,
+              "ratio": 0.9836350411274762,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 3.11,
+              "Tsim": 2.861796543389806,
+              "Zref": 3.89,
+              "Zsim": 3.8243965502177177,
+              "ratio": 0.9831353599531408,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 3.33,
+              "Tsim": 3.0817965433898062,
+              "Zref": 4.11,
+              "Zsim": 4.171830216683362,
+              "ratio": 1.0150438483414506,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 4.02,
+              "Tsim": 3.7717965433898057,
+              "Zref": 5,
+              "Zsim": 5.308325109903998,
+              "ratio": 1.0616650219807995,
+              "pass": true,
+              "note": ""
+            }
+          ]
+        }
+      }
+    },
+    "h1": {
+      "T144": 0.6813896893397453,
+      "Tref": 0.8,
+      "shift": 0.11861031066025474,
+      "release": {
+        "2.25": {
+          "points": 19,
+          "pass": true,
+          "minRatio": 1.0641666836208767,
+          "minAtT": 3.32,
+          "minAtZref": 5,
+          "minOffWall": {
+            "ratio": 1.0800080604416489,
+            "T": 1.29,
+            "Zref": 2.11
+          },
+          "rows": [
+            {
+              "T": 0.62,
+              "Tsim": 0.62,
+              "Zref": 1.22,
+              "Zsim": 1.3682743465799698,
+              "ratio": 1.121536349655713,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 0.8,
+              "Tsim": 0.8,
+              "Zref": 1.44,
+              "Zsim": 1.5863750254535323,
+              "ratio": 1.1016493232316196,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 0.97,
+              "Tsim": 0.97,
+              "Zref": 1.67,
+              "Zsim": 1.8105718654485534,
+              "ratio": 1.0841747697296729,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 1.14,
+              "Tsim": 1.14,
+              "Zref": 1.89,
+              "Zsim": 2.051531362494786,
+              "ratio": 1.0854663293623206,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 1.29,
+              "Tsim": 1.29,
+              "Zref": 2.11,
+              "Zsim": 2.278817007531879,
+              "ratio": 1.0800080604416489,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 1.45,
+              "Tsim": 1.45,
+              "Zref": 2.33,
+              "Zsim": 2.5363453697501672,
+              "ratio": 1.0885602445279687,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 1.62,
+              "Tsim": 1.62,
+              "Zref": 2.56,
+              "Zsim": 2.8241189636550326,
+              "ratio": 1.103171470177747,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 1.76,
+              "Tsim": 1.76,
+              "Zref": 2.78,
+              "Zsim": 3.0690035578986135,
+              "ratio": 1.1039581143520194,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 1.93,
+              "Tsim": 1.93,
+              "Zref": 3,
+              "Zsim": 3.37408096375603,
+              "ratio": 1.1246936545853432,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 2.07,
+              "Tsim": 2.07,
+              "Zref": 3.22,
+              "Zsim": 3.6321534882409416,
+              "ratio": 1.127997977714578,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 2.24,
+              "Tsim": 2.24,
+              "Zref": 3.44,
+              "Zsim": 3.952739465349282,
+              "ratio": 1.149052170159675,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 2.4,
+              "Tsim": 2.4,
+              "Zref": 3.67,
+              "Zsim": 4.260758096626427,
+              "ratio": 1.160969508617555,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 2.54,
+              "Tsim": 2.54,
+              "Zref": 3.89,
+              "Zsim": 4.535057544725476,
+              "ratio": 1.1658245616260865,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 2.71,
+              "Tsim": 2.71,
+              "Zref": 4.11,
+              "Zsim": 4.873645602667457,
+              "ratio": 1.1858018497974347,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 2.87,
+              "Tsim": 2.87,
+              "Zref": 4.33,
+              "Zsim": 5.1973904989600275,
+              "ratio": 1.2003211313995443,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 3.04,
+              "Tsim": 3.04,
+              "Zref": 4.56,
+              "Zsim": 5.3208334181043835,
+              "ratio": 1.166849433794821,
+              "pass": true,
+              "note": "sim front already at far wall"
+            },
+            {
+              "T": 3.21,
+              "Tsim": 3.21,
+              "Zref": 4.78,
+              "Zsim": 5.3208334181043835,
+              "ratio": 1.1131450665490341,
+              "pass": true,
+              "note": "sim front already at far wall"
+            },
+            {
+              "T": 3.29,
+              "Tsim": 3.29,
+              "Zref": 4.89,
+              "Zsim": 5.3208334181043835,
+              "ratio": 1.0881049934773792,
+              "pass": true,
+              "note": "sim front already at far wall"
+            },
+            {
+              "T": 3.32,
+              "Tsim": 3.32,
+              "Zref": 5,
+              "Zsim": 5.3208334181043835,
+              "ratio": 1.0641666836208767,
+              "pass": true,
+              "note": "sim front already at far wall"
+            }
+          ]
+        },
+        "4.5": {
+          "points": 9,
+          "pass": true,
+          "minRatio": 1.0641666836208767,
+          "minAtT": 3.19,
+          "minAtZref": 5,
+          "minOffWall": {
+            "ratio": 1.084028033029831,
+            "T": 0.58,
+            "Zref": 1.22
+          },
+          "rows": [
+            {
+              "T": 0.58,
+              "Tsim": 0.58,
+              "Zref": 1.22,
+              "Zsim": 1.3225142002963939,
+              "ratio": 1.084028033029831,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 0.8,
+              "Tsim": 0.8,
+              "Zref": 1.44,
+              "Zsim": 1.5863750254535323,
+              "ratio": 1.1016493232316196,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 1.19,
+              "Tsim": 1.19,
+              "Zref": 1.89,
+              "Zsim": 2.1257257873318016,
+              "ratio": 1.1247226387998952,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 1.66,
+              "Tsim": 1.66,
+              "Zref": 2.56,
+              "Zsim": 2.8933608113013554,
+              "ratio": 1.130219066914592,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 1.94,
+              "Tsim": 1.94,
+              "Zref": 3,
+              "Zsim": 3.3923955961596475,
+              "ratio": 1.130798532053216,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 2.17,
+              "Tsim": 2.17,
+              "Zref": 3.44,
+              "Zsim": 3.8197890066990086,
+              "ratio": 1.1104037810171536,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 2.38,
+              "Tsim": 2.38,
+              "Zref": 3.89,
+              "Zsim": 4.2219787328729375,
+              "ratio": 1.08534157657402,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 2.85,
+              "Tsim": 2.85,
+              "Zref": 4.56,
+              "Zsim": 5.156595486587844,
+              "ratio": 1.1308323435499659,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 3.19,
+              "Tsim": 3.19,
+              "Zref": 5,
+              "Zsim": 5.3208334181043835,
+              "ratio": 1.0641666836208767,
+              "pass": true,
+              "note": "sim front already at far wall"
+            }
+          ]
+        }
+      },
+      "shifted": {
+        "2.25": {
+          "points": 19,
+          "pass": true,
+          "minRatio": 0.989336022107185,
+          "minAtT": 0.97,
+          "minAtZref": 1.67,
+          "minOffWall": {
+            "ratio": 0.989336022107185,
+            "T": 0.97,
+            "Zref": 1.67
+          },
+          "rows": [
+            {
+              "T": 0.62,
+              "Tsim": 0.5013896893397453,
+              "Zref": 1.22,
+              "Zsim": 1.2397810896839987,
+              "ratio": 1.0162140079377038,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 0.8,
+              "Tsim": 0.6813896893397453,
+              "Zref": 1.44,
+              "Zsim": 1.44,
+              "ratio": 1,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 0.97,
+              "Tsim": 0.8513896893397452,
+              "Zref": 1.67,
+              "Zsim": 1.6521911569189989,
+              "ratio": 0.989336022107185,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 1.14,
+              "Tsim": 1.0213896893397452,
+              "Zref": 1.89,
+              "Zsim": 1.8814355331640666,
+              "ratio": 0.9954685360656438,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 1.29,
+              "Tsim": 1.1713896893397453,
+              "Zref": 2.11,
+              "Zsim": 2.0975447185747003,
+              "ratio": 0.994097023021185,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 1.45,
+              "Tsim": 1.3313896893397452,
+              "Zref": 2.33,
+              "Zsim": 2.3433455333053455,
+              "ratio": 1.0057276966975732,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 1.62,
+              "Tsim": 1.5013896893397454,
+              "Zref": 2.56,
+              "Zsim": 2.621757678118696,
+              "ratio": 1.0241240930151156,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 1.76,
+              "Tsim": 1.6413896893397453,
+              "Zref": 2.78,
+              "Zsim": 2.861145503916653,
+              "ratio": 1.0291890301858464,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 1.93,
+              "Tsim": 1.8113896893397452,
+              "Zref": 3,
+              "Zsim": 3.1604267022268133,
+              "ratio": 1.0534755674089378,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 2.07,
+              "Tsim": 1.951389689339745,
+              "Zref": 3.22,
+              "Zsim": 3.4132553935045307,
+              "ratio": 1.0600172029517176,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 2.24,
+              "Tsim": 2.1213896893397455,
+              "Zref": 3.44,
+              "Zsim": 3.728370755387464,
+              "ratio": 1.0838287079614721,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 2.4,
+              "Tsim": 2.281389689339745,
+              "Zref": 3.67,
+              "Zsim": 4.031889048139164,
+              "ratio": 1.0986073700651673,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 2.54,
+              "Tsim": 2.4213896893397453,
+              "Zref": 3.89,
+              "Zsim": 4.302232023800434,
+              "ratio": 1.1059722426222194,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 2.71,
+              "Tsim": 2.5913896893397452,
+              "Zref": 4.11,
+              "Zsim": 4.636639271686565,
+              "ratio": 1.1281360758361472,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 2.87,
+              "Tsim": 2.7513896893397454,
+              "Zref": 4.33,
+              "Zsim": 4.956818101701616,
+              "ratio": 1.144761686305223,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 3.04,
+              "Tsim": 2.9213896893397453,
+              "Zref": 4.56,
+              "Zsim": 5.302212649580907,
+              "ratio": 1.1627659319256376,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 3.21,
+              "Tsim": 3.0913896893397452,
+              "Zref": 4.78,
+              "Zsim": 5.3208334181043835,
+              "ratio": 1.1131450665490341,
+              "pass": true,
+              "note": "sim front already at far wall"
+            },
+            {
+              "T": 3.29,
+              "Tsim": 3.1713896893397453,
+              "Zref": 4.89,
+              "Zsim": 5.3208334181043835,
+              "ratio": 1.0881049934773792,
+              "pass": true,
+              "note": "sim front already at far wall"
+            },
+            {
+              "T": 3.32,
+              "Tsim": 3.201389689339745,
+              "Zref": 5,
+              "Zsim": 5.3208334181043835,
+              "ratio": 1.0641666836208767,
+              "pass": true,
+              "note": "sim front already at far wall"
+            }
+          ]
+        },
+        "4.5": {
+          "points": 9,
+          "pass": true,
+          "minRatio": 0.9863672433773227,
+          "minAtT": 0.58,
+          "minAtZref": 1.22,
+          "minOffWall": {
+            "ratio": 0.9863672433773227,
+            "T": 0.58,
+            "Zref": 1.22
+          },
+          "rows": [
+            {
+              "T": 0.58,
+              "Tsim": 0.4613896893397452,
+              "Zref": 1.22,
+              "Zsim": 1.2033680369203337,
+              "ratio": 0.9863672433773227,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 0.8,
+              "Tsim": 0.6813896893397453,
+              "Zref": 1.44,
+              "Zsim": 1.44,
+              "ratio": 1,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 1.19,
+              "Tsim": 1.0713896893397452,
+              "Zref": 1.89,
+              "Zsim": 1.9519449712315775,
+              "ratio": 1.0327751170537447,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 1.66,
+              "Tsim": 1.5413896893397452,
+              "Zref": 2.56,
+              "Zsim": 2.6895781760309547,
+              "ratio": 1.0506164750120917,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 1.94,
+              "Tsim": 1.8213896893397452,
+              "Zref": 3,
+              "Zsim": 3.178216874828128,
+              "ratio": 1.0594056249427093,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 2.17,
+              "Tsim": 2.051389689339745,
+              "Zref": 3.44,
+              "Zsim": 3.597595277056005,
+              "ratio": 1.0458125805395364,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 2.38,
+              "Tsim": 2.261389689339745,
+              "Zref": 3.89,
+              "Zsim": 3.9934984302485983,
+              "ratio": 1.0266062802695626,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 2.85,
+              "Tsim": 2.7313896893397454,
+              "Zref": 4.56,
+              "Zsim": 4.916628141177177,
+              "ratio": 1.0782079256967494,
+              "pass": true,
+              "note": ""
+            },
+            {
+              "T": 3.19,
+              "Tsim": 3.071389689339745,
+              "Zref": 5,
+              "Zsim": 5.3208334181043835,
+              "ratio": 1.0641666836208767,
+              "pass": true,
+              "note": "sim front already at far wall"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "harness": {
+    "reseed": true,
+    "freshProcessPerCase": true
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "h": 0.0234375,
+  "R": 0.1171875,
+  "g": 9.81,
+  "formula": "t_phys = sqrt(2h/g) + R/max(|v_side|,0.1)",
+  "rows": [
+    {
+      "name": "left",
+      "v_throw": [
+        -3,
+        -8
+      ],
+      "v_side_at_dual_contact": 0.8424525558948517,
+      "dualContactT": 0.12,
+      "nCornerParticles": 4,
+      "v_side_used": 0.8424525558948517,
+      "t_phys": 0.2082279468026093,
+      "band_hi": 0.30822794680260934,
+      "t_release": 0.4,
+      "legacy_t": 0.06,
+      "pass_new_band": false
+    },
+    {
+      "name": "right",
+      "v_throw": [
+        5,
+        -6
+      ],
+      "v_side_at_dual_contact": 0.7338741719722748,
+      "dualContactT": 0.12,
+      "nCornerParticles": 2,
+      "v_side_used": 0.7338741719722748,
+      "t_phys": 0.22880852667507245,
+      "band_hi": 0.32880852667507243,
+      "t_release": 0.5,
+      "legacy_t": 0.08000000000000002,
+      "pass_new_band": false
+    },
+    {
+      "name": "center",
+      "v_throw": [
+        0,
+        -8
+      ],
+      "v_side_at_dual_contact": 4.96551513671875,
+      "dualContactT": 0.26,
+      "nCornerParticles": 1,
+      "v_side_used": 4.96551513671875,
+      "t_phys": 0.0927254283709316,
+      "band_hi": 0.1927254283709316,
+      "t_release": 0.38,
+      "legacy_t": 0.32,
+      "pass_new_band": false
+    }
+  ]
+}

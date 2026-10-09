@@ -1,0 +1,39 @@
+{
+ "run1": {
+  "pass": true,
+  "valid": true,
+  "deltaD": 0.064246,
+  "d_none": 0.362231,
+  "d_box": 0.426477
+ },
+ "run2": {
+  "box": {
+   "closureOk": true,
+   "velRemLE0": true,
+   "cumulativeLE1e4": true,
+   "windowLE1e4": false,
+   "pass": false
+  },
+  "ramp": {
+   "closureOk": true,
+   "velRemLE0": true,
+   "cumulativeLE1e4": true,
+   "windowLE1e4": false,
+   "pass": false
+  },
+  "instrumentationIdentical": {
+   "box": true,
+   "ramp": true,
+   "hashes": [
+    "60e805ad3f4563cf",
+    "60e805ad3f4563cf",
+    "600025e19864cd3a",
+    "600025e19864cd3a"
+   ]
+  }
+ },
+ "run3": {
+  "b1": true,
+  "b2": true
+ }
+}

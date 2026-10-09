@@ -1,0 +1,370 @@
+{
+ "gate": "CFL 1, no path check: 1-cell and 2-cell barriers 0 leaks and min SDF ≥ 0; 0.5-cell, CFL 0.5 and ramp tip report-only",
+ "b1": {
+  "case": "b1",
+  "cfl": 1,
+  "config": {
+   "cellSize": 0.0234375,
+   "grid": [
+    128,
+    72
+   ],
+   "radius": 0.007031249999999999,
+   "cfl": 1,
+   "maxSubsteps": 8,
+   "damping": 0,
+   "flipRatio": 0.8,
+   "viscosity": 0.05,
+   "solver": "pcg",
+   "boundary": "separating",
+   "separation": "neutral",
+   "pressureMass": "equal",
+   "driftRate": 1,
+   "densitySampler": "renorm",
+   "gravity": 9.81,
+   "fill": 0.22
+  },
+  "barrier_cells": [
+   64,
+   65
+  ],
+  "thickness_cells": 1,
+  "particles": [
+   6400,
+   6400
+  ],
+  "initialDownstream": 0,
+  "maxDownstream": 0,
+  "maxDownstreamT": null,
+  "finalDownstream": 0,
+  "everDownstream": 0,
+  "firstLeakT": null,
+  "minSdfOverR": 0.9999932183159723,
+  "minSdfT": 0.18888888888888894,
+  "insideMaxPerSubstep": 0,
+  "substeps": 19532,
+  "nanMax": 0,
+  "capHits": 2437,
+  "maskCells": 72,
+  "maskColumns": [
+   64
+  ],
+  "maskRowsExpected": 72,
+  "wallSeconds": 200.011,
+  "pass": true
+ },
+ "b2": {
+  "case": "b2",
+  "cfl": 1,
+  "config": {
+   "cellSize": 0.0234375,
+   "grid": [
+    128,
+    72
+   ],
+   "radius": 0.007031249999999999,
+   "cfl": 1,
+   "maxSubsteps": 8,
+   "damping": 0,
+   "flipRatio": 0.8,
+   "viscosity": 0.05,
+   "solver": "pcg",
+   "boundary": "separating",
+   "separation": "neutral",
+   "pressureMass": "equal",
+   "driftRate": 1,
+   "densitySampler": "renorm",
+   "gravity": 9.81,
+   "fill": 0.22
+  },
+  "barrier_cells": [
+   64,
+   66
+  ],
+  "thickness_cells": 2,
+  "particles": [
+   6400,
+   6400
+  ],
+  "initialDownstream": 0,
+  "maxDownstream": 0,
+  "maxDownstreamT": null,
+  "finalDownstream": 0,
+  "everDownstream": 0,
+  "firstLeakT": null,
+  "minSdfOverR": 0.9999932183159723,
+  "minSdfT": 0.18888888888888894,
+  "insideMaxPerSubstep": 0,
+  "substeps": 2691,
+  "nanMax": 0,
+  "capHits": 0,
+  "maskCells": 144,
+  "maskColumns": [
+   64,
+   65
+  ],
+  "maskRowsExpected": 72,
+  "wallSeconds": 19.099,
+  "pass": true
+ },
+ "b05_centred": {
+  "case": "b05c",
+  "cfl": 1,
+  "config": {
+   "cellSize": 0.0234375,
+   "grid": [
+    128,
+    72
+   ],
+   "radius": 0.007031249999999999,
+   "cfl": 1,
+   "maxSubsteps": 8,
+   "damping": 0,
+   "flipRatio": 0.8,
+   "viscosity": 0.05,
+   "solver": "pcg",
+   "boundary": "separating",
+   "separation": "neutral",
+   "pressureMass": "equal",
+   "driftRate": 1,
+   "densitySampler": "renorm",
+   "gravity": 9.81,
+   "fill": 0.22
+  },
+  "barrier_cells": [
+   64.25,
+   64.75
+  ],
+  "thickness_cells": 0.5,
+  "particles": [
+   6400,
+   6400
+  ],
+  "initialDownstream": 0,
+  "maxDownstream": 18,
+  "maxDownstreamT": 29.457275035101944,
+  "finalDownstream": 18,
+  "everDownstream": 18,
+  "firstLeakT": 3.091566749318547,
+  "minSdfOverR": 0.9999932183159723,
+  "minSdfT": 0.18888888888888894,
+  "insideMaxPerSubstep": 0,
+  "substeps": 19532,
+  "nanMax": 0,
+  "capHits": 2438,
+  "maskCells": 72,
+  "maskColumns": [
+   64
+  ],
+  "maskRowsExpected": 72,
+  "wallSeconds": 199.353
+ },
+ "b05_noCellCentre": {
+  "case": "b05e",
+  "cfl": 1,
+  "config": {
+   "cellSize": 0.0234375,
+   "grid": [
+    128,
+    72
+   ],
+   "radius": 0.007031249999999999,
+   "cfl": 1,
+   "maxSubsteps": 8,
+   "damping": 0,
+   "flipRatio": 0.8,
+   "viscosity": 0.05,
+   "solver": "pcg",
+   "boundary": "separating",
+   "separation": "neutral",
+   "pressureMass": "equal",
+   "driftRate": 1,
+   "densitySampler": "renorm",
+   "gravity": 9.81,
+   "fill": 0.22
+  },
+  "barrier_cells": [
+   64.6,
+   65.1
+  ],
+  "thickness_cells": 0.5,
+  "particles": [
+   6400,
+   6400
+  ],
+  "initialDownstream": 0,
+  "maxDownstream": 3166,
+  "maxDownstreamT": 16.41666666666712,
+  "finalDownstream": 3166,
+  "everDownstream": 3210,
+  "firstLeakT": 0.1944444444444445,
+  "minSdfOverR": 0.9999966091580051,
+  "minSdfT": 0.1944444444444445,
+  "insideMaxPerSubstep": 0,
+  "substeps": 2372,
+  "nanMax": 0,
+  "capHits": 0,
+  "maskCells": 0,
+  "maskColumns": [],
+  "maskRowsExpected": 72,
+  "wallSeconds": 15.821
+ },
+ "b1_cfl05": {
+  "case": "b1",
+  "cfl": 0.5,
+  "config": {
+   "cellSize": 0.0234375,
+   "grid": [
+    128,
+    72
+   ],
+   "radius": 0.007031249999999999,
+   "cfl": 0.5,
+   "maxSubsteps": 8,
+   "damping": 0,
+   "flipRatio": 0.8,
+   "viscosity": 0.05,
+   "solver": "pcg",
+   "boundary": "separating",
+   "separation": "neutral",
+   "pressureMass": "equal",
+   "driftRate": 1,
+   "densitySampler": "renorm",
+   "gravity": 9.81,
+   "fill": 0.22
+  },
+  "barrier_cells": [
+   64,
+   65
+  ],
+  "thickness_cells": 1,
+  "particles": [
+   6400,
+   6400
+  ],
+  "initialDownstream": 0,
+  "maxDownstream": 0,
+  "maxDownstreamT": null,
+  "finalDownstream": 0,
+  "everDownstream": 0,
+  "firstLeakT": null,
+  "minSdfOverR": 0.9999932183159723,
+  "minSdfT": 0.18333333333333318,
+  "insideMaxPerSubstep": 0,
+  "substeps": 37508,
+  "nanMax": 0,
+  "capHits": 4682,
+  "maskCells": 72,
+  "maskColumns": [
+   64
+  ],
+  "maskRowsExpected": 72,
+  "wallSeconds": 388.253
+ },
+ "noBarrierBaseline": {
+  "case": "none",
+  "cfl": 1,
+  "config": {
+   "cellSize": 0.0234375,
+   "grid": [
+    128,
+    72
+   ],
+   "radius": 0.007031249999999999,
+   "cfl": 1,
+   "maxSubsteps": 8,
+   "damping": 0,
+   "flipRatio": 0.8,
+   "viscosity": 0.05,
+   "solver": "pcg",
+   "boundary": "separating",
+   "separation": "neutral",
+   "pressureMass": "equal",
+   "driftRate": 1,
+   "densitySampler": "renorm",
+   "gravity": 9.81,
+   "fill": 0.22
+  },
+  "barrier_cells": null,
+  "thickness_cells": 0,
+  "particles": [
+   6400,
+   6400
+  ],
+  "initialDownstream": 0,
+  "maxDownstream": 4837,
+  "maxDownstreamT": 1.750000000000007,
+  "finalDownstream": 2966,
+  "everDownstream": 6238,
+  "firstLeakT": 0.18888888888888894,
+  "minSdfOverR": null,
+  "minSdfT": null,
+  "insideMaxPerSubstep": 0,
+  "substeps": 3452,
+  "nanMax": 0,
+  "capHits": 0,
+  "maskCells": 0,
+  "maskColumns": [],
+  "maskRowsExpected": 72,
+  "wallSeconds": 20.211
+ },
+ "rampTip": {
+  "case": "tip",
+  "cfl": 1,
+  "config": {
+   "cellSize": 0.0234375,
+   "grid": [
+    128,
+    72
+   ],
+   "radius": 0.007031249999999999,
+   "cfl": 1,
+   "maxSubsteps": 8,
+   "damping": 0,
+   "flipRatio": 0.8,
+   "viscosity": 0.05,
+   "solver": "pcg",
+   "boundary": "separating",
+   "separation": "neutral",
+   "pressureMass": "equal",
+   "driftRate": 1,
+   "densitySampler": "renorm",
+   "gravity": 9.81,
+   "fill": 0.22
+  },
+  "particles": [
+   6400,
+   6400
+  ],
+  "topToUnderside": 17,
+  "undersideToTop": 33,
+  "firstCrossTimes": [
+   6.1833,
+   7.2,
+   7.2,
+   7.2083,
+   7.2333,
+   10.3167,
+   10.3833,
+   10.3833,
+   10.4833,
+   10.5,
+   11.55,
+   11.55,
+   11.75,
+   13.6333,
+   13.6333,
+   13.7667,
+   13.9
+  ],
+  "minSdfOverR": 0.9999827771735135,
+  "insideMaxPerSubstep": 0,
+  "nanMax": 0,
+  "maskCells": 60,
+  "maskFirstColumn": 74,
+  "tipColumn": 70,
+  "missingTipLength_cells": 4,
+  "capHits": 0,
+  "wallSeconds": 20.726
+ }
+}

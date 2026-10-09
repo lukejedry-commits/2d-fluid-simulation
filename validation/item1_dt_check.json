@@ -1,0 +1,139 @@
+{
+ "rule": "p and halving claims stand only if mean dt(CFL1)/mean dt(CFL0.5) is within 10% of 2 (1.8-2.2)",
+ "windowMembership": "substep start time t0 in [a, b), exactly as test/item1_budget.js; full-precision dt from validation/item1_dt_series.csv",
+ "capHitInference": "frames reconstructed from the per-substep dt series (8 substeps not covering 1/60 s = cap hit); totals cross-checked against the harness capLog count",
+ "cases": {
+  "prefix": {
+   "b1_cfl1_capFramesTotal_inferred": 1421,
+   "b1_cfl1_capFramesTotal_harness": 1421,
+   "b1_cfl05_capFramesTotal_inferred": 518,
+   "b1_cfl05_capFramesTotal_harness": 518,
+   "onsetWindow": {
+    "b1_cfl1": {
+     "window": [
+      0.16666666666666669,
+      0.22298464461568082
+     ],
+     "substeps": 20,
+     "substeps_budget": 20,
+     "mean_dt": 0.002815898897450704,
+     "min_dt": 0.001,
+     "max_dt": 0.005555555555555556,
+     "capHitFramesInWindow": 1,
+     "substepsInCapFrames": 5
+    },
+    "b1_cfl05": {
+     "window": [
+      0.16666666666666657,
+      0.2140358619344472
+     ],
+     "substeps": 29,
+     "substeps_budget": 29,
+     "mean_dt": 0.0016334205264751972,
+     "min_dt": 0.0005190361168622039,
+     "max_dt": 0.002777777777777778,
+     "capHitFramesInWindow": 2,
+     "substepsInCapFrames": 15
+    },
+    "dt_ratio_cfl1_over_cfl05": 1.7239277037415521,
+    "p_stands": false
+   },
+   "growthWindow": {
+    "b1_cfl1": {
+     "window": [
+      0.22298464461568082,
+      0.2346520120035864
+     ],
+     "substeps": 33,
+     "substeps_budget": 33,
+     "mean_dt": 0.0003535565875122917,
+     "min_dt": 7.423057279239552e-05,
+     "max_dt": 0.0009407898834229624,
+     "capHitFramesInWindow": 5,
+     "substepsInCapFrames": 33
+    },
+    "b1_cfl05": {
+     "window": [
+      0.2140358619344472,
+      0.219490414732415
+     ],
+     "substeps": 34,
+     "substeps_budget": 34,
+     "mean_dt": 0.0001604280234696412,
+     "min_dt": 2.949852507374631e-05,
+     "max_dt": 0.00048663594089858774,
+     "capHitFramesInWindow": 6,
+     "substepsInCapFrames": 34
+    },
+    "dt_ratio_cfl1_over_cfl05": 2.2038330951524654,
+    "p_stands": false
+   }
+  },
+  "fixed": {
+   "b1_cfl1_capFramesTotal_inferred": 0,
+   "b1_cfl1_capFramesTotal_harness": 0,
+   "b1_cfl05_capFramesTotal_inferred": 72,
+   "b1_cfl05_capFramesTotal_harness": 72,
+   "first1s": {
+    "b1_cfl1": {
+     "window": [
+      0,
+      1
+     ],
+     "substeps": 325,
+     "substeps_budget": 325,
+     "mean_dt": 0.003076923076923077,
+     "min_dt": 0.0016666666666666666,
+     "max_dt": 0.016666666666666666,
+     "capHitFramesInWindow": 0,
+     "substepsInCapFrames": 0
+    },
+    "b1_cfl05": {
+     "window": [
+      0,
+      1
+     ],
+     "substeps": 627,
+     "substeps_budget": 627,
+     "mean_dt": 0.001597318347824345,
+     "min_dt": 0.001098901098901099,
+     "max_dt": 0.016666666666666666,
+     "capHitFramesInWindow": 72,
+     "substepsInCapFrames": 576
+    },
+    "dt_ratio_cfl1_over_cfl05": 1.9263054738675311,
+    "p_stands": true
+   },
+   "contactWindow": {
+    "b1_cfl1": {
+     "window": [
+      0.16666666666666669,
+      0.3666666666666667
+     ],
+     "substeps": 83,
+     "substeps_budget": 83,
+     "mean_dt": 0.002409638554216867,
+     "min_dt": 0.0017857142857142854,
+     "max_dt": 0.005555555555555556,
+     "capHitFramesInWindow": 0,
+     "substepsInCapFrames": 0
+    },
+    "b1_cfl05": {
+     "window": [
+      0.16666666666666657,
+      0.3666666666666666
+     ],
+     "substeps": 153,
+     "substeps_budget": 153,
+     "mean_dt": 0.0013084370828084666,
+     "min_dt": 0.001098901098901099,
+     "max_dt": 0.002777777777777778,
+     "capHitFramesInWindow": 18,
+     "substepsInCapFrames": 140
+    },
+    "dt_ratio_cfl1_over_cfl05": 1.8416159140374941,
+    "p_stands": true
+   }
+  }
+ }
+}

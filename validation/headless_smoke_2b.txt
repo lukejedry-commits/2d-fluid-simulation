@@ -1,0 +1,15 @@
+{
+  "smoke": "headless-2s",
+  "ok": true,
+  "frames": 121,
+  "simTime": 2.0166666666666604,
+  "ms": 934,
+  "count": 2500,
+  "nan": 0,
+  "outside": 0,
+  "pressureMass": "equal",
+  "driftRate": 1,
+  "densitySampler": "renorm",
+  "separation": "neutral",
+  "boundary": "separating"
+}

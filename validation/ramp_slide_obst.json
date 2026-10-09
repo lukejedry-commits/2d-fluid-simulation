@@ -1,0 +1,135 @@
+{
+ "reportOnly": true,
+ "ramp": {
+  "case": "ramp",
+  "config": {
+   "cellSize": 0.0234375,
+   "grid": [
+    128,
+    72
+   ],
+   "radius": 0.007031249999999999,
+   "cfl": 1,
+   "maxSubsteps": 8,
+   "damping": 0,
+   "flipRatio": 0.8,
+   "viscosity": 0.05,
+   "solver": "pcg",
+   "boundary": "separating",
+   "separation": "neutral",
+   "pressureMass": "equal",
+   "driftRate": 1,
+   "densitySampler": "renorm",
+   "gravity": 9.81,
+   "fill": 0.22
+  },
+  "theta_deg": 29.744881296942225,
+  "gSinTheta": 4.867122985280539,
+  "particles": [
+   100,
+   100
+  ],
+  "removedAtAdd": 0,
+  "window": [
+   0.05,
+   0.6555555555555552
+  ],
+  "windowSamples": 83,
+  "a_slope_fit_v": 0.804301757380542,
+  "a_slope_fit_s": 0.7402394669001368,
+  "a_vertical_fit": 0.3408793801390761,
+  "a_slope_early_0p05_0p2": 3.5106755241331276,
+  "a_vertical_early_0p05_0p2": 1.6324418838426815,
+  "a_slope_byRow_window": [
+   0.04514389605476454,
+   0.34599320859989097,
+   0.9674738560396704,
+   1.8585960688278418
+  ],
+  "a_slope_byRow_early": [
+   1.5204631339682038,
+   2.875321045017912,
+   4.399226400715192,
+   5.247691516831201
+  ],
+  "v_slope_max": 0.9696502514374284,
+  "v_slope_at_window_end": 0.8678498238991801,
+  "v_slope_byRow_at_window_end": [
+   0.2593909896356393,
+   0.5767209703778151,
+   1.0454080153719043,
+   1.589879320211362
+  ],
+  "meanNormalOffset_r_start": 3.9273815628452495,
+  "meanNormalOffset_r_end": 2.623700805930247,
+  "minSdfOverR": 0.9999909334818835,
+  "nanMax": 0,
+  "wallSeconds": 3.877
+ },
+ "freefall": {
+  "case": "freefall",
+  "config": {
+   "cellSize": 0.0234375,
+   "grid": [
+    128,
+    72
+   ],
+   "radius": 0.007031249999999999,
+   "cfl": 1,
+   "maxSubsteps": 8,
+   "damping": 0,
+   "flipRatio": 0.8,
+   "viscosity": 0.05,
+   "solver": "pcg",
+   "boundary": "separating",
+   "separation": "neutral",
+   "pressureMass": "equal",
+   "driftRate": 1,
+   "densitySampler": "renorm",
+   "gravity": 9.81,
+   "fill": 0.22
+  },
+  "theta_deg": 29.744881296942225,
+  "gSinTheta": 4.867122985280539,
+  "particles": [
+   100,
+   100
+  ],
+  "removedAtAdd": 0,
+  "window": [
+   0.05,
+   0.34999999999999964
+  ],
+  "windowSamples": 41,
+  "a_slope_fit_v": 5.021078290980187,
+  "a_slope_fit_s": 4.940850126523654,
+  "a_vertical_fit": 10.120159557052219,
+  "a_slope_early_0p05_0p2": 5.186905725904519,
+  "a_vertical_early_0p05_0p2": 10.454634114194674,
+  "a_slope_byRow_window": [
+   5.021077021016638,
+   5.0210665736084525,
+   5.02108369881735,
+   5.021085870478311
+  ],
+  "a_slope_byRow_early": [
+   5.186872364142894,
+   5.186885116735953,
+   5.186933363753772,
+   5.186932058985463
+  ],
+  "v_slope_max": 1.6764546411582268,
+  "v_slope_at_window_end": 1.6764546411582268,
+  "v_slope_byRow_at_window_end": [
+   1.6764507075644046,
+   1.6764512738992279,
+   1.6764594627521838,
+   1.6764571204170897
+  ],
+  "meanNormalOffset_r_start": 3.0405484145785495,
+  "meanNormalOffset_r_end": -68.06394550299753,
+  "minSdfOverR": null,
+  "nanMax": 0,
+  "wallSeconds": 2.852
+ }
+}

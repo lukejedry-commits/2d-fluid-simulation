@@ -1,0 +1,72 @@
+{
+  "generated": "Thu Oct 08 2026 11:00:05 GMT-0400 (Eastern Daylight Time)",
+  "validate": {
+    "files": {
+      "comparison_mm.csv": "identical",
+      "div_h1.csv": "identical",
+      "div_h2.csv": "identical",
+      "energy_h1.csv": "identical",
+      "energy_h2.csv": "identical",
+      "front_h1.csv": "identical",
+      "front_h2.csv": "identical",
+      "volume_h1.csv": "identical",
+      "volume_h2.csv": "identical"
+    },
+    "summaryDiffsExcludingCost": [],
+    "summaryCostDiffs": "6 wall-clock fields differ (timing only)",
+    "identical": true
+  },
+  "run1": {
+    "d_none": 0.3622309915997151,
+    "d_box": 0.42647655353952874,
+    "delta_d": 0.06424556193981362,
+    "band": [
+      0.0381,
+      0.0849
+    ],
+    "pass": true,
+    "box_minSdfOverR": 0.9999830904941712,
+    "box_insideMax": 0,
+    "nan": 0
+  },
+  "b2": {
+    "case": "b2",
+    "build": "plain sim.js (speed clamp ON)",
+    "damping": 0,
+    "simTime": 29.999999999999382,
+    "E0": 4.788077540919157,
+    "E30": 3.7011575799831835,
+    "maxE": 4.8056489737349,
+    "maxEt": 0.09999999999999999,
+    "nan": 0,
+    "capHits": 0,
+    "pcgCapHits": 0,
+    "vmaxFrames": 9.965542285549414,
+    "leaks": {
+      "maxDownstream": 0,
+      "everDownstream": 0
+    },
+    "minSdfOverR": 0.9999932183159723,
+    "pass": true
+  },
+  "b1": {
+    "case": "b1",
+    "build": "plain sim.js (speed clamp ON)",
+    "damping": 0,
+    "simTime": 29.99999999999939,
+    "E0": 4.788077540919157,
+    "E30": 3.7169740284937607,
+    "maxE": 4.8056489737349,
+    "maxEt": 0.09999999999999999,
+    "nan": 0,
+    "capHits": 0,
+    "pcgCapHits": 0,
+    "vmaxFrames": 9.982037879225247,
+    "leaks": {
+      "maxDownstream": 0,
+      "everDownstream": 0
+    },
+    "minSdfOverR": 0.9999932183159723,
+    "pass": true
+  }
+}
